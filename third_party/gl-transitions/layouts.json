@@ -1,0 +1,2956 @@
+{
+  "AdvancedMosaic": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "pixelSize",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "BlockDissolve": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "blocksize",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "BookFlip": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "Bounce": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "shadow_colour",
+        "type": "vec4",
+        "offset": 16
+      },
+      {
+        "name": "shadow_height",
+        "type": "float",
+        "offset": 32
+      },
+      {
+        "name": "bounces",
+        "type": "float",
+        "offset": 36
+      }
+    ],
+    "size": 48,
+    "textures": []
+  },
+  "BowTieHorizontal": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "BowTieVertical": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "BowTieWithParameter": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "adjust",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "reverse",
+        "type": "bool",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "Box": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "rectIn",
+        "type": "int",
+        "offset": 8
+      },
+      {
+        "name": "location",
+        "type": "int",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "ButterflyWaveScrawler": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "amplitude",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "waves",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "colorSeparation",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "CircleCrop": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "bgcolor",
+        "type": "vec4",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "ColourDistance": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "power",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "CrazyParametricFun": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "a",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "b",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "amplitude",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 20
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "CrossZoom": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "strength",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "DefocusBlur": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "blurSize",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "Directional": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "direction",
+        "type": "vec2",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "DirectionalScaled": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "direction",
+        "type": "vec2",
+        "offset": 8
+      },
+      {
+        "name": "scale",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "DoomScreenTransition": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "bars",
+        "type": "int",
+        "offset": 8
+      },
+      {
+        "name": "amplitude",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "noise",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "frequency",
+        "type": "float",
+        "offset": 20
+      },
+      {
+        "name": "dripScale",
+        "type": "float",
+        "offset": 24
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "Dreamy": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "DreamyZoom": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "rotation",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "scale",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "Drop_Zone_Flicker": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "frameRate",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "rgbOffset",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "blockAmount",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "ghostAmount",
+        "type": "float",
+        "offset": 20
+      },
+      {
+        "name": "redCyan",
+        "type": "float",
+        "offset": 24
+      },
+      {
+        "name": "scanline",
+        "type": "float",
+        "offset": 28
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "EdgeTransition": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "edge_thickness",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "edge_brightness",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "FilmBurn": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "Seed",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "Fold": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "GlitchDisplace": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "GlitchMemories": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "GridFlip": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "size",
+        "type": "ivec2",
+        "offset": 8
+      },
+      {
+        "name": "pause",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "dividerWidth",
+        "type": "float",
+        "offset": 20
+      },
+      {
+        "name": "bgcolor",
+        "type": "vec4",
+        "offset": 32
+      },
+      {
+        "name": "randomness",
+        "type": "float",
+        "offset": 48
+      }
+    ],
+    "size": 64,
+    "textures": []
+  },
+  "HSVfade": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "HorizontalClose": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "HorizontalOpen": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "InvertedPageCurl": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "LeftRight": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "LinearBlur": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "intensity",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "Mosaic": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "endx",
+        "type": "int",
+        "offset": 8
+      },
+      {
+        "name": "endy",
+        "type": "int",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "Overexposure": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "strength",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "PolkaDotsCurtain": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "dots",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "center",
+        "type": "vec2",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "PuzzleRight": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "size",
+        "type": "ivec2",
+        "offset": 8
+      },
+      {
+        "name": "pause",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "dividerWidth",
+        "type": "float",
+        "offset": 20
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "Radial": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "Rectangle": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "bgcolor",
+        "type": "vec4",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "RectangleCrop": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "bgcolor",
+        "type": "vec4",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "Revolve_Left": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "center",
+        "type": "vec2",
+        "offset": 8
+      },
+      {
+        "name": "direction",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "maxRotation",
+        "type": "float",
+        "offset": 20
+      },
+      {
+        "name": "peakZoom",
+        "type": "float",
+        "offset": 24
+      },
+      {
+        "name": "swirl",
+        "type": "float",
+        "offset": 28
+      },
+      {
+        "name": "barrel",
+        "type": "float",
+        "offset": 32
+      },
+      {
+        "name": "motionBlur",
+        "type": "float",
+        "offset": 36
+      },
+      {
+        "name": "switchStart",
+        "type": "float",
+        "offset": 40
+      },
+      {
+        "name": "switchEnd",
+        "type": "float",
+        "offset": 44
+      },
+      {
+        "name": "shadow",
+        "type": "float",
+        "offset": 48
+      }
+    ],
+    "size": 64,
+    "textures": []
+  },
+  "Rolls": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "type",
+        "type": "int",
+        "offset": 8
+      },
+      {
+        "name": "RotDown",
+        "type": "bool",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "RotateScaleVanish": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "FadeInSecond",
+        "type": "bool",
+        "offset": 8
+      },
+      {
+        "name": "ReverseEffect",
+        "type": "bool",
+        "offset": 12
+      },
+      {
+        "name": "ReverseRotation",
+        "type": "bool",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "SimpleFlip": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "SimpleZoom": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "zoom_quickness",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "SimpleZoomOut": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "zoom_quickness",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "fade",
+        "type": "bool",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "Slides": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "type",
+        "type": "int",
+        "offset": 8
+      },
+      {
+        "name": "In",
+        "type": "bool",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "StarWipe": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "border_thickness",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "star_rotation",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "border_color",
+        "type": "vec4",
+        "offset": 16
+      },
+      {
+        "name": "star_center",
+        "type": "vec2",
+        "offset": 32
+      }
+    ],
+    "size": 48,
+    "textures": []
+  },
+  "StaticFade": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "n_noise_pixels",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "static_luminosity",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "StereoViewer": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "zoom",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "corner_radius",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "StripDatamoshGlitch": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "strength",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "horizontalBars",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "verticalSlits",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "tear",
+        "type": "float",
+        "offset": 20
+      },
+      {
+        "name": "chroma",
+        "type": "float",
+        "offset": 24
+      },
+      {
+        "name": "residue",
+        "type": "float",
+        "offset": 28
+      },
+      {
+        "name": "noiseAmount",
+        "type": "float",
+        "offset": 32
+      },
+      {
+        "name": "scanAmount",
+        "type": "float",
+        "offset": 36
+      },
+      {
+        "name": "flashAmount",
+        "type": "float",
+        "offset": 40
+      }
+    ],
+    "size": 48,
+    "textures": []
+  },
+  "Swirl": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "TVStatic": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "offset",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "TilesWave": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "tileCount",
+        "type": "ivec2",
+        "offset": 8
+      },
+      {
+        "name": "flipX",
+        "type": "bool",
+        "offset": 16
+      },
+      {
+        "name": "flipY",
+        "type": "bool",
+        "offset": 20
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "TopBottom": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "VerticalClose": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "VerticalOpen": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "WaterDrop": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "amplitude",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "speed",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "ZoomInCircles": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "ZoomLeftWipe": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "zoom_quickness",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "ZoomRigthWipe": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "zoom_quickness",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "angular": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "startingAngle",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "burn": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "color",
+        "type": "vec3",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "burn0": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "burnColor",
+        "type": "vec3",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "cannabisleaf": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "chessboard": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "grid_num",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "circle": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "center",
+        "type": "vec2",
+        "offset": 8
+      },
+      {
+        "name": "backColor",
+        "type": "vec3",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "circleopen": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "opening",
+        "type": "bool",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "colorphase": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "fromStep",
+        "type": "vec4",
+        "offset": 16
+      },
+      {
+        "name": "toStep",
+        "type": "vec4",
+        "offset": 32
+      }
+    ],
+    "size": 48,
+    "textures": []
+  },
+  "coord-from-in": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "crosshatch": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "center",
+        "type": "vec2",
+        "offset": 8
+      },
+      {
+        "name": "threshold",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "fadeEdge",
+        "type": "float",
+        "offset": 20
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "crosswarp": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "cube": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "persp",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "unzoom",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "reflection",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "floating",
+        "type": "float",
+        "offset": 20
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "directional-easing": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "direction",
+        "type": "vec2",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "directionalwarp": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "direction",
+        "type": "vec2",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "directionalwipe": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "direction",
+        "type": "vec2",
+        "offset": 8
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "displacement": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "strength",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": [
+      "displacementMap"
+    ]
+  },
+  "dissolve": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "uLineWidth",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "uSpreadClr",
+        "type": "vec3",
+        "offset": 16
+      },
+      {
+        "name": "uHotClr",
+        "type": "vec3",
+        "offset": 32
+      },
+      {
+        "name": "uPow",
+        "type": "float",
+        "offset": 44
+      },
+      {
+        "name": "uIntensity",
+        "type": "float",
+        "offset": 48
+      }
+    ],
+    "size": 64,
+    "textures": []
+  },
+  "doorway": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "reflection",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "perspective",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "depth",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "fade": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "fadecolor": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "color",
+        "type": "vec3",
+        "offset": 16
+      },
+      {
+        "name": "colorPhase",
+        "type": "float",
+        "offset": 28
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "fadegrayscale": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "intensity",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "flyeye": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "size",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "zoom",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "colorSeparation",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "fragment": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "heart": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "hexagonalize": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "steps",
+        "type": "int",
+        "offset": 8
+      },
+      {
+        "name": "horizontalHexagons",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "kaleidoscope": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "speed",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "angle",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "power",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "luma": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": [
+      "luma"
+    ]
+  },
+  "luminance_melt": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "direction",
+        "type": "bool",
+        "offset": 8
+      },
+      {
+        "name": "l_threshold",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "above",
+        "type": "bool",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "morph": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "strength",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "mosaic_transition": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "mosaicNum",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "multiply_blend": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "old_tv_lost_signal": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "parametric_glitch": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "ampx",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "ampy",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "perlin": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "scale",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "seed",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "pinwheel": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "speed",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "pixelize": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "squaresMin",
+        "type": "ivec2",
+        "offset": 8
+      },
+      {
+        "name": "steps",
+        "type": "int",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "polar_function": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "segments",
+        "type": "int",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "powerKaleido": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "scale",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "z",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "speed",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "randomNoisex": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "randomsquares": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "size",
+        "type": "ivec2",
+        "offset": 8
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "ripple": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "amplitude",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "speed",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "rotateTransition": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "rotate_scale_fade": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "center",
+        "type": "vec2",
+        "offset": 8
+      },
+      {
+        "name": "rotations",
+        "type": "float",
+        "offset": 16
+      },
+      {
+        "name": "scale",
+        "type": "float",
+        "offset": 20
+      },
+      {
+        "name": "backColor",
+        "type": "vec4",
+        "offset": 32
+      }
+    ],
+    "size": 48,
+    "textures": []
+  },
+  "scale-in": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "splitSlideInHorizontal": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "reverse",
+        "type": "bool",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "splitSlideInOutHorizontal": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "reverse",
+        "type": "bool",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "splitSlideInOutVertical": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "reverse",
+        "type": "bool",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "splitSlideInVertical": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "reverse",
+        "type": "bool",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "splitSlideOutHorizontal": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "reverse",
+        "type": "bool",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "splitSlideOutVertical": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "reverse",
+        "type": "bool",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "squareswire": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "squares",
+        "type": "ivec2",
+        "offset": 8
+      },
+      {
+        "name": "direction",
+        "type": "vec2",
+        "offset": 16
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 24
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "squeeze": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "colorSeparation",
+        "type": "float",
+        "offset": 8
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "static_wipe": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "u_transitionUpToDown",
+        "type": "bool",
+        "offset": 8
+      },
+      {
+        "name": "u_max_static_span",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "swap": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "reflection",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "perspective",
+        "type": "float",
+        "offset": 12
+      },
+      {
+        "name": "depth",
+        "type": "float",
+        "offset": 16
+      }
+    ],
+    "size": 32,
+    "textures": []
+  },
+  "tangentMotionBlur": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "undulatingBurnOut": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "center",
+        "type": "vec2",
+        "offset": 16
+      },
+      {
+        "name": "color",
+        "type": "vec3",
+        "offset": 32
+      }
+    ],
+    "size": 48,
+    "textures": []
+  },
+  "wind": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "size",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "reversed",
+        "type": "bool",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "windowblinds": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "windowslice": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      },
+      {
+        "name": "count",
+        "type": "float",
+        "offset": 8
+      },
+      {
+        "name": "smoothness",
+        "type": "float",
+        "offset": 12
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "wipeDown": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "wipeLeft": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "wipeRight": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "wipeUp": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "x_axis_translation": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  },
+  "zoomInOut": {
+    "uniforms": [
+      {
+        "name": "progress",
+        "type": "float",
+        "offset": 0
+      },
+      {
+        "name": "ratio",
+        "type": "float",
+        "offset": 4
+      }
+    ],
+    "size": 16,
+    "textures": []
+  }
+}

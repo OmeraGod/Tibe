@@ -1,0 +1,1 @@
+const fs=require('node:fs'),path=require('node:path'),api=require('../assets/js/gl-transitions.js');fs.writeFileSync(path.join(__dirname,'../.runtime/gl-shader-check.json'),JSON.stringify({vertex:api.vertexSource,shaders:api.catalog.map(e=>({...e,fragment:api.fragmentSource(e.glsl)}))}));console.log(api.catalog.length+' exact application shaders prepared for GPU checks.');

@@ -1,0 +1,2070 @@
+{
+  "targets": {
+    "sksl": {
+      "language": "SkSL",
+      "path": "sksl/{name}.sksl",
+      "rendered": true
+    },
+    "glsl3": {
+      "language": "GLSL ES 3.00",
+      "path": "glsl3/{name}.glsl",
+      "rendered": false
+    },
+    "wgsl": {
+      "language": "WGSL",
+      "path": "wgsl/{name}.wgsl",
+      "rendered": true
+    },
+    "msl": {
+      "language": "Metal Shading Language",
+      "path": "msl/{name}.metal",
+      "rendered": false
+    }
+  },
+  "transitions": {
+    "AdvancedMosaic": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0.009
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "close",
+        "differingPixels": 0.029
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "BlockDissolve": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.495,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "BookFlip": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Bounce": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "BowTieHorizontal": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "BowTieVertical": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "BowTieWithParameter": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Box": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "ButterflyWaveScrawler": {
+      "sksl": {
+        "status": "close",
+        "differingPixels": 0.015
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "CircleCrop": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "ColourDistance": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "CrazyParametricFun": {
+      "sksl": {
+        "status": "close",
+        "differingPixels": 0.016
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "CrossZoom": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "DefocusBlur": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Directional": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "DirectionalScaled": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0.009
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "DoomScreenTransition": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Dreamy": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "DreamyZoom": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Drop_Zone_Flicker": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "EdgeTransition": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "FilmBurn": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.76,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Fold": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "GlitchDisplace": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "GlitchMemories": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "GridFlip": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.382,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "HSVfade": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "HorizontalClose": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "HorizontalOpen": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "InvertedPageCurl": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "LeftRight": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "LinearBlur": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Mosaic": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.765,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Overexposure": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "PolkaDotsCurtain": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "PuzzleRight": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.414,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "noise-only",
+        "differingPixels": 0.053,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Radial": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Rectangle": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "RectangleCrop": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Revolve_Left": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Rolls": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0.005
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0.003
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "RotateScaleVanish": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "SimpleFlip": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "SimpleZoom": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "SimpleZoomOut": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Slides": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "StarWipe": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "StaticFade": {
+      "sksl": {
+        "status": "noise-only",
+        "differingPixels": 0.996,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "noise-only",
+        "differingPixels": 0.575,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "StereoViewer": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0.004
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "StripDatamoshGlitch": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.906,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0.008,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "Swirl": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "TVStatic": {
+      "sksl": {
+        "status": "noise-only",
+        "differingPixels": 0.845,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "noise-only",
+        "differingPixels": 0.611,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "TilesWave": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0.001
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0.001
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "TopBottom": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "VerticalClose": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "VerticalOpen": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "WaterDrop": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "ZoomInCircles": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "ZoomLeftWipe": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "ZoomRigthWipe": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "angular": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "burn": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "burn0": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.463,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "cannabisleaf": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0.001
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "chessboard": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "circle": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "circleopen": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "colorphase": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "coord-from-in": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "crosshatch": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.437,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "differs",
+        "differingPixels": 0.07,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "crosswarp": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "cube": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "directional-easing": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "directionalwarp": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "directionalwipe": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "displacement": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "dissolve": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "doorway": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "fade": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "fadecolor": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "fadegrayscale": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "flyeye": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "fragment": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.423,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "noise-only",
+        "differingPixels": 0.03,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "heart": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "hexagonalize": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "kaleidoscope": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "luma": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "luminance_melt": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.191,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0.006,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "morph": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "mosaic_transition": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "multiply_blend": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "old_tv_lost_signal": {
+      "sksl": {
+        "status": "noise-only",
+        "differingPixels": 0.038,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0.004,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "parametric_glitch": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "perlin": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.509,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "pinwheel": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "pixelize": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "polar_function": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "powerKaleido": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "randomNoisex": {
+      "sksl": {
+        "status": "noise-only",
+        "differingPixels": 0.454,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "noise-only",
+        "differingPixels": 0.239,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "randomsquares": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.638,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "ripple": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "rotateTransition": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "rotate_scale_fade": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "scale-in": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "splitSlideInHorizontal": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "splitSlideInOutHorizontal": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "splitSlideInOutVertical": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "splitSlideInVertical": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "splitSlideOutHorizontal": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "splitSlideOutVertical": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "squareswire": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "squeeze": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "static_wipe": {
+      "sksl": {
+        "status": "noise-only",
+        "differingPixels": 0.604,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "noise-only",
+        "differingPixels": 0.156,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "swap": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "tangentMotionBlur": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0.001,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "undulatingBurnOut": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0.002
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "wind": {
+      "sksl": {
+        "status": "differs",
+        "differingPixels": 0.21,
+        "hashNoise": true
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "noise-only",
+        "differingPixels": 0.155,
+        "hashNoise": true
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "windowblinds": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "windowslice": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "wipeDown": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "wipeLeft": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "wipeRight": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "wipeUp": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "x_axis_translation": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    },
+    "zoomInOut": {
+      "sksl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "glsl3": {
+        "status": "compiled"
+      },
+      "wgsl": {
+        "status": "match",
+        "differingPixels": 0
+      },
+      "msl": {
+        "status": "translated"
+      }
+    }
+  }
+}

@@ -1,0 +1,1934 @@
+[
+  {
+    "id": "af-ZA-AdriNeural",
+    "name": "Microsoft Adri Online (Natural) - Afrikaans (South Africa)",
+    "detail": "Female · af-ZA",
+    "locale": "af-ZA"
+  },
+  {
+    "id": "af-ZA-WillemNeural",
+    "name": "Microsoft Willem Online (Natural) - Afrikaans (South Africa)",
+    "detail": "Male · af-ZA",
+    "locale": "af-ZA"
+  },
+  {
+    "id": "sq-AL-AnilaNeural",
+    "name": "Microsoft Anila Online (Natural) - Albanian (Albania)",
+    "detail": "Female · sq-AL",
+    "locale": "sq-AL"
+  },
+  {
+    "id": "sq-AL-IlirNeural",
+    "name": "Microsoft Ilir Online (Natural) - Albanian (Albania)",
+    "detail": "Male · sq-AL",
+    "locale": "sq-AL"
+  },
+  {
+    "id": "am-ET-AmehaNeural",
+    "name": "Microsoft Ameha Online (Natural) - Amharic (Ethiopia)",
+    "detail": "Male · am-ET",
+    "locale": "am-ET"
+  },
+  {
+    "id": "am-ET-MekdesNeural",
+    "name": "Microsoft Mekdes Online (Natural) - Amharic (Ethiopia)",
+    "detail": "Female · am-ET",
+    "locale": "am-ET"
+  },
+  {
+    "id": "ar-DZ-AminaNeural",
+    "name": "Microsoft Amina Online (Natural) - Arabic (Algeria)",
+    "detail": "Female · ar-DZ",
+    "locale": "ar-DZ"
+  },
+  {
+    "id": "ar-DZ-IsmaelNeural",
+    "name": "Microsoft Ismael Online (Natural) - Arabic (Algeria)",
+    "detail": "Male · ar-DZ",
+    "locale": "ar-DZ"
+  },
+  {
+    "id": "ar-BH-AliNeural",
+    "name": "Microsoft Ali Online (Natural) - Arabic (Bahrain)",
+    "detail": "Male · ar-BH",
+    "locale": "ar-BH"
+  },
+  {
+    "id": "ar-BH-LailaNeural",
+    "name": "Microsoft Laila Online (Natural) - Arabic (Bahrain)",
+    "detail": "Female · ar-BH",
+    "locale": "ar-BH"
+  },
+  {
+    "id": "ar-EG-SalmaNeural",
+    "name": "Microsoft Salma Online (Natural) - Arabic (Egypt)",
+    "detail": "Female · ar-EG",
+    "locale": "ar-EG"
+  },
+  {
+    "id": "ar-EG-ShakirNeural",
+    "name": "Microsoft Shakir Online (Natural) - Arabic (Egypt)",
+    "detail": "Male · ar-EG",
+    "locale": "ar-EG"
+  },
+  {
+    "id": "ar-IQ-BasselNeural",
+    "name": "Microsoft Bassel Online (Natural) - Arabic (Iraq)",
+    "detail": "Male · ar-IQ",
+    "locale": "ar-IQ"
+  },
+  {
+    "id": "ar-IQ-RanaNeural",
+    "name": "Microsoft Rana Online (Natural) - Arabic (Iraq)",
+    "detail": "Female · ar-IQ",
+    "locale": "ar-IQ"
+  },
+  {
+    "id": "ar-JO-SanaNeural",
+    "name": "Microsoft Sana Online (Natural) - Arabic (Jordan)",
+    "detail": "Female · ar-JO",
+    "locale": "ar-JO"
+  },
+  {
+    "id": "ar-JO-TaimNeural",
+    "name": "Microsoft Taim Online (Natural) - Arabic (Jordan)",
+    "detail": "Male · ar-JO",
+    "locale": "ar-JO"
+  },
+  {
+    "id": "ar-KW-FahedNeural",
+    "name": "Microsoft Fahed Online (Natural) - Arabic (Kuwait)",
+    "detail": "Male · ar-KW",
+    "locale": "ar-KW"
+  },
+  {
+    "id": "ar-KW-NouraNeural",
+    "name": "Microsoft Noura Online (Natural) - Arabic (Kuwait)",
+    "detail": "Female · ar-KW",
+    "locale": "ar-KW"
+  },
+  {
+    "id": "ar-LB-LaylaNeural",
+    "name": "Microsoft Layla Online (Natural) - Arabic (Lebanon)",
+    "detail": "Female · ar-LB",
+    "locale": "ar-LB"
+  },
+  {
+    "id": "ar-LB-RamiNeural",
+    "name": "Microsoft Rami Online (Natural) - Arabic (Lebanon)",
+    "detail": "Male · ar-LB",
+    "locale": "ar-LB"
+  },
+  {
+    "id": "ar-LY-ImanNeural",
+    "name": "Microsoft Iman Online (Natural) - Arabic (Libya)",
+    "detail": "Female · ar-LY",
+    "locale": "ar-LY"
+  },
+  {
+    "id": "ar-LY-OmarNeural",
+    "name": "Microsoft Omar Online (Natural) - Arabic (Libya)",
+    "detail": "Male · ar-LY",
+    "locale": "ar-LY"
+  },
+  {
+    "id": "ar-MA-JamalNeural",
+    "name": "Microsoft Jamal Online (Natural) - Arabic (Morocco)",
+    "detail": "Male · ar-MA",
+    "locale": "ar-MA"
+  },
+  {
+    "id": "ar-MA-MounaNeural",
+    "name": "Microsoft Mouna Online (Natural) - Arabic (Morocco)",
+    "detail": "Female · ar-MA",
+    "locale": "ar-MA"
+  },
+  {
+    "id": "ar-OM-AbdullahNeural",
+    "name": "Microsoft Abdullah Online (Natural) - Arabic (Oman)",
+    "detail": "Male · ar-OM",
+    "locale": "ar-OM"
+  },
+  {
+    "id": "ar-OM-AyshaNeural",
+    "name": "Microsoft Aysha Online (Natural) - Arabic (Oman)",
+    "detail": "Female · ar-OM",
+    "locale": "ar-OM"
+  },
+  {
+    "id": "ar-QA-AmalNeural",
+    "name": "Microsoft Amal Online (Natural) - Arabic (Qatar)",
+    "detail": "Female · ar-QA",
+    "locale": "ar-QA"
+  },
+  {
+    "id": "ar-QA-MoazNeural",
+    "name": "Microsoft Moaz Online (Natural) - Arabic (Qatar)",
+    "detail": "Male · ar-QA",
+    "locale": "ar-QA"
+  },
+  {
+    "id": "ar-SA-HamedNeural",
+    "name": "Microsoft Hamed Online (Natural) - Arabic (Saudi Arabia)",
+    "detail": "Male · ar-SA",
+    "locale": "ar-SA"
+  },
+  {
+    "id": "ar-SA-ZariyahNeural",
+    "name": "Microsoft Zariyah Online (Natural) - Arabic (Saudi Arabia)",
+    "detail": "Female · ar-SA",
+    "locale": "ar-SA"
+  },
+  {
+    "id": "ar-SY-AmanyNeural",
+    "name": "Microsoft Amany Online (Natural) - Arabic (Syria)",
+    "detail": "Female · ar-SY",
+    "locale": "ar-SY"
+  },
+  {
+    "id": "ar-SY-LaithNeural",
+    "name": "Microsoft Laith Online (Natural) - Arabic (Syria)",
+    "detail": "Male · ar-SY",
+    "locale": "ar-SY"
+  },
+  {
+    "id": "ar-TN-HediNeural",
+    "name": "Microsoft Hedi Online (Natural) - Arabic (Tunisia)",
+    "detail": "Male · ar-TN",
+    "locale": "ar-TN"
+  },
+  {
+    "id": "ar-TN-ReemNeural",
+    "name": "Microsoft Reem Online (Natural) - Arabic (Tunisia)",
+    "detail": "Female · ar-TN",
+    "locale": "ar-TN"
+  },
+  {
+    "id": "ar-AE-FatimaNeural",
+    "name": "Microsoft Fatima Online (Natural) - Arabic (United Arab Emirates)",
+    "detail": "Female · ar-AE",
+    "locale": "ar-AE"
+  },
+  {
+    "id": "ar-AE-HamdanNeural",
+    "name": "Microsoft Hamdan Online (Natural) - Arabic (United Arab Emirates)",
+    "detail": "Male · ar-AE",
+    "locale": "ar-AE"
+  },
+  {
+    "id": "ar-YE-MaryamNeural",
+    "name": "Microsoft Maryam Online (Natural) - Arabic (Yemen)",
+    "detail": "Female · ar-YE",
+    "locale": "ar-YE"
+  },
+  {
+    "id": "ar-YE-SalehNeural",
+    "name": "Microsoft Saleh Online (Natural) - Arabic (Yemen)",
+    "detail": "Male · ar-YE",
+    "locale": "ar-YE"
+  },
+  {
+    "id": "az-AZ-BabekNeural",
+    "name": "Microsoft Babek Online (Natural) - Azerbaijani (Azerbaijan)",
+    "detail": "Male · az-AZ",
+    "locale": "az-AZ"
+  },
+  {
+    "id": "az-AZ-BanuNeural",
+    "name": "Microsoft Banu Online (Natural) - Azerbaijani (Azerbaijan)",
+    "detail": "Female · az-AZ",
+    "locale": "az-AZ"
+  },
+  {
+    "id": "bn-BD-NabanitaNeural",
+    "name": "Microsoft Nabanita Online (Natural) - Bangla (Bangladesh)",
+    "detail": "Female · bn-BD",
+    "locale": "bn-BD"
+  },
+  {
+    "id": "bn-BD-PradeepNeural",
+    "name": "Microsoft Pradeep Online (Natural) - Bangla (Bangladesh)",
+    "detail": "Male · bn-BD",
+    "locale": "bn-BD"
+  },
+  {
+    "id": "bn-IN-BashkarNeural",
+    "name": "Microsoft Bashkar Online (Natural) - Bangla (India)",
+    "detail": "Male · bn-IN",
+    "locale": "bn-IN"
+  },
+  {
+    "id": "bn-IN-TanishaaNeural",
+    "name": "Microsoft Tanishaa Online (Natural) - Bengali (India)",
+    "detail": "Female · bn-IN",
+    "locale": "bn-IN"
+  },
+  {
+    "id": "bs-BA-VesnaNeural",
+    "name": "Microsoft Vesna Online (Natural) - Bosnian (Bosnia and Herzegovina)",
+    "detail": "Female · bs-BA",
+    "locale": "bs-BA"
+  },
+  {
+    "id": "bs-BA-GoranNeural",
+    "name": "Microsoft Goran Online (Natural) - Bosnian (Bosnia)",
+    "detail": "Male · bs-BA",
+    "locale": "bs-BA"
+  },
+  {
+    "id": "bg-BG-BorislavNeural",
+    "name": "Microsoft Borislav Online (Natural) - Bulgarian (Bulgaria)",
+    "detail": "Male · bg-BG",
+    "locale": "bg-BG"
+  },
+  {
+    "id": "bg-BG-KalinaNeural",
+    "name": "Microsoft Kalina Online (Natural) - Bulgarian (Bulgaria)",
+    "detail": "Female · bg-BG",
+    "locale": "bg-BG"
+  },
+  {
+    "id": "my-MM-NilarNeural",
+    "name": "Microsoft Nilar Online (Natural) - Burmese (Myanmar)",
+    "detail": "Female · my-MM",
+    "locale": "my-MM"
+  },
+  {
+    "id": "my-MM-ThihaNeural",
+    "name": "Microsoft Thiha Online (Natural) - Burmese (Myanmar)",
+    "detail": "Male · my-MM",
+    "locale": "my-MM"
+  },
+  {
+    "id": "ca-ES-EnricNeural",
+    "name": "Microsoft Enric Online (Natural) - Catalan",
+    "detail": "Male · ca-ES",
+    "locale": "ca-ES"
+  },
+  {
+    "id": "ca-ES-JoanaNeural",
+    "name": "Microsoft Joana Online (Natural) - Catalan",
+    "detail": "Female · ca-ES",
+    "locale": "ca-ES"
+  },
+  {
+    "id": "zh-HK-HiuGaaiNeural",
+    "name": "Microsoft HiuGaai Online (Natural) - Chinese (Cantonese Traditional)",
+    "detail": "Female · zh-HK",
+    "locale": "zh-HK"
+  },
+  {
+    "id": "zh-HK-HiuMaanNeural",
+    "name": "Microsoft HiuMaan Online (Natural) - Chinese (Hong Kong SAR)",
+    "detail": "Female · zh-HK",
+    "locale": "zh-HK"
+  },
+  {
+    "id": "zh-HK-WanLungNeural",
+    "name": "Microsoft WanLung Online (Natural) - Chinese (Hong Kong SAR)",
+    "detail": "Male · zh-HK",
+    "locale": "zh-HK"
+  },
+  {
+    "id": "zh-CN-XiaoxiaoNeural",
+    "name": "Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland)",
+    "detail": "Female · zh-CN",
+    "locale": "zh-CN"
+  },
+  {
+    "id": "zh-CN-XiaoyiNeural",
+    "name": "Microsoft Xiaoyi Online (Natural) - Chinese (Mainland)",
+    "detail": "Female · zh-CN",
+    "locale": "zh-CN"
+  },
+  {
+    "id": "zh-CN-YunjianNeural",
+    "name": "Microsoft Yunjian Online (Natural) - Chinese (Mainland)",
+    "detail": "Male · zh-CN",
+    "locale": "zh-CN"
+  },
+  {
+    "id": "zh-CN-YunxiNeural",
+    "name": "Microsoft Yunxi Online (Natural) - Chinese (Mainland)",
+    "detail": "Male · zh-CN",
+    "locale": "zh-CN"
+  },
+  {
+    "id": "zh-CN-YunxiaNeural",
+    "name": "Microsoft Yunxia Online (Natural) - Chinese (Mainland)",
+    "detail": "Male · zh-CN",
+    "locale": "zh-CN"
+  },
+  {
+    "id": "zh-CN-YunyangNeural",
+    "name": "Microsoft Yunyang Online (Natural) - Chinese (Mainland)",
+    "detail": "Male · zh-CN",
+    "locale": "zh-CN"
+  },
+  {
+    "id": "zh-CN-liaoning-XiaobeiNeural",
+    "name": "Microsoft Xiaobei Online (Natural) - Chinese (Northeastern Mandarin)",
+    "detail": "Female · zh-CN-liaoning",
+    "locale": "zh-CN-liaoning"
+  },
+  {
+    "id": "zh-TW-HsiaoChenNeural",
+    "name": "Microsoft HsiaoChen Online (Natural) - Chinese (Taiwan)",
+    "detail": "Female · zh-TW",
+    "locale": "zh-TW"
+  },
+  {
+    "id": "zh-TW-YunJheNeural",
+    "name": "Microsoft YunJhe Online (Natural) - Chinese (Taiwan)",
+    "detail": "Male · zh-TW",
+    "locale": "zh-TW"
+  },
+  {
+    "id": "zh-TW-HsiaoYuNeural",
+    "name": "Microsoft HsiaoYu Online (Natural) - Chinese (Taiwanese Mandarin)",
+    "detail": "Female · zh-TW",
+    "locale": "zh-TW"
+  },
+  {
+    "id": "zh-CN-shaanxi-XiaoniNeural",
+    "name": "Microsoft Xiaoni Online (Natural) - Chinese (Zhongyuan Mandarin Shaanxi)",
+    "detail": "Female · zh-CN-shaanxi",
+    "locale": "zh-CN-shaanxi"
+  },
+  {
+    "id": "hr-HR-GabrijelaNeural",
+    "name": "Microsoft Gabrijela Online (Natural) - Croatian (Croatia)",
+    "detail": "Female · hr-HR",
+    "locale": "hr-HR"
+  },
+  {
+    "id": "hr-HR-SreckoNeural",
+    "name": "Microsoft Srecko Online (Natural) - Croatian (Croatia)",
+    "detail": "Male · hr-HR",
+    "locale": "hr-HR"
+  },
+  {
+    "id": "cs-CZ-AntoninNeural",
+    "name": "Microsoft Antonin Online (Natural) - Czech (Czech)",
+    "detail": "Male · cs-CZ",
+    "locale": "cs-CZ"
+  },
+  {
+    "id": "cs-CZ-VlastaNeural",
+    "name": "Microsoft Vlasta Online (Natural) - Czech (Czech)",
+    "detail": "Female · cs-CZ",
+    "locale": "cs-CZ"
+  },
+  {
+    "id": "da-DK-ChristelNeural",
+    "name": "Microsoft Christel Online (Natural) - Danish (Denmark)",
+    "detail": "Female · da-DK",
+    "locale": "da-DK"
+  },
+  {
+    "id": "da-DK-JeppeNeural",
+    "name": "Microsoft Jeppe Online (Natural) - Danish (Denmark)",
+    "detail": "Male · da-DK",
+    "locale": "da-DK"
+  },
+  {
+    "id": "nl-BE-ArnaudNeural",
+    "name": "Microsoft Arnaud Online (Natural) - Dutch (Belgium)",
+    "detail": "Male · nl-BE",
+    "locale": "nl-BE"
+  },
+  {
+    "id": "nl-BE-DenaNeural",
+    "name": "Microsoft Dena Online (Natural) - Dutch (Belgium)",
+    "detail": "Female · nl-BE",
+    "locale": "nl-BE"
+  },
+  {
+    "id": "nl-NL-ColetteNeural",
+    "name": "Microsoft Colette Online (Natural) - Dutch (Netherlands)",
+    "detail": "Female · nl-NL",
+    "locale": "nl-NL"
+  },
+  {
+    "id": "nl-NL-FennaNeural",
+    "name": "Microsoft Fenna Online (Natural) - Dutch (Netherlands)",
+    "detail": "Female · nl-NL",
+    "locale": "nl-NL"
+  },
+  {
+    "id": "nl-NL-MaartenNeural",
+    "name": "Microsoft Maarten Online (Natural) - Dutch (Netherlands)",
+    "detail": "Male · nl-NL",
+    "locale": "nl-NL"
+  },
+  {
+    "id": "en-AU-WilliamMultilingualNeural",
+    "name": "Microsoft WilliamMultilingual Online (Natural) - English (Australia)",
+    "detail": "Male · en-AU",
+    "locale": "en-AU"
+  },
+  {
+    "id": "en-AU-NatashaNeural",
+    "name": "Microsoft Natasha Online (Natural) - English (Australia)",
+    "detail": "Female · en-AU",
+    "locale": "en-AU"
+  },
+  {
+    "id": "en-CA-ClaraNeural",
+    "name": "Microsoft Clara Online (Natural) - English (Canada)",
+    "detail": "Female · en-CA",
+    "locale": "en-CA"
+  },
+  {
+    "id": "en-CA-LiamNeural",
+    "name": "Microsoft Liam Online (Natural) - English (Canada)",
+    "detail": "Male · en-CA",
+    "locale": "en-CA"
+  },
+  {
+    "id": "en-HK-YanNeural",
+    "name": "Microsoft Yan Online (Natural) - English (Hong Kong SAR)",
+    "detail": "Female · en-HK",
+    "locale": "en-HK"
+  },
+  {
+    "id": "en-HK-SamNeural",
+    "name": "Microsoft Sam Online (Natural) - English (Hongkong)",
+    "detail": "Male · en-HK",
+    "locale": "en-HK"
+  },
+  {
+    "id": "en-IN-NeerjaExpressiveNeural",
+    "name": "Microsoft Neerja Online (Natural) - English (India) (Preview)",
+    "detail": "Female · en-IN",
+    "locale": "en-IN"
+  },
+  {
+    "id": "en-IN-NeerjaNeural",
+    "name": "Microsoft Neerja Online (Natural) - English (India)",
+    "detail": "Female · en-IN",
+    "locale": "en-IN"
+  },
+  {
+    "id": "en-IN-PrabhatNeural",
+    "name": "Microsoft Prabhat Online (Natural) - English (India)",
+    "detail": "Male · en-IN",
+    "locale": "en-IN"
+  },
+  {
+    "id": "en-IE-ConnorNeural",
+    "name": "Microsoft Connor Online (Natural) - English (Ireland)",
+    "detail": "Male · en-IE",
+    "locale": "en-IE"
+  },
+  {
+    "id": "en-IE-EmilyNeural",
+    "name": "Microsoft Emily Online (Natural) - English (Ireland)",
+    "detail": "Female · en-IE",
+    "locale": "en-IE"
+  },
+  {
+    "id": "en-KE-AsiliaNeural",
+    "name": "Microsoft Asilia Online (Natural) - English (Kenya)",
+    "detail": "Female · en-KE",
+    "locale": "en-KE"
+  },
+  {
+    "id": "en-KE-ChilembaNeural",
+    "name": "Microsoft Chilemba Online (Natural) - English (Kenya)",
+    "detail": "Male · en-KE",
+    "locale": "en-KE"
+  },
+  {
+    "id": "en-NZ-MitchellNeural",
+    "name": "Microsoft Mitchell Online (Natural) - English (New Zealand)",
+    "detail": "Male · en-NZ",
+    "locale": "en-NZ"
+  },
+  {
+    "id": "en-NZ-MollyNeural",
+    "name": "Microsoft Molly Online (Natural) - English (New Zealand)",
+    "detail": "Female · en-NZ",
+    "locale": "en-NZ"
+  },
+  {
+    "id": "en-NG-AbeoNeural",
+    "name": "Microsoft Abeo Online (Natural) - English (Nigeria)",
+    "detail": "Male · en-NG",
+    "locale": "en-NG"
+  },
+  {
+    "id": "en-NG-EzinneNeural",
+    "name": "Microsoft Ezinne Online (Natural) - English (Nigeria)",
+    "detail": "Female · en-NG",
+    "locale": "en-NG"
+  },
+  {
+    "id": "en-PH-JamesNeural",
+    "name": "Microsoft James Online (Natural) - English (Philippines)",
+    "detail": "Male · en-PH",
+    "locale": "en-PH"
+  },
+  {
+    "id": "en-PH-RosaNeural",
+    "name": "Microsoft Rosa Online (Natural) - English (Philippines)",
+    "detail": "Female · en-PH",
+    "locale": "en-PH"
+  },
+  {
+    "id": "en-US-AvaNeural",
+    "name": "Microsoft Ava Online (Natural) - English (United States)",
+    "detail": "Female · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-AndrewNeural",
+    "name": "Microsoft Andrew Online (Natural) - English (United States)",
+    "detail": "Male · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-EmmaNeural",
+    "name": "Microsoft Emma Online (Natural) - English (United States)",
+    "detail": "Female · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-BrianNeural",
+    "name": "Microsoft Brian Online (Natural) - English (United States)",
+    "detail": "Male · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-SG-LunaNeural",
+    "name": "Microsoft Luna Online (Natural) - English (Singapore)",
+    "detail": "Female · en-SG",
+    "locale": "en-SG"
+  },
+  {
+    "id": "en-SG-WayneNeural",
+    "name": "Microsoft Wayne Online (Natural) - English (Singapore)",
+    "detail": "Male · en-SG",
+    "locale": "en-SG"
+  },
+  {
+    "id": "en-ZA-LeahNeural",
+    "name": "Microsoft Leah Online (Natural) - English (South Africa)",
+    "detail": "Female · en-ZA",
+    "locale": "en-ZA"
+  },
+  {
+    "id": "en-ZA-LukeNeural",
+    "name": "Microsoft Luke Online (Natural) - English (South Africa)",
+    "detail": "Male · en-ZA",
+    "locale": "en-ZA"
+  },
+  {
+    "id": "en-TZ-ElimuNeural",
+    "name": "Microsoft Elimu Online (Natural) - English (Tanzania)",
+    "detail": "Male · en-TZ",
+    "locale": "en-TZ"
+  },
+  {
+    "id": "en-TZ-ImaniNeural",
+    "name": "Microsoft Imani Online (Natural) - English (Tanzania)",
+    "detail": "Female · en-TZ",
+    "locale": "en-TZ"
+  },
+  {
+    "id": "en-GB-LibbyNeural",
+    "name": "Microsoft Libby Online (Natural) - English (United Kingdom)",
+    "detail": "Female · en-GB",
+    "locale": "en-GB"
+  },
+  {
+    "id": "en-GB-MaisieNeural",
+    "name": "Microsoft Maisie Online (Natural) - English (United Kingdom)",
+    "detail": "Female · en-GB",
+    "locale": "en-GB"
+  },
+  {
+    "id": "en-GB-RyanNeural",
+    "name": "Microsoft Ryan Online (Natural) - English (United Kingdom)",
+    "detail": "Male · en-GB",
+    "locale": "en-GB"
+  },
+  {
+    "id": "en-GB-SoniaNeural",
+    "name": "Microsoft Sonia Online (Natural) - English (United Kingdom)",
+    "detail": "Female · en-GB",
+    "locale": "en-GB"
+  },
+  {
+    "id": "en-GB-ThomasNeural",
+    "name": "Microsoft Thomas Online (Natural) - English (United Kingdom)",
+    "detail": "Male · en-GB",
+    "locale": "en-GB"
+  },
+  {
+    "id": "en-US-AnaNeural",
+    "name": "Microsoft Ana Online (Natural) - English (United States)",
+    "detail": "Female · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-AndrewMultilingualNeural",
+    "name": "Microsoft AndrewMultilingual Online (Natural) - English (United States)",
+    "detail": "Male · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-AriaNeural",
+    "name": "Microsoft Aria Online (Natural) - English (United States)",
+    "detail": "Female · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-AvaMultilingualNeural",
+    "name": "Microsoft AvaMultilingual Online (Natural) - English (United States)",
+    "detail": "Female · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-BrianMultilingualNeural",
+    "name": "Microsoft BrianMultilingual Online (Natural) - English (United States)",
+    "detail": "Male · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-ChristopherNeural",
+    "name": "Microsoft Christopher Online (Natural) - English (United States)",
+    "detail": "Male · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-EmmaMultilingualNeural",
+    "name": "Microsoft EmmaMultilingual Online (Natural) - English (United States)",
+    "detail": "Female · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-EricNeural",
+    "name": "Microsoft Eric Online (Natural) - English (United States)",
+    "detail": "Male · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-GuyNeural",
+    "name": "Microsoft Guy Online (Natural) - English (United States)",
+    "detail": "Male · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-JennyNeural",
+    "name": "Microsoft Jenny Online (Natural) - English (United States)",
+    "detail": "Female · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-MichelleNeural",
+    "name": "Microsoft Michelle Online (Natural) - English (United States)",
+    "detail": "Female · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-RogerNeural",
+    "name": "Microsoft Roger Online (Natural) - English (United States)",
+    "detail": "Male · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "en-US-SteffanNeural",
+    "name": "Microsoft Steffan Online (Natural) - English (United States)",
+    "detail": "Male · en-US",
+    "locale": "en-US"
+  },
+  {
+    "id": "et-EE-AnuNeural",
+    "name": "Microsoft Anu Online (Natural) - Estonian (Estonia)",
+    "detail": "Female · et-EE",
+    "locale": "et-EE"
+  },
+  {
+    "id": "et-EE-KertNeural",
+    "name": "Microsoft Kert Online (Natural) - Estonian (Estonia)",
+    "detail": "Male · et-EE",
+    "locale": "et-EE"
+  },
+  {
+    "id": "fil-PH-AngeloNeural",
+    "name": "Microsoft Angelo Online (Natural) - Filipino (Philippines)",
+    "detail": "Male · fil-PH",
+    "locale": "fil-PH"
+  },
+  {
+    "id": "fil-PH-BlessicaNeural",
+    "name": "Microsoft Blessica Online (Natural) - Filipino (Philippines)",
+    "detail": "Female · fil-PH",
+    "locale": "fil-PH"
+  },
+  {
+    "id": "fi-FI-HarriNeural",
+    "name": "Microsoft Harri Online (Natural) - Finnish (Finland)",
+    "detail": "Male · fi-FI",
+    "locale": "fi-FI"
+  },
+  {
+    "id": "fi-FI-NooraNeural",
+    "name": "Microsoft Noora Online (Natural) - Finnish (Finland)",
+    "detail": "Female · fi-FI",
+    "locale": "fi-FI"
+  },
+  {
+    "id": "fr-BE-CharlineNeural",
+    "name": "Microsoft Charline Online (Natural) - French (Belgium)",
+    "detail": "Female · fr-BE",
+    "locale": "fr-BE"
+  },
+  {
+    "id": "fr-BE-GerardNeural",
+    "name": "Microsoft Gerard Online (Natural) - French (Belgium)",
+    "detail": "Male · fr-BE",
+    "locale": "fr-BE"
+  },
+  {
+    "id": "fr-CA-ThierryNeural",
+    "name": "Microsoft Thierry Online (Natural) - French (Canada)",
+    "detail": "Male · fr-CA",
+    "locale": "fr-CA"
+  },
+  {
+    "id": "fr-CA-AntoineNeural",
+    "name": "Microsoft Antoine Online (Natural) - French (Canada)",
+    "detail": "Male · fr-CA",
+    "locale": "fr-CA"
+  },
+  {
+    "id": "fr-CA-JeanNeural",
+    "name": "Microsoft Jean Online (Natural) - French (Canada)",
+    "detail": "Male · fr-CA",
+    "locale": "fr-CA"
+  },
+  {
+    "id": "fr-CA-SylvieNeural",
+    "name": "Microsoft Sylvie Online (Natural) - French (Canada)",
+    "detail": "Female · fr-CA",
+    "locale": "fr-CA"
+  },
+  {
+    "id": "fr-FR-VivienneMultilingualNeural",
+    "name": "Microsoft VivienneMultilingual Online (Natural) - French (France)",
+    "detail": "Female · fr-FR",
+    "locale": "fr-FR"
+  },
+  {
+    "id": "fr-FR-RemyMultilingualNeural",
+    "name": "Microsoft RemyMultilingual Online (Natural) - French (France)",
+    "detail": "Male · fr-FR",
+    "locale": "fr-FR"
+  },
+  {
+    "id": "fr-FR-DeniseNeural",
+    "name": "Microsoft Denise Online (Natural) - French (France)",
+    "detail": "Female · fr-FR",
+    "locale": "fr-FR"
+  },
+  {
+    "id": "fr-FR-EloiseNeural",
+    "name": "Microsoft Eloise Online (Natural) - French (France)",
+    "detail": "Female · fr-FR",
+    "locale": "fr-FR"
+  },
+  {
+    "id": "fr-FR-HenriNeural",
+    "name": "Microsoft Henri Online (Natural) - French (France)",
+    "detail": "Male · fr-FR",
+    "locale": "fr-FR"
+  },
+  {
+    "id": "fr-CH-ArianeNeural",
+    "name": "Microsoft Ariane Online (Natural) - French (Switzerland)",
+    "detail": "Female · fr-CH",
+    "locale": "fr-CH"
+  },
+  {
+    "id": "fr-CH-FabriceNeural",
+    "name": "Microsoft Fabrice Online (Natural) - French (Switzerland)",
+    "detail": "Male · fr-CH",
+    "locale": "fr-CH"
+  },
+  {
+    "id": "gl-ES-RoiNeural",
+    "name": "Microsoft Roi Online (Natural) - Galician",
+    "detail": "Male · gl-ES",
+    "locale": "gl-ES"
+  },
+  {
+    "id": "gl-ES-SabelaNeural",
+    "name": "Microsoft Sabela Online (Natural) - Galician",
+    "detail": "Female · gl-ES",
+    "locale": "gl-ES"
+  },
+  {
+    "id": "ka-GE-EkaNeural",
+    "name": "Microsoft Eka Online (Natural) - Georgian (Georgia)",
+    "detail": "Female · ka-GE",
+    "locale": "ka-GE"
+  },
+  {
+    "id": "ka-GE-GiorgiNeural",
+    "name": "Microsoft Giorgi Online (Natural) - Georgian (Georgia)",
+    "detail": "Male · ka-GE",
+    "locale": "ka-GE"
+  },
+  {
+    "id": "de-AT-IngridNeural",
+    "name": "Microsoft Ingrid Online (Natural) - German (Austria)",
+    "detail": "Female · de-AT",
+    "locale": "de-AT"
+  },
+  {
+    "id": "de-AT-JonasNeural",
+    "name": "Microsoft Jonas Online (Natural) - German (Austria)",
+    "detail": "Male · de-AT",
+    "locale": "de-AT"
+  },
+  {
+    "id": "de-DE-SeraphinaMultilingualNeural",
+    "name": "Microsoft SeraphinaMultilingual Online (Natural) - German (Germany)",
+    "detail": "Female · de-DE",
+    "locale": "de-DE"
+  },
+  {
+    "id": "de-DE-FlorianMultilingualNeural",
+    "name": "Microsoft FlorianMultilingual Online (Natural) - German (Germany)",
+    "detail": "Male · de-DE",
+    "locale": "de-DE"
+  },
+  {
+    "id": "de-DE-AmalaNeural",
+    "name": "Microsoft Amala Online (Natural) - German (Germany)",
+    "detail": "Female · de-DE",
+    "locale": "de-DE"
+  },
+  {
+    "id": "de-DE-ConradNeural",
+    "name": "Microsoft Conrad Online (Natural) - German (Germany)",
+    "detail": "Male · de-DE",
+    "locale": "de-DE"
+  },
+  {
+    "id": "de-DE-KatjaNeural",
+    "name": "Microsoft Katja Online (Natural) - German (Germany)",
+    "detail": "Female · de-DE",
+    "locale": "de-DE"
+  },
+  {
+    "id": "de-DE-KillianNeural",
+    "name": "Microsoft Killian Online (Natural) - German (Germany)",
+    "detail": "Male · de-DE",
+    "locale": "de-DE"
+  },
+  {
+    "id": "de-CH-JanNeural",
+    "name": "Microsoft Jan Online (Natural) - German (Switzerland)",
+    "detail": "Male · de-CH",
+    "locale": "de-CH"
+  },
+  {
+    "id": "de-CH-LeniNeural",
+    "name": "Microsoft Leni Online (Natural) - German (Switzerland)",
+    "detail": "Female · de-CH",
+    "locale": "de-CH"
+  },
+  {
+    "id": "el-GR-AthinaNeural",
+    "name": "Microsoft Athina Online (Natural) - Greek (Greece)",
+    "detail": "Female · el-GR",
+    "locale": "el-GR"
+  },
+  {
+    "id": "el-GR-NestorasNeural",
+    "name": "Microsoft Nestoras Online (Natural) - Greek (Greece)",
+    "detail": "Male · el-GR",
+    "locale": "el-GR"
+  },
+  {
+    "id": "gu-IN-DhwaniNeural",
+    "name": "Microsoft Dhwani Online (Natural) - Gujarati (India)",
+    "detail": "Female · gu-IN",
+    "locale": "gu-IN"
+  },
+  {
+    "id": "gu-IN-NiranjanNeural",
+    "name": "Microsoft Niranjan Online (Natural) - Gujarati (India)",
+    "detail": "Male · gu-IN",
+    "locale": "gu-IN"
+  },
+  {
+    "id": "he-IL-AvriNeural",
+    "name": "Microsoft Avri Online (Natural) - Hebrew (Israel)",
+    "detail": "Male · he-IL",
+    "locale": "he-IL"
+  },
+  {
+    "id": "he-IL-HilaNeural",
+    "name": "Microsoft Hila Online (Natural) - Hebrew (Israel)",
+    "detail": "Female · he-IL",
+    "locale": "he-IL"
+  },
+  {
+    "id": "hi-IN-MadhurNeural",
+    "name": "Microsoft Madhur Online (Natural) - Hindi (India)",
+    "detail": "Male · hi-IN",
+    "locale": "hi-IN"
+  },
+  {
+    "id": "hi-IN-SwaraNeural",
+    "name": "Microsoft Swara Online (Natural) - Hindi (India)",
+    "detail": "Female · hi-IN",
+    "locale": "hi-IN"
+  },
+  {
+    "id": "hu-HU-NoemiNeural",
+    "name": "Microsoft Noemi Online (Natural) - Hungarian (Hungary)",
+    "detail": "Female · hu-HU",
+    "locale": "hu-HU"
+  },
+  {
+    "id": "hu-HU-TamasNeural",
+    "name": "Microsoft Tamas Online (Natural) - Hungarian (Hungary)",
+    "detail": "Male · hu-HU",
+    "locale": "hu-HU"
+  },
+  {
+    "id": "is-IS-GudrunNeural",
+    "name": "Microsoft Gudrun Online (Natural) - Icelandic (Iceland)",
+    "detail": "Female · is-IS",
+    "locale": "is-IS"
+  },
+  {
+    "id": "is-IS-GunnarNeural",
+    "name": "Microsoft Gunnar Online (Natural) - Icelandic (Iceland)",
+    "detail": "Male · is-IS",
+    "locale": "is-IS"
+  },
+  {
+    "id": "id-ID-ArdiNeural",
+    "name": "Microsoft Ardi Online (Natural) - Indonesian (Indonesia)",
+    "detail": "Male · id-ID",
+    "locale": "id-ID"
+  },
+  {
+    "id": "id-ID-GadisNeural",
+    "name": "Microsoft Gadis Online (Natural) - Indonesian (Indonesia)",
+    "detail": "Female · id-ID",
+    "locale": "id-ID"
+  },
+  {
+    "id": "iu-Latn-CA-SiqiniqNeural",
+    "name": "Microsoft Siqiniq Online (Natural) - Inuktitut (Latin, Canada)",
+    "detail": "Female · iu-Latn-CA",
+    "locale": "iu-Latn-CA"
+  },
+  {
+    "id": "iu-Latn-CA-TaqqiqNeural",
+    "name": "Microsoft Taqqiq Online (Natural) - Inuktitut (Latin, Canada)",
+    "detail": "Male · iu-Latn-CA",
+    "locale": "iu-Latn-CA"
+  },
+  {
+    "id": "iu-Cans-CA-SiqiniqNeural",
+    "name": "Microsoft Siqiniq Online (Natural) - Inuktitut (Syllabics, Canada)",
+    "detail": "Female · iu-Cans-CA",
+    "locale": "iu-Cans-CA"
+  },
+  {
+    "id": "iu-Cans-CA-TaqqiqNeural",
+    "name": "Microsoft Taqqiq Online (Natural) - Inuktitut (Syllabics, Canada)",
+    "detail": "Male · iu-Cans-CA",
+    "locale": "iu-Cans-CA"
+  },
+  {
+    "id": "ga-IE-ColmNeural",
+    "name": "Microsoft Colm Online (Natural) - Irish (Ireland)",
+    "detail": "Male · ga-IE",
+    "locale": "ga-IE"
+  },
+  {
+    "id": "ga-IE-OrlaNeural",
+    "name": "Microsoft Orla Online (Natural) - Irish (Ireland)",
+    "detail": "Female · ga-IE",
+    "locale": "ga-IE"
+  },
+  {
+    "id": "it-IT-GiuseppeMultilingualNeural",
+    "name": "Microsoft GiuseppeMultilingual Online (Natural) - Italian (Italy)",
+    "detail": "Male · it-IT",
+    "locale": "it-IT"
+  },
+  {
+    "id": "it-IT-DiegoNeural",
+    "name": "Microsoft Diego Online (Natural) - Italian (Italy)",
+    "detail": "Male · it-IT",
+    "locale": "it-IT"
+  },
+  {
+    "id": "it-IT-ElsaNeural",
+    "name": "Microsoft Elsa Online (Natural) - Italian (Italy)",
+    "detail": "Female · it-IT",
+    "locale": "it-IT"
+  },
+  {
+    "id": "it-IT-IsabellaNeural",
+    "name": "Microsoft Isabella Online (Natural) - Italian (Italy)",
+    "detail": "Female · it-IT",
+    "locale": "it-IT"
+  },
+  {
+    "id": "ja-JP-KeitaNeural",
+    "name": "Microsoft Keita Online (Natural) - Japanese (Japan)",
+    "detail": "Male · ja-JP",
+    "locale": "ja-JP"
+  },
+  {
+    "id": "ja-JP-NanamiNeural",
+    "name": "Microsoft Nanami Online (Natural) - Japanese (Japan)",
+    "detail": "Female · ja-JP",
+    "locale": "ja-JP"
+  },
+  {
+    "id": "jv-ID-DimasNeural",
+    "name": "Microsoft Dimas Online (Natural) - Javanese (Indonesia)",
+    "detail": "Male · jv-ID",
+    "locale": "jv-ID"
+  },
+  {
+    "id": "jv-ID-SitiNeural",
+    "name": "Microsoft Siti Online (Natural) - Javanese (Indonesia)",
+    "detail": "Female · jv-ID",
+    "locale": "jv-ID"
+  },
+  {
+    "id": "kn-IN-GaganNeural",
+    "name": "Microsoft Gagan Online (Natural) - Kannada (India)",
+    "detail": "Male · kn-IN",
+    "locale": "kn-IN"
+  },
+  {
+    "id": "kn-IN-SapnaNeural",
+    "name": "Microsoft Sapna Online (Natural) - Kannada (India)",
+    "detail": "Female · kn-IN",
+    "locale": "kn-IN"
+  },
+  {
+    "id": "kk-KZ-AigulNeural",
+    "name": "Microsoft Aigul Online (Natural) - Kazakh (Kazakhstan)",
+    "detail": "Female · kk-KZ",
+    "locale": "kk-KZ"
+  },
+  {
+    "id": "kk-KZ-DauletNeural",
+    "name": "Microsoft Daulet Online (Natural) - Kazakh (Kazakhstan)",
+    "detail": "Male · kk-KZ",
+    "locale": "kk-KZ"
+  },
+  {
+    "id": "km-KH-PisethNeural",
+    "name": "Microsoft Piseth Online (Natural) - Khmer (Cambodia)",
+    "detail": "Male · km-KH",
+    "locale": "km-KH"
+  },
+  {
+    "id": "km-KH-SreymomNeural",
+    "name": "Microsoft Sreymom Online (Natural) - Khmer (Cambodia)",
+    "detail": "Female · km-KH",
+    "locale": "km-KH"
+  },
+  {
+    "id": "ko-KR-HyunsuMultilingualNeural",
+    "name": "Microsoft HyunsuMultilingual Online (Natural) - Korean (Korea)",
+    "detail": "Male · ko-KR",
+    "locale": "ko-KR"
+  },
+  {
+    "id": "ko-KR-InJoonNeural",
+    "name": "Microsoft InJoon Online (Natural) - Korean (Korea)",
+    "detail": "Male · ko-KR",
+    "locale": "ko-KR"
+  },
+  {
+    "id": "ko-KR-SunHiNeural",
+    "name": "Microsoft SunHi Online (Natural) - Korean (Korea)",
+    "detail": "Female · ko-KR",
+    "locale": "ko-KR"
+  },
+  {
+    "id": "lo-LA-ChanthavongNeural",
+    "name": "Microsoft Chanthavong Online (Natural) - Lao (Laos)",
+    "detail": "Male · lo-LA",
+    "locale": "lo-LA"
+  },
+  {
+    "id": "lo-LA-KeomanyNeural",
+    "name": "Microsoft Keomany Online (Natural) - Lao (Laos)",
+    "detail": "Female · lo-LA",
+    "locale": "lo-LA"
+  },
+  {
+    "id": "lv-LV-EveritaNeural",
+    "name": "Microsoft Everita Online (Natural) - Latvian (Latvia)",
+    "detail": "Female · lv-LV",
+    "locale": "lv-LV"
+  },
+  {
+    "id": "lv-LV-NilsNeural",
+    "name": "Microsoft Nils Online (Natural) - Latvian (Latvia)",
+    "detail": "Male · lv-LV",
+    "locale": "lv-LV"
+  },
+  {
+    "id": "lt-LT-LeonasNeural",
+    "name": "Microsoft Leonas Online (Natural) - Lithuanian (Lithuania)",
+    "detail": "Male · lt-LT",
+    "locale": "lt-LT"
+  },
+  {
+    "id": "lt-LT-OnaNeural",
+    "name": "Microsoft Ona Online (Natural) - Lithuanian (Lithuania)",
+    "detail": "Female · lt-LT",
+    "locale": "lt-LT"
+  },
+  {
+    "id": "mk-MK-AleksandarNeural",
+    "name": "Microsoft Aleksandar Online (Natural) - Macedonian (North Macedonia)",
+    "detail": "Male · mk-MK",
+    "locale": "mk-MK"
+  },
+  {
+    "id": "mk-MK-MarijaNeural",
+    "name": "Microsoft Marija Online (Natural) - Macedonian (North Macedonia)",
+    "detail": "Female · mk-MK",
+    "locale": "mk-MK"
+  },
+  {
+    "id": "ms-MY-OsmanNeural",
+    "name": "Microsoft Osman Online (Natural) - Malay (Malaysia)",
+    "detail": "Male · ms-MY",
+    "locale": "ms-MY"
+  },
+  {
+    "id": "ms-MY-YasminNeural",
+    "name": "Microsoft Yasmin Online (Natural) - Malay (Malaysia)",
+    "detail": "Female · ms-MY",
+    "locale": "ms-MY"
+  },
+  {
+    "id": "ml-IN-MidhunNeural",
+    "name": "Microsoft Midhun Online (Natural) - Malayalam (India)",
+    "detail": "Male · ml-IN",
+    "locale": "ml-IN"
+  },
+  {
+    "id": "ml-IN-SobhanaNeural",
+    "name": "Microsoft Sobhana Online (Natural) - Malayalam (India)",
+    "detail": "Female · ml-IN",
+    "locale": "ml-IN"
+  },
+  {
+    "id": "mt-MT-GraceNeural",
+    "name": "Microsoft Grace Online (Natural) - Maltese (Malta)",
+    "detail": "Female · mt-MT",
+    "locale": "mt-MT"
+  },
+  {
+    "id": "mt-MT-JosephNeural",
+    "name": "Microsoft Joseph Online (Natural) - Maltese (Malta)",
+    "detail": "Male · mt-MT",
+    "locale": "mt-MT"
+  },
+  {
+    "id": "mr-IN-AarohiNeural",
+    "name": "Microsoft Aarohi Online (Natural) - Marathi (India)",
+    "detail": "Female · mr-IN",
+    "locale": "mr-IN"
+  },
+  {
+    "id": "mr-IN-ManoharNeural",
+    "name": "Microsoft Manohar Online (Natural) - Marathi (India)",
+    "detail": "Male · mr-IN",
+    "locale": "mr-IN"
+  },
+  {
+    "id": "mn-MN-BataaNeural",
+    "name": "Microsoft Bataa Online (Natural) - Mongolian (Mongolia)",
+    "detail": "Male · mn-MN",
+    "locale": "mn-MN"
+  },
+  {
+    "id": "mn-MN-YesuiNeural",
+    "name": "Microsoft Yesui Online (Natural) - Mongolian (Mongolia)",
+    "detail": "Female · mn-MN",
+    "locale": "mn-MN"
+  },
+  {
+    "id": "ne-NP-HemkalaNeural",
+    "name": "Microsoft Hemkala Online (Natural) - Nepali (Nepal)",
+    "detail": "Female · ne-NP",
+    "locale": "ne-NP"
+  },
+  {
+    "id": "ne-NP-SagarNeural",
+    "name": "Microsoft Sagar Online (Natural) - Nepali (Nepal)",
+    "detail": "Male · ne-NP",
+    "locale": "ne-NP"
+  },
+  {
+    "id": "nb-NO-FinnNeural",
+    "name": "Microsoft Finn Online (Natural) - Norwegian (Bokmål Norway)",
+    "detail": "Male · nb-NO",
+    "locale": "nb-NO"
+  },
+  {
+    "id": "nb-NO-PernilleNeural",
+    "name": "Microsoft Pernille Online (Natural) - Norwegian (Bokmål, Norway)",
+    "detail": "Female · nb-NO",
+    "locale": "nb-NO"
+  },
+  {
+    "id": "ps-AF-GulNawazNeural",
+    "name": "Microsoft GulNawaz Online (Natural) - Pashto (Afghanistan)",
+    "detail": "Male · ps-AF",
+    "locale": "ps-AF"
+  },
+  {
+    "id": "ps-AF-LatifaNeural",
+    "name": "Microsoft Latifa Online (Natural) - Pashto (Afghanistan)",
+    "detail": "Female · ps-AF",
+    "locale": "ps-AF"
+  },
+  {
+    "id": "fa-IR-DilaraNeural",
+    "name": "Microsoft Dilara Online (Natural) - Persian (Iran)",
+    "detail": "Female · fa-IR",
+    "locale": "fa-IR"
+  },
+  {
+    "id": "fa-IR-FaridNeural",
+    "name": "Microsoft Farid Online (Natural) - Persian (Iran)",
+    "detail": "Male · fa-IR",
+    "locale": "fa-IR"
+  },
+  {
+    "id": "pl-PL-MarekNeural",
+    "name": "Microsoft Marek Online (Natural) - Polish (Poland)",
+    "detail": "Male · pl-PL",
+    "locale": "pl-PL"
+  },
+  {
+    "id": "pl-PL-ZofiaNeural",
+    "name": "Microsoft Zofia Online (Natural) - Polish (Poland)",
+    "detail": "Female · pl-PL",
+    "locale": "pl-PL"
+  },
+  {
+    "id": "pt-BR-ThalitaMultilingualNeural",
+    "name": "Microsoft ThalitaMultilingual Online (Natural) - Portuguese (Brazil)",
+    "detail": "Female · pt-BR",
+    "locale": "pt-BR"
+  },
+  {
+    "id": "pt-BR-AntonioNeural",
+    "name": "Microsoft Antonio Online (Natural) - Portuguese (Brazil)",
+    "detail": "Male · pt-BR",
+    "locale": "pt-BR"
+  },
+  {
+    "id": "pt-BR-FranciscaNeural",
+    "name": "Microsoft Francisca Online (Natural) - Portuguese (Brazil)",
+    "detail": "Female · pt-BR",
+    "locale": "pt-BR"
+  },
+  {
+    "id": "pt-PT-DuarteNeural",
+    "name": "Microsoft Duarte Online (Natural) - Portuguese (Portugal)",
+    "detail": "Male · pt-PT",
+    "locale": "pt-PT"
+  },
+  {
+    "id": "pt-PT-RaquelNeural",
+    "name": "Microsoft Raquel Online (Natural) - Portuguese (Portugal)",
+    "detail": "Female · pt-PT",
+    "locale": "pt-PT"
+  },
+  {
+    "id": "ro-RO-AlinaNeural",
+    "name": "Microsoft Alina Online (Natural) - Romanian (Romania)",
+    "detail": "Female · ro-RO",
+    "locale": "ro-RO"
+  },
+  {
+    "id": "ro-RO-EmilNeural",
+    "name": "Microsoft Emil Online (Natural) - Romanian (Romania)",
+    "detail": "Male · ro-RO",
+    "locale": "ro-RO"
+  },
+  {
+    "id": "ru-RU-DmitryNeural",
+    "name": "Microsoft Dmitry Online (Natural) - Russian (Russia)",
+    "detail": "Male · ru-RU",
+    "locale": "ru-RU"
+  },
+  {
+    "id": "ru-RU-SvetlanaNeural",
+    "name": "Microsoft Svetlana Online (Natural) - Russian (Russia)",
+    "detail": "Female · ru-RU",
+    "locale": "ru-RU"
+  },
+  {
+    "id": "sr-RS-NicholasNeural",
+    "name": "Microsoft Nicholas Online (Natural) - Serbian (Serbia)",
+    "detail": "Male · sr-RS",
+    "locale": "sr-RS"
+  },
+  {
+    "id": "sr-RS-SophieNeural",
+    "name": "Microsoft Sophie Online (Natural) - Serbian (Serbia)",
+    "detail": "Female · sr-RS",
+    "locale": "sr-RS"
+  },
+  {
+    "id": "si-LK-SameeraNeural",
+    "name": "Microsoft Sameera Online (Natural) - Sinhala (Sri Lanka)",
+    "detail": "Male · si-LK",
+    "locale": "si-LK"
+  },
+  {
+    "id": "si-LK-ThiliniNeural",
+    "name": "Microsoft Thilini Online (Natural) - Sinhala (Sri Lanka)",
+    "detail": "Female · si-LK",
+    "locale": "si-LK"
+  },
+  {
+    "id": "sk-SK-LukasNeural",
+    "name": "Microsoft Lukas Online (Natural) - Slovak (Slovakia)",
+    "detail": "Male · sk-SK",
+    "locale": "sk-SK"
+  },
+  {
+    "id": "sk-SK-ViktoriaNeural",
+    "name": "Microsoft Viktoria Online (Natural) - Slovak (Slovakia)",
+    "detail": "Female · sk-SK",
+    "locale": "sk-SK"
+  },
+  {
+    "id": "sl-SI-PetraNeural",
+    "name": "Microsoft Petra Online (Natural) - Slovenian (Slovenia)",
+    "detail": "Female · sl-SI",
+    "locale": "sl-SI"
+  },
+  {
+    "id": "sl-SI-RokNeural",
+    "name": "Microsoft Rok Online (Natural) - Slovenian (Slovenia)",
+    "detail": "Male · sl-SI",
+    "locale": "sl-SI"
+  },
+  {
+    "id": "so-SO-MuuseNeural",
+    "name": "Microsoft Muuse Online (Natural) - Somali (Somalia)",
+    "detail": "Male · so-SO",
+    "locale": "so-SO"
+  },
+  {
+    "id": "so-SO-UbaxNeural",
+    "name": "Microsoft Ubax Online (Natural) - Somali (Somalia)",
+    "detail": "Female · so-SO",
+    "locale": "so-SO"
+  },
+  {
+    "id": "es-AR-ElenaNeural",
+    "name": "Microsoft Elena Online (Natural) - Spanish (Argentina)",
+    "detail": "Female · es-AR",
+    "locale": "es-AR"
+  },
+  {
+    "id": "es-AR-TomasNeural",
+    "name": "Microsoft Tomas Online (Natural) - Spanish (Argentina)",
+    "detail": "Male · es-AR",
+    "locale": "es-AR"
+  },
+  {
+    "id": "es-BO-MarceloNeural",
+    "name": "Microsoft Marcelo Online (Natural) - Spanish (Bolivia)",
+    "detail": "Male · es-BO",
+    "locale": "es-BO"
+  },
+  {
+    "id": "es-BO-SofiaNeural",
+    "name": "Microsoft Sofia Online (Natural) - Spanish (Bolivia)",
+    "detail": "Female · es-BO",
+    "locale": "es-BO"
+  },
+  {
+    "id": "es-CL-CatalinaNeural",
+    "name": "Microsoft Catalina Online (Natural) - Spanish (Chile)",
+    "detail": "Female · es-CL",
+    "locale": "es-CL"
+  },
+  {
+    "id": "es-CL-LorenzoNeural",
+    "name": "Microsoft Lorenzo Online (Natural) - Spanish (Chile)",
+    "detail": "Male · es-CL",
+    "locale": "es-CL"
+  },
+  {
+    "id": "es-CO-GonzaloNeural",
+    "name": "Microsoft Gonzalo Online (Natural) - Spanish (Colombia)",
+    "detail": "Male · es-CO",
+    "locale": "es-CO"
+  },
+  {
+    "id": "es-CO-SalomeNeural",
+    "name": "Microsoft Salome Online (Natural) - Spanish (Colombia)",
+    "detail": "Female · es-CO",
+    "locale": "es-CO"
+  },
+  {
+    "id": "es-ES-XimenaNeural",
+    "name": "Microsoft Ximena Online (Natural) - Spanish (Colombia)",
+    "detail": "Female · es-ES",
+    "locale": "es-ES"
+  },
+  {
+    "id": "es-CR-JuanNeural",
+    "name": "Microsoft Juan Online (Natural) - Spanish (Costa Rica)",
+    "detail": "Male · es-CR",
+    "locale": "es-CR"
+  },
+  {
+    "id": "es-CR-MariaNeural",
+    "name": "Microsoft Maria Online (Natural) - Spanish (Costa Rica)",
+    "detail": "Female · es-CR",
+    "locale": "es-CR"
+  },
+  {
+    "id": "es-CU-BelkysNeural",
+    "name": "Microsoft Belkys Online (Natural) - Spanish (Cuba)",
+    "detail": "Female · es-CU",
+    "locale": "es-CU"
+  },
+  {
+    "id": "es-CU-ManuelNeural",
+    "name": "Microsoft Manuel Online (Natural) - Spanish (Cuba)",
+    "detail": "Male · es-CU",
+    "locale": "es-CU"
+  },
+  {
+    "id": "es-DO-EmilioNeural",
+    "name": "Microsoft Emilio Online (Natural) - Spanish (Dominican Republic)",
+    "detail": "Male · es-DO",
+    "locale": "es-DO"
+  },
+  {
+    "id": "es-DO-RamonaNeural",
+    "name": "Microsoft Ramona Online (Natural) - Spanish (Dominican Republic)",
+    "detail": "Female · es-DO",
+    "locale": "es-DO"
+  },
+  {
+    "id": "es-EC-AndreaNeural",
+    "name": "Microsoft Andrea Online (Natural) - Spanish (Ecuador)",
+    "detail": "Female · es-EC",
+    "locale": "es-EC"
+  },
+  {
+    "id": "es-EC-LuisNeural",
+    "name": "Microsoft Luis Online (Natural) - Spanish (Ecuador)",
+    "detail": "Male · es-EC",
+    "locale": "es-EC"
+  },
+  {
+    "id": "es-SV-LorenaNeural",
+    "name": "Microsoft Lorena Online (Natural) - Spanish (El Salvador)",
+    "detail": "Female · es-SV",
+    "locale": "es-SV"
+  },
+  {
+    "id": "es-SV-RodrigoNeural",
+    "name": "Microsoft Rodrigo Online (Natural) - Spanish (El Salvador)",
+    "detail": "Male · es-SV",
+    "locale": "es-SV"
+  },
+  {
+    "id": "es-GQ-JavierNeural",
+    "name": "Microsoft Javier Online (Natural) - Spanish (Equatorial Guinea)",
+    "detail": "Male · es-GQ",
+    "locale": "es-GQ"
+  },
+  {
+    "id": "es-GQ-TeresaNeural",
+    "name": "Microsoft Teresa Online (Natural) - Spanish (Equatorial Guinea)",
+    "detail": "Female · es-GQ",
+    "locale": "es-GQ"
+  },
+  {
+    "id": "es-GT-AndresNeural",
+    "name": "Microsoft Andres Online (Natural) - Spanish (Guatemala)",
+    "detail": "Male · es-GT",
+    "locale": "es-GT"
+  },
+  {
+    "id": "es-GT-MartaNeural",
+    "name": "Microsoft Marta Online (Natural) - Spanish (Guatemala)",
+    "detail": "Female · es-GT",
+    "locale": "es-GT"
+  },
+  {
+    "id": "es-HN-CarlosNeural",
+    "name": "Microsoft Carlos Online (Natural) - Spanish (Honduras)",
+    "detail": "Male · es-HN",
+    "locale": "es-HN"
+  },
+  {
+    "id": "es-HN-KarlaNeural",
+    "name": "Microsoft Karla Online (Natural) - Spanish (Honduras)",
+    "detail": "Female · es-HN",
+    "locale": "es-HN"
+  },
+  {
+    "id": "es-MX-DaliaNeural",
+    "name": "Microsoft Dalia Online (Natural) - Spanish (Mexico)",
+    "detail": "Female · es-MX",
+    "locale": "es-MX"
+  },
+  {
+    "id": "es-MX-JorgeNeural",
+    "name": "Microsoft Jorge Online (Natural) - Spanish (Mexico)",
+    "detail": "Male · es-MX",
+    "locale": "es-MX"
+  },
+  {
+    "id": "es-NI-FedericoNeural",
+    "name": "Microsoft Federico Online (Natural) - Spanish (Nicaragua)",
+    "detail": "Male · es-NI",
+    "locale": "es-NI"
+  },
+  {
+    "id": "es-NI-YolandaNeural",
+    "name": "Microsoft Yolanda Online (Natural) - Spanish (Nicaragua)",
+    "detail": "Female · es-NI",
+    "locale": "es-NI"
+  },
+  {
+    "id": "es-PA-MargaritaNeural",
+    "name": "Microsoft Margarita Online (Natural) - Spanish (Panama)",
+    "detail": "Female · es-PA",
+    "locale": "es-PA"
+  },
+  {
+    "id": "es-PA-RobertoNeural",
+    "name": "Microsoft Roberto Online (Natural) - Spanish (Panama)",
+    "detail": "Male · es-PA",
+    "locale": "es-PA"
+  },
+  {
+    "id": "es-PY-MarioNeural",
+    "name": "Microsoft Mario Online (Natural) - Spanish (Paraguay)",
+    "detail": "Male · es-PY",
+    "locale": "es-PY"
+  },
+  {
+    "id": "es-PY-TaniaNeural",
+    "name": "Microsoft Tania Online (Natural) - Spanish (Paraguay)",
+    "detail": "Female · es-PY",
+    "locale": "es-PY"
+  },
+  {
+    "id": "es-PE-AlexNeural",
+    "name": "Microsoft Alex Online (Natural) - Spanish (Peru)",
+    "detail": "Male · es-PE",
+    "locale": "es-PE"
+  },
+  {
+    "id": "es-PE-CamilaNeural",
+    "name": "Microsoft Camila Online (Natural) - Spanish (Peru)",
+    "detail": "Female · es-PE",
+    "locale": "es-PE"
+  },
+  {
+    "id": "es-PR-KarinaNeural",
+    "name": "Microsoft Karina Online (Natural) - Spanish (Puerto Rico)",
+    "detail": "Female · es-PR",
+    "locale": "es-PR"
+  },
+  {
+    "id": "es-PR-VictorNeural",
+    "name": "Microsoft Victor Online (Natural) - Spanish (Puerto Rico)",
+    "detail": "Male · es-PR",
+    "locale": "es-PR"
+  },
+  {
+    "id": "es-ES-AlvaroNeural",
+    "name": "Microsoft Alvaro Online (Natural) - Spanish (Spain)",
+    "detail": "Male · es-ES",
+    "locale": "es-ES"
+  },
+  {
+    "id": "es-ES-ElviraNeural",
+    "name": "Microsoft Elvira Online (Natural) - Spanish (Spain)",
+    "detail": "Female · es-ES",
+    "locale": "es-ES"
+  },
+  {
+    "id": "es-US-AlonsoNeural",
+    "name": "Microsoft Alonso Online (Natural) - Spanish (United States)",
+    "detail": "Male · es-US",
+    "locale": "es-US"
+  },
+  {
+    "id": "es-US-PalomaNeural",
+    "name": "Microsoft Paloma Online (Natural) - Spanish (United States)",
+    "detail": "Female · es-US",
+    "locale": "es-US"
+  },
+  {
+    "id": "es-UY-MateoNeural",
+    "name": "Microsoft Mateo Online (Natural) - Spanish (Uruguay)",
+    "detail": "Male · es-UY",
+    "locale": "es-UY"
+  },
+  {
+    "id": "es-UY-ValentinaNeural",
+    "name": "Microsoft Valentina Online (Natural) - Spanish (Uruguay)",
+    "detail": "Female · es-UY",
+    "locale": "es-UY"
+  },
+  {
+    "id": "es-VE-PaolaNeural",
+    "name": "Microsoft Paola Online (Natural) - Spanish (Venezuela)",
+    "detail": "Female · es-VE",
+    "locale": "es-VE"
+  },
+  {
+    "id": "es-VE-SebastianNeural",
+    "name": "Microsoft Sebastian Online (Natural) - Spanish (Venezuela)",
+    "detail": "Male · es-VE",
+    "locale": "es-VE"
+  },
+  {
+    "id": "su-ID-JajangNeural",
+    "name": "Microsoft Jajang Online (Natural) - Sundanese (Indonesia)",
+    "detail": "Male · su-ID",
+    "locale": "su-ID"
+  },
+  {
+    "id": "su-ID-TutiNeural",
+    "name": "Microsoft Tuti Online (Natural) - Sundanese (Indonesia)",
+    "detail": "Female · su-ID",
+    "locale": "su-ID"
+  },
+  {
+    "id": "sw-KE-RafikiNeural",
+    "name": "Microsoft Rafiki Online (Natural) - Swahili (Kenya)",
+    "detail": "Male · sw-KE",
+    "locale": "sw-KE"
+  },
+  {
+    "id": "sw-KE-ZuriNeural",
+    "name": "Microsoft Zuri Online (Natural) - Swahili (Kenya)",
+    "detail": "Female · sw-KE",
+    "locale": "sw-KE"
+  },
+  {
+    "id": "sw-TZ-DaudiNeural",
+    "name": "Microsoft Daudi Online (Natural) - Swahili (Tanzania)",
+    "detail": "Male · sw-TZ",
+    "locale": "sw-TZ"
+  },
+  {
+    "id": "sw-TZ-RehemaNeural",
+    "name": "Microsoft Rehema Online (Natural) - Swahili (Tanzania)",
+    "detail": "Female · sw-TZ",
+    "locale": "sw-TZ"
+  },
+  {
+    "id": "sv-SE-MattiasNeural",
+    "name": "Microsoft Mattias Online (Natural) - Swedish (Sweden)",
+    "detail": "Male · sv-SE",
+    "locale": "sv-SE"
+  },
+  {
+    "id": "sv-SE-SofieNeural",
+    "name": "Microsoft Sofie Online (Natural) - Swedish (Sweden)",
+    "detail": "Female · sv-SE",
+    "locale": "sv-SE"
+  },
+  {
+    "id": "ta-IN-PallaviNeural",
+    "name": "Microsoft Pallavi Online (Natural) - Tamil (India)",
+    "detail": "Female · ta-IN",
+    "locale": "ta-IN"
+  },
+  {
+    "id": "ta-IN-ValluvarNeural",
+    "name": "Microsoft Valluvar Online (Natural) - Tamil (India)",
+    "detail": "Male · ta-IN",
+    "locale": "ta-IN"
+  },
+  {
+    "id": "ta-MY-KaniNeural",
+    "name": "Microsoft Kani Online (Natural) - Tamil (Malaysia)",
+    "detail": "Female · ta-MY",
+    "locale": "ta-MY"
+  },
+  {
+    "id": "ta-MY-SuryaNeural",
+    "name": "Microsoft Surya Online (Natural) - Tamil (Malaysia)",
+    "detail": "Male · ta-MY",
+    "locale": "ta-MY"
+  },
+  {
+    "id": "ta-SG-AnbuNeural",
+    "name": "Microsoft Anbu Online (Natural) - Tamil (Singapore)",
+    "detail": "Male · ta-SG",
+    "locale": "ta-SG"
+  },
+  {
+    "id": "ta-SG-VenbaNeural",
+    "name": "Microsoft Venba Online (Natural) - Tamil (Singapore)",
+    "detail": "Female · ta-SG",
+    "locale": "ta-SG"
+  },
+  {
+    "id": "ta-LK-KumarNeural",
+    "name": "Microsoft Kumar Online (Natural) - Tamil (Sri Lanka)",
+    "detail": "Male · ta-LK",
+    "locale": "ta-LK"
+  },
+  {
+    "id": "ta-LK-SaranyaNeural",
+    "name": "Microsoft Saranya Online (Natural) - Tamil (Sri Lanka)",
+    "detail": "Female · ta-LK",
+    "locale": "ta-LK"
+  },
+  {
+    "id": "te-IN-MohanNeural",
+    "name": "Microsoft Mohan Online (Natural) - Telugu (India)",
+    "detail": "Male · te-IN",
+    "locale": "te-IN"
+  },
+  {
+    "id": "te-IN-ShrutiNeural",
+    "name": "Microsoft Shruti Online (Natural) - Telugu (India)",
+    "detail": "Female · te-IN",
+    "locale": "te-IN"
+  },
+  {
+    "id": "th-TH-NiwatNeural",
+    "name": "Microsoft Niwat Online (Natural) - Thai (Thailand)",
+    "detail": "Male · th-TH",
+    "locale": "th-TH"
+  },
+  {
+    "id": "th-TH-PremwadeeNeural",
+    "name": "Microsoft Premwadee Online (Natural) - Thai (Thailand)",
+    "detail": "Female · th-TH",
+    "locale": "th-TH"
+  },
+  {
+    "id": "tr-TR-EmelNeural",
+    "name": "Microsoft Emel Online (Natural) - Turkish (Turkey)",
+    "detail": "Female · tr-TR",
+    "locale": "tr-TR"
+  },
+  {
+    "id": "tr-TR-AhmetNeural",
+    "name": "Microsoft Ahmet Online (Natural) - Turkish (Türkiye)",
+    "detail": "Male · tr-TR",
+    "locale": "tr-TR"
+  },
+  {
+    "id": "uk-UA-OstapNeural",
+    "name": "Microsoft Ostap Online (Natural) - Ukrainian (Ukraine)",
+    "detail": "Male · uk-UA",
+    "locale": "uk-UA"
+  },
+  {
+    "id": "uk-UA-PolinaNeural",
+    "name": "Microsoft Polina Online (Natural) - Ukrainian (Ukraine)",
+    "detail": "Female · uk-UA",
+    "locale": "uk-UA"
+  },
+  {
+    "id": "ur-IN-GulNeural",
+    "name": "Microsoft Gul Online (Natural) - Urdu (India)",
+    "detail": "Female · ur-IN",
+    "locale": "ur-IN"
+  },
+  {
+    "id": "ur-IN-SalmanNeural",
+    "name": "Microsoft Salman Online (Natural) - Urdu (India)",
+    "detail": "Male · ur-IN",
+    "locale": "ur-IN"
+  },
+  {
+    "id": "ur-PK-AsadNeural",
+    "name": "Microsoft Asad Online (Natural) - Urdu (Pakistan)",
+    "detail": "Male · ur-PK",
+    "locale": "ur-PK"
+  },
+  {
+    "id": "ur-PK-UzmaNeural",
+    "name": "Microsoft Uzma Online (Natural) - Urdu (Pakistan)",
+    "detail": "Female · ur-PK",
+    "locale": "ur-PK"
+  },
+  {
+    "id": "uz-UZ-MadinaNeural",
+    "name": "Microsoft Madina Online (Natural) - Uzbek (Uzbekistan)",
+    "detail": "Female · uz-UZ",
+    "locale": "uz-UZ"
+  },
+  {
+    "id": "uz-UZ-SardorNeural",
+    "name": "Microsoft Sardor Online (Natural) - Uzbek (Uzbekistan)",
+    "detail": "Male · uz-UZ",
+    "locale": "uz-UZ"
+  },
+  {
+    "id": "vi-VN-HoaiMyNeural",
+    "name": "Microsoft HoaiMy Online (Natural) - Vietnamese (Vietnam)",
+    "detail": "Female · vi-VN",
+    "locale": "vi-VN"
+  },
+  {
+    "id": "vi-VN-NamMinhNeural",
+    "name": "Microsoft NamMinh Online (Natural) - Vietnamese (Vietnam)",
+    "detail": "Male · vi-VN",
+    "locale": "vi-VN"
+  },
+  {
+    "id": "cy-GB-AledNeural",
+    "name": "Microsoft Aled Online (Natural) - Welsh (United Kingdom)",
+    "detail": "Male · cy-GB",
+    "locale": "cy-GB"
+  },
+  {
+    "id": "cy-GB-NiaNeural",
+    "name": "Microsoft Nia Online (Natural) - Welsh (United Kingdom)",
+    "detail": "Female · cy-GB",
+    "locale": "cy-GB"
+  },
+  {
+    "id": "zu-ZA-ThandoNeural",
+    "name": "Microsoft Thando Online (Natural) - Zulu (South Africa)",
+    "detail": "Female · zu-ZA",
+    "locale": "zu-ZA"
+  },
+  {
+    "id": "zu-ZA-ThembaNeural",
+    "name": "Microsoft Themba Online (Natural) - Zulu (South Africa)",
+    "detail": "Male · zu-ZA",
+    "locale": "zu-ZA"
+  }
+]

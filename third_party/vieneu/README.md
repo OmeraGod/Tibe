@@ -1,0 +1,1 @@
+VieNeu-TTS runtime attribution; application source is installed from PyPI by requirements-voice.txt. Author: Phạm Nguyễn Ngọc Bảo. SDK 3.8.3; model pnnbao-ump/VieNeu-TTS-v3-Turbo. See ../../docs/VOICE_INTEGRATION.md and ../../THIRD_PARTY_NOTICES.md. Runtime and models are excluded from the source archive.

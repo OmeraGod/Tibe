@@ -1,0 +1,9 @@
+'use strict';const assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require('node:crypto');
+const {createCanvas}=require(process.env.TIBE_CANVAS_MODULE||'@napi-rs/canvas');global.document={createElement:()=>createCanvas(1,1)};
+const native=require('../assets/js/capcut-effects.js'),effects=require('../assets/js/editor-effects.js');global.TibeCapCut=native;
+const catalog=[];native.register({algorithms:['grain','direction_blur','soft_blur'].map(algorithm=>({algorithm,sha256:'a'.repeat(64)}))},catalog);assert.equal(catalog.length,5);
+const source=createCanvas(240,150),sc=source.getContext('2d');sc.fillStyle='#7f8ba1';sc.fillRect(0,0,240,150);sc.fillStyle='#f0bb71';sc.fillRect(50,40,60,70);effects.setCanvasFactory(createCanvas);
+const render=(id,amount,time,opacity=1)=>{const canvas=createCanvas(240,150),ctx=canvas.getContext('2d');ctx.translate(120,75);ctx.globalAlpha=opacity;effects.draw(ctx,source,{effect:id,amount,time,width:240,height:150});return canvas;};
+const hash=canvas=>crypto.createHash('sha256').update(canvas.toBuffer('image/png')).digest('hex'),original=hash(render('none',1,0));
+for(const entry of catalog){const a=render(entry.id,.8,.2);assert.notEqual(hash(a),original,entry.id);assert.equal(hash(a),hash(render(entry.id,.8,.2)));assert.equal(hash(render(entry.id,0,.2)),original);const frame=a.getContext('2d').getImageData(0,0,240,150).data;assert.ok(frame[(75*240+120)*4+3]>=250,entry.id+' must keep center opacity');const hidden=render(entry.id,.8,.2,0);assert.equal(hidden.getContext('2d').getImageData(50,50,1,1).data[3],0);}
+assert.notEqual(hash(render('capcut:grain',1,.2)),hash(render('capcut:grain',1,.4)));console.log('CapCut: 3 source algorithms / 5 presets render actual pixels, preserve opacity and zero amount, and export deterministically.');

@@ -1,0 +1,25 @@
+.venv/
+.runtime/
+node_modules/
+workspace/
+__pycache__/
+*.pyc
+dist/
+docs/previews/
+.idea/
+.pytest_cache/
+Thumbs.db
+Desktop.ini
+
+# Private credentials and local channel evidence
+.env
+.env.*
+!.env.example
+.streamlit/
+data/
+*.sqlite*
+*.db
+secrets*
+*token*.json
+coverage/
+site-dist/
