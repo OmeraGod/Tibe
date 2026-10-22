@@ -1,6 +1,6 @@
 # Omera trong Tibe
 
-Mở `http://127.0.0.1:5050/omera` để xem kênh và mở kịch bản vào bàn dựng. Tibe đọc kho Studio hiện có, không gọi API YouTube, không tạo tương tác và không tự thay trạng thái công khai.
+Mở **MỞ OMERA.bat**, dùng `http://127.0.0.1:5051/omera` để xem kênh và mở kịch bản vào bàn dựng. Cổng riêng giữ phiên Tibe 5050 đang dùng không bị gián đoạn. Launcher Tibe tiêu chuẩn vẫn dùng 5050. Tibe đọc kho Studio hiện có, không gọi API YouTube, không tạo tương tác và không tự thay trạng thái công khai.
 
 Trang tổng quan đọc SQLite ở chế độ chỉ đọc, nạp lại kho mỗi 30 giây. Giữ riêng tổng Nội dung, Analytics, nguồn APV, tuổi video lúc đo, thông báo và ngày xử lý chỉ số kiếm tiền. Thiếu số liệu giữ trống; doanh thu chỉ hiện số nếu có tiền và kỳ báo cáo. Nạp kho không có nghĩa đã đọc Studio lần mới.
 

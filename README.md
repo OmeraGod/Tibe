@@ -2,7 +2,7 @@
 
 Trình dựng video trên máy và trong trình duyệt, kèm không gian theo dõi kênh Omera.
 
-- Chạy **MỞ TIBE.bat**, mở **http://127.0.0.1:5050/omera**.
+- Chạy **MỞ OMERA.bat**, mở **http://127.0.0.1:5051/omera**. Bản Tibe tiêu chuẩn vẫn có ở **MỞ TIBE.bat** / cổng 5050.
 - Theo dõi lượt xem, đăng ký, tiến độ kiếm tiền và hiệu suất từng tập từ kho số liệu đã xác minh.
 - Mở kịch bản thành dự án Tibe mới: hình và chữ chỉnh riêng trên timeline, không sửa video đã đăng.
 - Tạo giọng Việt trên máy, dựng, xem thử và xuất video với công cụ Tibe có sẵn.
