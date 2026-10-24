@@ -37,6 +37,9 @@ local_voice = LocalVoice(BASE_DIR)
 voice_studio = VoiceStudio(WORKSPACE_DIR, rea_engine, local_voice)
 capcut_resources = CapCutResources(rea_engine)
 
+from batch_engine import register_batch
+batch_manager = register_batch(app, BASE_DIR, local_voice)
+
 from omera_hub import register_omera
 omera_hub = register_omera(app, BASE_DIR, project_store)
 
@@ -83,6 +86,11 @@ def index():
     return render_template("index.html")
 
 
+@app.get('/batch')
+def batch_studio():
+    return render_template('batch.html')
+
+
 @app.get("/assets/<path:subpath>")
 def assets(subpath):
     return send_from_directory(BASE_DIR / "assets", subpath)
@@ -95,13 +103,13 @@ def workspace(subpath):
 
 @app.get("/api/status")
 def status():
-    return jsonify(ok=True, version='3.5.0',instance=APP_INSTANCE,ffmpeg=bool(shutil.which("ffmpeg")), frameRenderer=bool(shutil.which("ffmpeg") and shutil.which("ffprobe")), rea=rea_engine.status(), voice=local_voice.status())
+    return jsonify(ok=True, version='3.6.0',instance=APP_INSTANCE,ffmpeg=bool(shutil.which("ffmpeg")), frameRenderer=bool(shutil.which("ffmpeg") and shutil.which("ffprobe")), rea=rea_engine.status(), voice=local_voice.status())
 
 
 @app.post('/api/render/start')
 def render_start():
     job = render_store.create(request.get_json())
-    return jsonify(ok=True, jobId=job.id, frames=job.expected)
+    return jsonify(ok=True, jobId=job.id, frames=job.expected, fps=job.fps, fpsRatio=job.fps_ratio)
 
 
 @app.get('/api/projects')

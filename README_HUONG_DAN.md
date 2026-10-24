@@ -2,6 +2,14 @@
 
 Trình dựng video cục bộ với nền trắng trong nhẹ, các nút nổi có phản hồi nhấn và điểm nhấn san hô. Thương hiệu hiển thị là **tibe**. ClipCore, route máy chủ, dữ liệu tự lưu và định dạng `.clipcut` vẫn tương thích với các dự án cũ. Giao diện Flask và bản HTML dùng chung nguồn. Hai ảnh biển/vách đá dùng bản AI dựng lại 1536 × 1024; ảnh gốc được giữ. Xem `assets/demo/GENERATED_ASSETS.md` để biết nguồn và prompt.
 
+## Omera Batch Studio — bản 3.6.0
+
+Mở **http://127.0.0.1:5050/batch** sau khi chạy **MỞ TIBE.bat**. Nhập 1–20 kịch bản hoặc nhiều thư mục tư liệu; một bài tạo ba bản A/B/C (34s/42s/68s), xuất tuần tự ở nền với tiến trình, hủy/thử lại, xem trước, tải MP4/manifest và mở tiếp trong editor. Chọn production để xuất **1080×1920/60fps H.264/AAC**; có bản nháp 540p/30fps.
+
+Bộ dựng mới có bốn bố cục Bento/kính, hook ngay khung đầu, spring/microzoom/HUD, bốn widget, phụ đề karaoke, SFX tự đồng bộ và giọng Việt theo từng cảnh. Chữ tự căn thời gian là ước lượng; cung cấp mốc từ để khớp chính xác. MD5/grain/pan hỗ trợ quản lý phiên bản, không bảo đảm vượt nhận diện trùng hoặc tăng lượt xem. 60fps là tốc độ tệp xuất; thời gian dựng phụ thuộc máy.
+
+Xem **[hướng dẫn đầy đủ, JSON và danh sách từng tệp](docs/OMERA_BATCH_ENGINE.md)**. Năm bài mẫu: `docs/examples/batch_projects.json`. Máy hiện tại đã cài bộ vẽ; máy khác cần Node.js và npm để trình khởi động chuẩn bị dependency theo lockfile. Bản ZIP ở `dist/tibe_Studio_Source.zip` không chứa môi trường/mô hình/dự án cá nhân.
+
 ## Bản nâng cấp tibe 3.5.0
 
 - Bỏ nút VI/EN và mô-đun dịch giao diện theo yêu cầu; bỏ biểu tượng mây và dòng báo lưu lớn bên cạnh logo. Bản nháp vẫn tự lưu, nút Lưu và thư viện dự án giữ nguyên.

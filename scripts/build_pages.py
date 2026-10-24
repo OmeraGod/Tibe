@@ -9,7 +9,7 @@ OUT=ROOT/'site-dist'
 def build():
     OUT.mkdir(exist_ok=True)
     for p in (ROOT/'assets').rglob('*'):
-        if p.is_file() and p.suffix.lower() in {'.js','.css','.json','.svg','.png','.webp','.jpg','.jpeg','.wav','.mp3','.woff','.woff2'}:
+        if p.is_file() and (p.name in {'plusjakartasans-OFL.txt','playfairdisplay-OFL.txt'} or p.suffix.lower() in {'.js','.css','.json','.svg','.png','.webp','.jpg','.jpeg','.wav','.mp3','.woff','.woff2','.ttf','.otf'}):
             dest=OUT/p.relative_to(ROOT);dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,dest)
     shutil.copy2(ROOT/'templates/index.html',OUT/'index.html')
     shutil.copy2(ROOT/'templates/omera.html',OUT/'omera.html')

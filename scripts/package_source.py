@@ -4,9 +4,9 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parent.parent
 FILES = [
-    '.gitignore', 'omera_hub.py', 'app.py', 'rea_adapter.py', 'render_engine.py', 'project_store.py', 'concat_audio.py', 'voice_studio.py', 'local_voice.py', 'capcut_resources.py', 'start_studio.py',
-    'run_studio.bat', 'MỞ TIBE.bat', 'requirements.txt', 'requirements-voice.txt', 'package.json', 'package-lock.json',
-    'README_HUONG_DAN.md', 'THIRD_PARTY_NOTICES.md', 'ClipCut_Studio_Standalone.html',
+    '.gitignore', 'batch_engine.py', 'omera_audio.py', 'omera_growth.py', 'omera_hub.py', 'app.py', 'rea_adapter.py', 'render_engine.py', 'project_store.py', 'concat_audio.py', 'voice_studio.py', 'local_voice.py', 'capcut_resources.py', 'start_studio.py',
+    'run_studio.bat', 'MỞ TIBE.bat', 'MỞ OMERA.bat', 'requirements.txt', 'requirements-voice.txt', 'package.json', 'package-lock.json',
+    'README.md', 'README_HUONG_DAN.md', 'THIRD_PARTY_NOTICES.md', 'ClipCut_Studio_Standalone.html',
 ]
 sources = [ROOT / name for name in FILES]
 for folder in ['assets', 'templates', 'scripts', 'tests', 'third_party', 'docs']:

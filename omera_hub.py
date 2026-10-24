@@ -15,6 +15,7 @@ import sqlite3
 
 from flask import Blueprint, jsonify, render_template, request, send_file
 from PIL import Image, ImageOps
+from omera_growth import growth_summary
 
 CHANNEL = 'UC5YEwdle02kdZZqF2q7Ajtw'
 VN = timezone(timedelta(hours=7))
@@ -118,13 +119,23 @@ class OmeraHub:
         briefs = []
         for slug, b in self.briefs().items():
             matching = next((r for _,r in receipts if r.get('title') == b['title']), {})
+            pid = b.get('tibe_project_id', '')
+            native = bool(re.fullmatch(r'[a-f0-9]{32}', str(pid)) and (self.projects.folder(pid)/'project.clipcut').is_file())
+            meta = read_json(self.projects.folder(pid)/'meta.json') if native else {}
             briefs.append({'slug':slug, 'title':b['title'], 'scene_count':len(b.get('scenes', [])),
-                           'state':matching.get('publishing_status', 'draft'),
-                           'youtube_video_id':matching.get('youtube_video_id')})
+                           'state':matching.get('publishing_status', b.get('production_stage', 'draft')),
+                           'ratio':b.get('ratio','9:16'), 'kind':b.get('kind','shorts'),
+                           'youtube_video_id':matching.get('youtube_video_id'),
+                           'editor_url':f'/?project={pid}' if native else None,
+                           'native_project_available':native,
+                           'timeline_duration_seconds':numeric((meta or {}).get('duration'))})
         policy = read_json(self.source/'data/publication-policy.json') or {}
         last = stamp(snap.get('observed_at'))
         counts = [v['views'] for v in videos]
         revenue = numeric(snap.get('estimated_revenue_usd')) if snap.get('revenue_period') else None
+        growth_reports=[read_json(p) for p in (self.source/'data/assessments').glob('*-channel-growth.json')]
+        growth_reports=[g for g in growth_reports if isinstance(g,dict) and g.get('channel_id')==CHANNEL and stamp(g.get('observed_at'))]
+        channel_growth=max(growth_reports,key=lambda g:stamp(g['observed_at']),default=None)
         return {'ok':True, 'connected':True, 'channel':{'id':CHANNEL,'name':snap.get('channel_name','Omera Studio')},
                 'observed_at':snap.get('observed_at'),'subscriber_observed_at':snap.get('subscriber_observed_at'),
                 'loaded_at':datetime.now(VN).isoformat(),'source':snap.get('source'), 'complete':snap.get('complete') is True,
@@ -134,8 +145,17 @@ class OmeraHub:
                            'revenue_status':snap.get('revenue_status'), 'estimated_revenue_usd':revenue,'revenue_period':snap.get('revenue_period'),
                            'original_count':len(published)},
                 'eligibility':snap.get('eligibility'), 'monetization_observed_at':snap.get('monetization_observed_at'),
+                'growth':growth_summary(snap,videos,datetime.now(VN).date(),channel_growth),
+                'editorial_focus':self.editorial_focus(),
                 'videos':sorted(videos,key=lambda v:v.get('published_at') or '',reverse=True),'briefs':list(reversed(briefs)),
                 'policy':{k:policy.get(k) for k in ['max_new_per_day','minimum_gap_hours','trial_limit','review_at_trial_count','review_due_local_date']}}
+
+    def editorial_focus(self):
+        """Editorial research is separate from verified platform observations."""
+        value=read_json(self.source/'data/editorial-focus.json')
+        if not isinstance(value,dict) or value.get('channel_id')!=CHANNEL or value.get('kind')!='editorial_research_not_platform_report':
+            return None
+        return {k:value.get(k) for k in ['observed_at','selected_niche','selection_reason','limitations','examples','next_pilot','watch_hour_scenarios','experiment']}
 
     def asset(self, item):
         relative = item.get('file', '')
@@ -155,6 +175,22 @@ class OmeraHub:
         assets = brief.get('asset_provenance', [])
         if not assets:
             raise ValueError('Kịch bản chưa có minh họa có nguồn.')
+        # Preserve the actual editable timeline, including voice/captions/motion.
+        # The caller saves this as a NEW project; the source project is untouched.
+        pid = brief.get('tibe_project_id', '')
+        if re.fullmatch(r'[a-f0-9]{32}', str(pid)) and (self.projects.folder(pid)/'project.clipcut').is_file():
+            for asset in assets:
+                self.asset(asset)
+            project = self.projects.load(pid)
+            self.projects.validate(project)
+            project.pop('libraryId', None)
+            project['name'] = brief['title'] + ' · bản sao Tibe'
+            project['production'] = {**project.get('production', {}), 'copied_from_project':pid, 'copy_requires_publication_review':True}
+            return project
+        ratio=brief.get('ratio','9:16')
+        sizes={'9:16':(720,1280),'16:9':(1280,720),'1:1':(900,900),'4:5':(720,900)}
+        if ratio not in sizes:
+            raise ValueError('Tỷ lệ kịch bản chưa được hỗ trợ.')
         media, clips, start = {}, [], 0.
         for i, scene in enumerate(brief['scenes']):
             duration = numeric(scene.get('min_duration')) or 4
@@ -169,16 +205,17 @@ class OmeraHub:
                     image = image.resize((round(image.width*1920/image.height),1920), Image.Resampling.LANCZOS)
                     left = 255 if visual == 'space_a' else 535
                     image = image.crop((left,0,left+1080,1920))
-                image = ImageOps.fit(image,(720,1280),method=Image.Resampling.LANCZOS)
+                image = ImageOps.fit(image,sizes[ratio],method=Image.Resampling.LANCZOS)
                 buf = io.BytesIO(); image.save(buf,format='JPEG',quality=90)
             mid=f'omera_{i}'
             media[mid]={'id':mid,'name':scene.get('headline','Cảnh minh họa'),'type':'image','duration':duration,
                         'url':'data:image/jpeg;base64,'+base64.b64encode(buf.getvalue()).decode()}
             clips.append({'id':f'ov{i}','track':'video','mediaId':mid,'title':scene.get('headline','Cảnh'), 'start':start,'duration':duration,'fit':'cover','anim':'none','filter':'original','effect':'none','transition':'none',
                           'keyframes':[{'time':0,'scale':1,'xOffset':0,'yOffset':0,'rotation':0,'opacity':1},{'time':duration,'scale':1.025,'xOffset':0,'yOffset':0,'rotation':0,'opacity':1}]})
-            clips.append({'id':f'ot{i}','track':'text','title':scene.get('headline',''),'start':start,'duration':duration,'fontSize':22,'color':'#fff5df','textStyle':'heading','yOffset':-300,'anim':'none'})
+            clips.append({'id':f'ot{i}','track':'text','title':scene.get('headline',''),'start':start,'duration':duration,'fontSize':16 if ratio=='16:9' else 22,'color':'#fff5df','textStyle':'heading','yOffset':-88 if ratio=='16:9' else -300,'anim':'none'})
             start += duration
-        return {'format':'clipcut-project','version':2,'name':brief['title']+' · bản dựng Tibe','ratio':'9:16','clips':clips,'media':media,'canvas':{'enabled':True,'color':'#0b1820','blur':False}}
+        return {'format':'clipcut-project','version':2,'name':brief['title']+' · bản phân cảnh Tibe','ratio':ratio,'clips':clips,'media':media,'canvas':{'enabled':True,'color':'#0b1820','blur':False},
+                'production':{'stage':'storyboard','duration_is_measured':False,'voice_ready':False,'render_ready':False,'brief_slug':slug}}
 
 
 def register_omera(app, base, project_store):
@@ -201,25 +238,35 @@ def register_omera(app, base, project_store):
     def brief(slug):
         b=hub.briefs().get(slug)
         if not b: return jsonify(ok=False,error='Không tìm thấy kịch bản.'),404
-        return jsonify(ok=True,brief={k:b.get(k) for k in ['slug','title','description','scenes','sources']})
+        return jsonify(ok=True,brief={k:b.get(k) for k in ['slug','title','description','scenes','sources','ratio','kind','production_stage','quality_gate']})
 
     @bp.post('/api/omera/project/<slug>')
     def project(slug):
         p=hub.project(slug)
         saved=project_store.save({'project':p})
         return jsonify(ok=True,project_id=saved['id'],editor_url=f'/?project={saved["id"]}',
-                       note='Bản phân cảnh chỉnh sửa được; chưa có giọng, nhạc hoặc phụ đề đồng bộ. Thời lượng đang theo đề cương, chưa phải bản đã duyệt để đăng.')
+                       note=('Đã sao chép timeline gốc, giữ hình, giọng, phụ đề và chuyển động hiện có. Đây là bản chỉnh sửa riêng; cần kiểm tra lại trước khi đăng.' if p.get('production',{}).get('copied_from_project') else 'Bản phân cảnh chỉnh sửa được; chưa có giọng, nhạc hoặc phụ đề đồng bộ. Thời lượng đang theo đề cương, chưa phải bản đã duyệt để đăng.'))
 
     @bp.get('/api/omera/video/<video_id>')
     def video(video_id):
         if not VIDEO.fullmatch(video_id): return jsonify(ok=False,error='Mã video không hợp lệ.'),404
         for manifest,r in hub.receipts():
             if r.get('youtube_video_id') != video_id: continue
-            path=manifest.parent/'video.mp4'
+            path=Path(r.get('video_path') or manifest.parent/'video.mp4')
             root=(hub.source/'data/productions').resolve()
-            if path.resolve().is_relative_to(root) and path.is_file():
+            if path.resolve().is_relative_to(root) and path.suffix.lower()=='.mp4' and path.is_file():
                 return send_file(path,mimetype='video/mp4',conditional=True)
         return jsonify(ok=False,error='Chưa có bản dựng cục bộ của video này.'),404
+
+    @bp.get('/api/omera/preview/<slug>')
+    def preview(slug):
+        b=hub.briefs().get(slug)
+        if not b or not b.get('preview_path'):
+            return jsonify(ok=False,error='Chưa có bản xem thử.'),404
+        path=Path(b['preview_path']).resolve()
+        if not path.is_relative_to((hub.source/'data/productions').resolve()) or path.suffix.lower()!='.mp4' or not path.is_file():
+            return jsonify(ok=False,error='Bản xem thử không nằm trong kho video cục bộ.'),404
+        return send_file(path,mimetype='video/mp4',conditional=True)
 
     app.register_blueprint(bp)
     return hub

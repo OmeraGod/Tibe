@@ -48,8 +48,25 @@ class LocalVoice:
         except Exception as error:self.error=str(error)
         finally:self.preparing=False
 
-    def synthesize(self,text,voice,path):
+    def synthesize(self,text,voice,path,cancel_event=None):
         if not self.status().get('available'):raise ValueError('Giọng đọc trên máy chưa chuẩn bị xong. Hãy chờ thanh trạng thái hoàn tất.')
-        process=subprocess.run([str(self.python),str(self.base/'scripts/local_voice_worker.py')],input=json.dumps({'text':text,'voice':voice,'output':str(path)},ensure_ascii=False),
-            cwd=self.base,env=self.env(offline=True),capture_output=True,text=True,encoding='utf-8',errors='replace',timeout=900,creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
+        command=[str(self.python),str(self.base/'scripts/local_voice_worker.py')]
+        payload=json.dumps({'text':text,'voice':voice,'output':str(path)},ensure_ascii=False)
+        options=dict(cwd=self.base,env=self.env(offline=True),text=True,encoding='utf-8',errors='replace',creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
+        if cancel_event is None:
+            process=subprocess.run(command,input=payload,capture_output=True,timeout=900,**options)
+        else:
+            worker=subprocess.Popen(command,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE,**options)
+            deadline=time.monotonic()+900
+            pending=payload
+            while True:
+                if cancel_event.is_set() or time.monotonic()>deadline:
+                    worker.kill();worker.communicate()
+                    raise ValueError('Đã hủy hoặc hết thời gian tạo giọng.')
+                try:
+                    output,error=worker.communicate(input=pending,timeout=.5)
+                    process=subprocess.CompletedProcess(command,worker.returncode,output,error)
+                    break
+                except subprocess.TimeoutExpired:
+                    pending=None
         if process.returncode or not Path(path).is_file():raise ValueError('Bộ giọng đọc trên máy gặp lỗi: '+(process.stderr or process.stdout)[-500:])

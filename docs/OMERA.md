@@ -15,3 +15,7 @@ Nút **Dựng bản sao** tạo dự án Tibe mới. Hình và chữ là các l�
 Bản trên GitHub Pages chỉ có trình dựng trong trình duyệt. Giữ số liệu kênh, dự án cá nhân, mô hình và khóa ở máy. Không mở bộ xử lý Flask ra Internet; GitHub Pages không chạy Python/FFmpeg/mô hình giọng. Xuất WebM dùng trình duyệt; giọng Việt ngoại tuyến và xuất MP4 dùng bản trên máy. Để triển khai Pages, chọn Settings → Pages → Source → GitHub Actions trong kho, rồi chạy workflow Publish browser editor.
 
 Các giới hạn xuất bản vẫn giữ trong `PUBLISHING.md` và chính sách của kho Omera. Tibe là bàn dựng; mở dự án không đồng nghĩa cho phép đăng lại video cũ.
+
+## Quy chuẩn dựng điện ảnh hiện hành
+
+Đọc [Quy trình dựng Omera SOP3](OMERA_CINEMATIC_WORKFLOW.md) trước mọi bản dài hoặc Shorts mới. Kho chính sách và QA vẫn ở Py-YT; áp dụng năm track, thay đổi thị giác tối đa 4 giây, giọng VieNeu local và kiểm tra MP4 cuối trước đăng.

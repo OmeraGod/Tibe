@@ -23,3 +23,12 @@ secrets*
 *token*.json
 coverage/
 site-dist/
+# Local agent configuration and private key material
+.codex/
+.agents/
+.aws/
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519

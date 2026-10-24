@@ -1,12 +1,13 @@
 {
   "name": "tibe-studio-local",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "private": true,
   "description": "tibe local video editor with live effects, audio waveforms and optional REA inspection",
   "engines": {
     "node": "^22.19.0 || ^24.11.0 || >=26.0.0"
   },
   "dependencies": {
+    "@napi-rs/canvas": "0.1.100",
     "rea-agents": "6.7.0"
   },
   "scripts": {
@@ -14,6 +15,7 @@
     "test:effects": "node tests/editor-effects.test.cjs && node tests/editor-looks.test.cjs && node tests/editor-compositor.test.cjs && node tests/editor-text.test.cjs",
     "test:preview": "node tests/editor-library.test.cjs",
     "test:creator": "node tests/creator-core.test.cjs && node tests/concat-looks.test.cjs && node tests/editor-projects.test.cjs && node tests/editor-voice.test.cjs && node tests/capcut-effects.test.cjs",
-    "test:transport": "node tests/backend-api.test.cjs"
+    "test:transport": "node tests/backend-api.test.cjs",
+    "test:omera": "node tests/omera-studio.test.cjs && node tests/omera-batch-ui.test.cjs"
   }
 }

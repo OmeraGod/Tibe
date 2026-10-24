@@ -12,6 +12,7 @@ let canvasZoom = 1, showGuides = false, playOrigin = 0, playStartedAt = 0, clipb
 let pointerActive=false,mediaRefreshPending=false,mediaDrawerPending=false,mediaRefreshScheduled=false;
 const baseTrackHeights = {video:48,overlay:32,text:32,sticker:26,audio:66};
 const demoMode = new URLSearchParams(location.search).get('demo') === '1';
+let projectProduction={};
 let projectCanvas={enabled:true,color:'#ffe4d0',blur:false};
 const stickerImages=new Map(),visualLayers=new Map();
 let audioContext, monitor, mixDestination, backend = null, database = null, saveVersion = 0;
@@ -34,7 +35,7 @@ function defaultProject() {
     C.normalize({id:'a2',track:'audio',title:m.music2.name,mediaId:'music2',start:17,duration:7,volume:.5,fadeIn:.8,fadeOut:1.5}));
   return {format:'clipcut-project',version:2,name:'Summer Vibes',ratio:'9:16',clips:list,media:m};
 }
-function snapshot() { return {format:'clipcut-project',version:2,name:projectName,libraryId:currentProjectId,ratio,luts:TibeLooks.projectLuts(),selection:[...selectedIds],trackState:C.copy(trackState),canvas:C.copy(projectCanvas),clips:C.copy(clips),media:C.copy(media)}; }
+function snapshot() { return {format:'clipcut-project',version:2,name:projectName,libraryId:currentProjectId,ratio,production:C.copy(projectProduction),luts:TibeLooks.projectLuts(),selection:[...selectedIds],trackState:C.copy(trackState),canvas:C.copy(projectCanvas),clips:C.copy(clips),media:C.copy(media)}; }
 function applyProject(p) {
   TibeLibrary.stopSource();TibeLibrary.stopLookPreview();TibeLooks.registerLuts(p?.luts||{});
   if (!p || p.format !== 'clipcut-project' || !Array.isArray(p.clips) || !p.media || p.clips.length>3000) throw Error('Tệp dự án tibe không hợp lệ.');
@@ -42,13 +43,14 @@ function applyProject(p) {
     if (!item || !['image','video','audio'].includes(item.type)) throw Error('Loại tư liệu không hợp lệ.');
     const sharper={'assets/demo/cliff.webp':'assets/demo/cliff-hd.png','assets/demo/coast.webp':'assets/demo/coast-hd.png'};
     if(sharper[item.url]){item.url=sharper[item.url];delete item.thumbnail;}
-    if (item.url && !/^(assets\/demo\/[\w.-]+|\/workspace\/(uploads|tts)\/[\w.-]+|data:(image|video|audio)\/[^,]+,[\s\S]+)$/.test(item.url)) throw Error('Đường dẫn tư liệu không được hỗ trợ.');
-    if(item.thumbnail&&!/^(assets\/demo\/[\w.-]+|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/.test(item.thumbnail))delete item.thumbnail;
+    if (item.url && !/^(assets\/(?:demo|sfx)\/[\w.-]+|\/workspace\/(uploads|tts)\/[\w.-]+|data:(image|video|audio)\/[^,]+,[\s\S]+)$/.test(item.url)) throw Error('Đường dẫn tư liệu không được hỗ trợ.');
+    if(item.thumbnail&&!/^(assets\/(?:demo|sfx)\/[\w.-]+|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/.test(item.thumbnail))delete item.thumbnail;
   }
+  projectProduction=p.production&&typeof p.production==='object'&&!Array.isArray(p.production)?C.copy(p.production):{};
   projectCanvas={enabled:p.canvas?.enabled!==false,color:/^#[0-9a-f]{6}$/i.test(p.canvas?.color)?p.canvas.color:'#ffe4d0',blur:!!p.canvas?.blur};visualLayers.clear();
   pauseAll(); instances.forEach(m=>{ m.el.removeAttribute('src'); m.el.load(); m.source?.disconnect(); m.gain?.disconnect(); }); instances.clear(); images.clear();
   trackState = Object.fromEntries(tracks.map(track=>[track,{hidden:!!p.trackState?.[track]?.hidden,locked:!!p.trackState?.[track]?.locked,muted:!!p.trackState?.[track]?.muted}]));
-  const seen=new Set();clips = p.clips.filter(c=>c&&tracks.includes(c.track)).map(c=>{const clip=C.normalize(c);if(seen.has(clip.id))clip.id=C.uid();seen.add(clip.id);return clip;}); media=C.copy(p.media); ratio=['9:16','16:9','1:1','4:5'].includes(p.ratio)?p.ratio:'9:16';
+  const seen=new Set();clips = p.clips.filter(c=>c&&tracks.includes(c.track)).map(c=>{const clip=C.normalize(c);if(seen.has(clip.id))clip.id=C.uid();seen.add(clip.id);return clip;}); media=C.copy(p.media);window.OmeraEditor?.syncHelpers(clips,projectProduction.omera,media); ratio=['9:16','16:9','1:1','4:5'].includes(p.ratio)?p.ratio:'9:16';
   currentProjectId=/^[a-f0-9]{32}$/.test(p.libraryId||'')?p.libraryId:null;
   projectName=String(p.name||'Video chưa đặt tên').slice(0,120); selectedClipId=clips.find(c=>c.id===p.selection?.[0])?.id||clips.find(c=>c.id===selectedClipId)?.id||clips[0]?.id||null;
   selectedIds=new Set(Array.isArray(p.selection)?p.selection.filter(id=>clips.some(c=>c.id===id)):selectedClipId?[selectedClipId]:[]);setCanvasSize();refresh();prepareMedia();
@@ -59,7 +61,7 @@ function mutate(fn, key) {
   if(!key || mutate.lastKey!==key || now-mutate.lastTime>650) {history.push(snapshot()); if(history.length>80) history.shift();}
   mutate.lastKey=key; mutate.lastTime=now; future.length=0; fn(); changed();
 }
-function changed() { for(const id of visualLayers.keys())if(!clips.some(c=>c.id===id))visualLayers.delete(id);reconcileSelection();updateTotalDuration(); renderTimeline(); updatePlayheadUI(); updateSelectionBox(); saveSoon(); }
+function changed() { window.OmeraEditor?.syncHelpers(clips,projectProduction.omera,media);for(const id of visualLayers.keys())if(!clips.some(c=>c.id===id))visualLayers.delete(id);reconcileSelection();updateTotalDuration(); renderTimeline(); updatePlayheadUI(); updateSelectionBox(); saveSoon(); }
 function refresh() { reconcileSelection();updateTotalDuration(); renderRuler(); renderTimeline(); renderInspector(); renderDrawer(); updatePlayheadUI(); $('projectName').textContent=projectName; $('ratioSelect').value=ratio;TibeUI.syncSelects(); }
 function undoAction() { if(!history.length||exporting)return;mutate.lastKey=null; future.push(snapshot()); const p=history.pop(); applyProject(p); saveSoon(); }
 function redoAction() { if(!future.length||exporting)return;mutate.lastKey=null; history.push(snapshot()); applyProject(future.pop()); saveSoon(); }
@@ -80,7 +82,7 @@ async function resolveUrl(m) {
 function saveSoon() {
   if(demoMode){$('saveStatus').textContent='Bản mẫu · Lưu để giữ lại';return;}
   $('saveStatus').textContent='Đang lưu bản nháp…'; const version=++saveVersion;
-  clearTimeout(saveTimer);saveTimer=setTimeout(()=>{ try {const p=snapshot();Object.values(p.media).forEach(m=>delete m.runtimeUrl);localStorage.setItem('clipcut-autosave-v2',JSON.stringify(p));if(version===saveVersion)$('saveStatus').textContent='Đã lưu bản nháp';}catch{ $('saveStatus').textContent='Chưa lưu · hãy tải dự án';} },400);
+  clearTimeout(saveTimer);saveTimer=setTimeout(()=>{ try {const p=snapshot();Object.values(p.media).forEach(m=>delete m.runtimeUrl);localStorage.setItem('clipcut-autosave-v2',JSON.stringify(p));if(version===saveVersion)$('saveStatus').textContent='Đã lưu bản nháp';}catch{ $('saveStatus').textContent=currentProjectId?'Đã mở thư mục · bấm Lưu khi sửa':'Nháp lớn · hãy lưu tệp dự án';} },400);
 }
 const selected=()=>clips.find(c=>c.id===selectedClipId);
 function updateTotalDuration(){ totalDuration=Math.max(.1,...clips.map(c=>c.start+c.duration)); currentTime=C.clamp(currentTime,0,totalDuration);renderRuler(); }
@@ -99,10 +101,10 @@ function renderTimeline(){
   const trackNames={video:'Video chính',overlay:'Lớp phủ',text:'Văn bản',sticker:'Nhãn dán',audio:'Âm thanh'};
   const trackIcons={video:'video',overlay:'layers',text:'text',sticker:'stickers',audio:'audio'};
   tracks.forEach(track=>{
-    const lane=$('lane-'+track),state=trackState[track]||{},packed=C.packRows(clips.filter(c=>c.track===track)),rowHeight=baseTrackHeights[track];
+    const lane=$('lane-'+track),state=trackState[track]||{},packed=C.packRows(clips.filter(c=>c.track===track&&!c.omeraHelper)),rowHeight=baseTrackHeights[track];
     lane.replaceChildren();lane.style.width=width+'px';lane.style.height=Math.max(44,packed.rows*rowHeight+6)+'px';lane.classList.toggle('track-locked',!!state.locked);
     const header=document.querySelector('.tl-track-label[data-track="'+track+'"]');header.style.height=lane.style.height;
-    const unusedTrack=!clips.some(c=>c.track===track)&&!['video','audio'].includes(track);lane.hidden=unusedTrack;header.hidden=unusedTrack;
+    const unusedTrack=!clips.some(c=>c.track===track&&!c.omeraHelper)&&!['video','audio'].includes(track);lane.hidden=unusedTrack;header.hidden=unusedTrack;
     header.innerHTML=`<span class="track-icon">${icon(trackIcons[track])}</span><span class="track-name">${trackNames[track]}</span><span class="track-actions"><button class="${state.hidden?'active':''}" title="${state.hidden?'Hiện':'Ẩn'} track" onclick="toggleTrack('${track}','hidden')">${icon(state.hidden?'eyeOff':'eye')}</button><button class="${state.locked?'active':''}" title="${state.locked?'Mở khóa':'Khóa'} track" onclick="toggleTrack('${track}','locked')">${icon(state.locked?'lock':'unlock')}</button>${['video','overlay','audio'].includes(track)?`<button class="${state.muted?'active':''}" title="Bật/tắt âm thanh track" onclick="toggleTrack('${track}','muted')">${icon(state.muted?'mute':'volume')}</button>`:''}</span>`;
     for(const c of clips.filter(c=>c.track===track)){
       const el=document.createElement('div');const row=packed.positions.get(c.id);
@@ -253,6 +255,15 @@ function renderLoop(now){
 function drawCompositeFrame(){
   const w=canvas.width,h=canvas.height;ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,w,h);
   if(projectCanvas.enabled){ctx.fillStyle=projectCanvas.color;ctx.fillRect(0,0,w,h);}
+  if(typeof projectProduction!=='undefined'&&projectProduction.omera&&window.OmeraEditor){
+    if(!trackState.video?.hidden)window.OmeraEditor.draw(ctx,projectProduction.omera,clips,media,currentTime);
+    ctx.scale(w/450,w/450);
+    const shown=c=>!c.hidden&&!trackState[c.track]?.hidden&&currentTime>=c.start&&currentTime<c.start+c.duration;
+    clips.filter(c=>c.track==='video'&&!c.omeraSceneId&&shown(c)).forEach(c=>drawVisual(c));
+    clips.filter(c=>c.track==='overlay'&&!c.omeraHelper&&shown(c)).forEach(c=>drawVisual(c));
+    clips.filter(c=>(c.track==='text'||c.track==='sticker')&&shown(c)).forEach(drawLabel);
+    ctx.restore();updateSelectionBox();return;
+  }
   ctx.scale(w/450,w/450);
   const visible=c=>!c.hidden&&!trackState[c.track]?.hidden&&currentTime>=c.start&&currentTime<c.start+c.duration;
   const base=clips.filter(c=>c.track==='video').sort((a,b)=>a.start-b.start),active=base.filter(visible);
@@ -277,7 +288,10 @@ function drawVisual(c,alpha=1,localOverride){
   ctx.translate(225+x,H/2+y);ctx.rotate(t.rotation*Math.PI/180);ctx.scale(scale*(c.flipX?-1:1),scale*(c.flipY?-1:1));
   const dw=c.track==='overlay'?210:450,dh=c.track==='overlay'?Math.min(260,H*.6):H;
   const source=m?.type==='image'?loadImage(m):instances.get(c.id)?.el,sw=source?.videoWidth||source?.naturalWidth,sh=source?.videoHeight||source?.naturalHeight;
-  if(source&&sw&&sh){const layer=processedVisual(c,source,sw,sh,dw,dh);TibeEffects.draw(ctx,layer,{effect:fx,time:preview.time,width:dw,height:dh,amount:c.effectAmount??.7});}
+  if(c.sprintVisual&&window.TibeFBSprint)TibeFBSprint.drawVisual(ctx,c,local,source,450,H);
+  else if(c.sprintGraphic&&window.TibeFBSprint)TibeFBSprint.drawGraphic(ctx,c,local,450,H);
+  else if(c.motionGraphic&&typeof OmeraRadio!=='undefined')OmeraRadio.draw(ctx,c,local,dw,dh);
+  else if(source&&sw&&sh){const layer=processedVisual(c,source,sw,sh,dw,dh);TibeEffects.draw(ctx,layer,{effect:fx,time:preview.time,width:dw,height:dh,amount:c.effectAmount??.7});}
   else if(!m){const g=ctx.createLinearGradient(-225,-400,225,400);g.addColorStop(0,c.bg1||'#e7b7a6');g.addColorStop(1,c.bg2||'#aebfda');ctx.fillStyle=g;ctx.fillRect(-dw/2,-dh/2,dw,dh);}
   ctx.restore();
 }
@@ -371,6 +385,13 @@ function renderInspector(){
   const toggle=(label,key,value)=>`<label class="toggle-line">${label}<input class="switch" aria-label="${label}" type="checkbox" ${value?'checked':''} onchange="updateActiveClip('${key}',this.checked)"></label>`;
   const percent=(label,prop,value,max=100)=>rangeControl(label,prop,Math.round(value*100),prop==='scale'?10:0,max,1,'setPercent');
   const visual=['video','overlay'].includes(c.track),hasAudio=media[c.mediaId]?.type!=='image'&&!!media[c.mediaId]&&media[c.mediaId].hasAudio!==false,state=C.transform(c,C.clamp(currentTime-c.start,0,c.duration));let html='';
+  if(c.omeraSceneId){
+    html+=section('Omera · Bento',`<label class="dialog-label">Phụ đề cảnh<textarea maxlength="500" rows="4" oninput="updateActiveClip('omeraCaption',this.value)">${escapeHTML(c.omeraCaption??c.title)}</textarea></label>`+
+      selectControl('Bố cục','omeraLayout',c.omeraLayout||'BENTO_HERO_GLASS',[['BENTO_SPLIT_VERTICAL','Before / After'],['BENTO_PIP_DIAGRAM','Video + sơ đồ'],['BENTO_TRIPLE_GEAR','Kết quả + thiết bị'],['BENTO_HERO_GLASS','Hero Glass']])+
+      `<label class="dialog-label">Thông số<input maxlength="180" value="${escapeHTML(c.omeraSettings||'')}" oninput="updateActiveClip('omeraSettings',this.value)"></label><label class="dialog-label">Thiết bị<input maxlength="120" value="${escapeHTML(c.omeraGear||'')}" oninput="updateActiveClip('omeraGear',this.value)"></label>`);
+    html+=section('Thời gian',`<label class="dialog-label">Bắt đầu · s<input type="number" min="0" step="0.01" value="${c.start}" onchange="changeTiming('start',this.value)"></label><label class="dialog-label">Thời lượng · s<input type="number" min="0.6" step="0.01" value="${c.duration}" onchange="changeTiming('duration',this.value)"></label><p class="note-label">Khung hình, karaoke, Hook và SFX dùng thiết kế Omera. Có thể thêm chữ hoặc lớp phủ thường.</p>`);
+    el.innerHTML=html;if(trackState[c.track]?.locked)el.querySelectorAll('input,textarea,select,button').forEach(control=>control.disabled=true);TibeUI.syncSelects();return;
+  }
   if(inspectorTab==='audio'){
     html+=hasAudio?section('Audio',percent('Volume %','volume',c.volume,200)+rangeControl('Fade In · s','fadeIn',c.fadeIn,0,Math.min(30,c.duration),.1)+rangeControl('Fade Out · s','fadeOut',c.fadeOut,0,Math.min(30,c.duration),.1)+toggle('Mute clip','muted',c.muted)):'<p class="note-label">Clip này không có nguồn âm thanh. Chọn video có tiếng hoặc clip Audio.</p>';
     if(hasAudio){html+=section('Audio Ducking',toggle('Giảm nhạc khi có giọng nói','ducking',c.ducking)+selectControl('Vai trò','audioRole',c.audioRole||'music',[['music','Music / original'],['voice','Voice / TTS']])+`<p class="note-label">Nhạc được giảm còn 28% khi chồng lên clip Voice / TTS, với chuyển tiếp 120 ms.</p>`);html+=section('Voice Effects',selectControl('Effect','voiceEffect',c.voiceEffect||'none',[['none','None'],['deep','Deep'],['high','High'],['echo','Echo'],['radio','Radio']])+`<p class="note-label">Deep / High đổi cao độ mà giữ thời lượng clip. MP4 xử lý tiếng bằng FFmpeg.</p>${media[c.mediaId]?.type==='video'?`<button class="soft-button" onclick="extractAudio()">${icon('audio')}Tách âm thanh · Extract Audio</button>`:''}`);}
@@ -495,7 +516,8 @@ async function inspectReaMaterials(){const button=$('inspectMaterials');button.d
 
 function exportFullVideo(){
   if(!clips.length)return toast('Thêm clip vào timeline trước khi xuất.');
-  showDialog('Xuất video', `<div class="export-summary"><span>${icon('video')}</span><div><strong>${escapeHTML(projectName)}</strong><small>${ratio} · ${formatTime(totalDuration)} · ${clips.length} clip</small></div></div><label class="dialog-label">Tên tệp<input id="exportFilename" maxlength="120" value="${escapeHTML(projectName)}"></label><label class="dialog-label">Định dạng<select id="exportFormat" onchange="updateExportHelp()"><option value="mp4" ${backend?.ffmpeg?'':'disabled'}>MP4 · H.264 / AAC${backend?.ffmpeg?'':' (cần máy chủ FFmpeg)'}</option><option value="webm" ${backend?.ffmpeg?'':'selected'}>WebM · Xuất trên trình duyệt</option></select></label><div class="dialog-columns"><label class="dialog-label">Độ phân giải<select id="exportResolution"><option value="720">720p</option><option value="1080" selected>1080p</option></select></label><label class="dialog-label">Khung hình / giây<select id="exportFps"><option value="24">24 fps</option><option value="30" selected>30 fps</option><option value="60">60 fps</option></select></label></div><p id="exportHelp" class="hint"></p><progress id="exportProgress" max="100" value="0"></progress><p id="exportMessage" class="hint">Sẵn sàng xuất</p><button id="startExport" class="btn-export" onclick="startExport()">${icon('upload')}Xuất video</button><button id="cancelExport" class="link-button" hidden onclick="cancelExport()">Hủy xuất</button>`);
+  showDialog('Xuất video', `<div class="export-summary"><span>${icon('video')}</span><div><strong>${escapeHTML(projectName)}</strong><small>${ratio} · ${formatTime(totalDuration)} · ${clips.length} clip</small></div></div><label class="dialog-label">Tên tệp<input id="exportFilename" maxlength="120" value="${escapeHTML(projectName)}"></label><label class="dialog-label">Định dạng<select id="exportFormat" onchange="updateExportHelp()"><option value="mp4" ${backend?.ffmpeg?'':'disabled'}>MP4 · H.264 / AAC${backend?.ffmpeg?'':' (cần máy chủ FFmpeg)'}</option><option value="webm" ${backend?.ffmpeg?'':'selected'}>WebM · Xuất trên trình duyệt</option></select></label><div class="dialog-columns"><label class="dialog-label">Độ phân giải<select id="exportResolution"><option value="720">720p</option><option value="1080" selected>1080p</option></select></label><label class="dialog-label">Khung hình / giây<select id="exportFps"><option value="24">24 fps</option><option value="30" selected>30 fps</option><option value="59.94">59.94 fps · 60000/1001</option><option value="60">60 fps</option></select></label></div><p id="exportHelp" class="hint"></p><progress id="exportProgress" max="100" value="0"></progress><p id="exportMessage" class="hint">Sẵn sàng xuất</p><button id="startExport" class="btn-export" onclick="startExport()">${icon('upload')}Xuất video</button><button id="cancelExport" class="link-button" hidden onclick="cancelExport()">Hủy xuất</button>`);
+  if(projectProduction.omera)$('exportFps').value='60';
   updateExportHelp();
 }
 function updateExportHelp(){const deterministic=$('exportFormat').value==='mp4'&&backend?.frameRenderer;$('exportHelp').textContent=deterministic?'Xuất từng khung hình bằng FFmpeg, trộn âm thanh đúng timeline. Có thể chuyển sang cửa sổ khác khi đang xuất.':'Xuất bằng trình duyệt theo thời gian thực. Giữ cửa sổ ở phía trước trong lúc dựng.';}
@@ -503,6 +525,7 @@ function exportName(){return ($('exportFilename')?.value.trim()||projectName).re
 async function waitForSeek(item,time){if(!item||item.error)return;const el=item.el;item.target=null;el.pause();if(Math.abs(el.currentTime-time)<.015)return;await new Promise((resolve,reject)=>{const timer=setTimeout(()=>{el.removeEventListener('seeked',done);reject(Error('Không thể tua tư liệu để xuất.'));},10000);function done(){clearTimeout(timer);resolve();}el.addEventListener('seeked',done,{once:true});el.currentTime=Math.min(time,Math.max(0,el.duration-.002));});}
 async function startExport(){
   if(exporting)return;const fps=Number($('exportFps').value),resolution=Number($('exportResolution').value),format=$('exportFormat').value;
+  try{if(projectProduction?.sprint){TibeFBSprint.preflight(snapshot());if(format!=='mp4'||!backend?.frameRenderer)throw Error('FB Sprint cần máy chủ xuất MP4 từng khung hình để giữ đồng bộ.');}}catch(e){$('exportMessage').textContent=e.message;return;}
   if(format==='mp4'&&backend?.frameRenderer)return startFrameExport(fps,resolution);
   if(typeof MediaRecorder==='undefined'||!canvas.captureStream)return toast('Dùng Chrome hoặc Edge để xuất video.');
   const mime=['video/webm;codecs=vp9,opus','video/webm;codecs=vp8,opus','video/webm'].find(t=>MediaRecorder.isTypeSupported(t));if(!mime)return toast('Trình duyệt không hỗ trợ ghi WebM.');
@@ -543,7 +566,7 @@ async function startFrameExport(fps,resolution){
     const start=await(await request('/api/render/start',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({project,width:canvas.width,height:canvas.height,fps,duration:totalDuration})})).json();job.jobId=start.jobId;
     let batch=new FormData(),batchStart=0,batchCount=0;
     for(let frame=0;frame<start.frames;frame++){
-      assertActive();currentTime=frame/fps;
+      assertActive();currentTime=frame/(start.fps||fps);
       await Promise.all(visual.filter(c=>!c.hidden&&!trackState[c.track]?.hidden&&((currentTime>=c.start&&currentTime<c.start+c.duration)||transitionHoldLocal(c)!==null)).map(c=>waitForSeek(instances.get(c.id),C.sourceTime(c,transitionHoldLocal(c)??currentTime-c.start))));
       assertActive();drawCompositeFrame();
       const blob=await new Promise((resolve,reject)=>canvas.toBlob(value=>value?resolve(value):reject(Error('Không đọc được khung hình.')),'image/jpeg',.94));
@@ -551,7 +574,7 @@ async function startFrameExport(fps,resolution){
       if(batchCount===12||frame===start.frames-1){batch.append('start',String(batchStart));await request('/api/render/'+job.jobId+'/frames',{method:'POST',body:batch});batchStart=frame+1;batchCount=0;batch=new FormData();}
     }
     assertActive();$('exportMessage').textContent='Đang hoàn tất video và trộn âm thanh…';$('exportProgress').value=96;
-    const output=await(await request('/api/render/'+job.jobId+'/finish',{method:'POST'})).blob();assertActive();download(output,exportName()+'.mp4');job.jobId=null;$('exportProgress').value=100;$('exportMessage').textContent='Đã xuất thành công · '+formatTime(totalDuration)+' · '+fps+' fps';toast('Đã xuất video MP4.');
+    const output=await(await request('/api/render/'+job.jobId+'/finish',{method:'POST'})).blob();assertActive();download(output,exportName()+'.mp4');if(projectProduction?.sprint){const plan=projectProduction.sprint.plan,hash=await TibeFBSprint.fingerprint(plan);download(new Blob([JSON.stringify({template:TibeFBSprint.MODE,storyFingerprint:hash,note:'Dấu vân tay kịch bản để quản lý phiên bản; không xác nhận nội dung gốc của Meta.',fps:start.fps||fps,stripSourceMetadata:true,syntheticNarration:true,renderedAt:new Date().toISOString()},null,2)],{type:'application/json'}),exportName()+'-render-manifest.json');}job.jobId=null;$('exportProgress').value=100;$('exportMessage').textContent='Đã xuất thành công · '+formatTime(totalDuration)+' · '+fps+' fps';toast('Đã xuất video MP4.');
   }catch(error){$('exportMessage').textContent=job.cancelled?'Đã hủy xuất.':error.message;toast(job.cancelled?'Đã hủy xuất.':error.message);if(job.jobId)appFetch('/api/render/'+job.jobId+'/cancel',{method:'POST'}).catch(()=>{});}
   finally{pauseAll();currentTime=savedTime;setCanvasSize();exportJob=null;exporting=false;document.querySelector('.app-shell').inert=false;$('dialogClose').disabled=false;$('startExport').disabled=false;$('cancelExport').hidden=true;syncMedia(true);updatePlayheadUI();updateSelectionBox();}
 }

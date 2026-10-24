@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Omera Batch Studio · tibe</title>
+<link rel="stylesheet" href="assets/css/omera-batch.css?v=3.6.0">
+</head>
+<body>
+<header class="batch-topbar"><a class="brand" href="/">tibe<span>.</span><small>OMERA STUDIO</small></a><div class="topbar-title">Một ý tưởng. Nhiều bản dựng.</div><a class="quiet-button" href="/">Về trình chỉnh sửa ↗</a></header>
+<main class="batch-shell">
+<section class="batch-intro"><div><span class="eyebrow">CINEMA GLASS / BATCH ENGINE</span><h1>Dựng câu chuyện.<br><em>Cho từng nền tảng.</em></h1><p>Bento chuyển động, giọng đọc và hiệu ứng âm thanh. Xuất lần lượt trên máy; bạn có thể rời tab khi hàng đợi chạy.</p></div><div class="output-card"><span class="output-badge">9:16</span><strong>1080 × 1920</strong><span>60 khung hình / giây</span><small>H.264 · AAC · MP4</small></div></section>
+<div id="batchStatus" class="batch-status" role="status">Đang mở bộ xử lý tibe…</div>
+<div class="batch-grid">
+<section class="glass-panel input-panel"><header><div><span class="eyebrow">01 / INPUT</span><h2>Kịch bản & tư liệu</h2></div><span id="inputCount" class="count-pill">0 bài</span></header>
+<div class="import-actions"><button class="primary-button" id="importJson">＋ Nhập JSON</button><button class="soft-button" id="importFolder">▱ Thêm thư mục</button><button class="soft-button" id="loadSamples">5 bài mẫu</button></div>
+<input type="file" id="batchJsonFiles" accept=".json" multiple hidden><input type="file" id="batchFolderFiles" webkitdirectory multiple hidden>
+<p class="hint">Chọn thư mục cha có nhiều bộ tư liệu, hoặc thêm từng thư mục. Mỗi lô tối đa 20 kịch bản.</p>
+<div id="planList" class="plan-list"><div class="empty-state"><span>✦</span><strong>Bắt đầu với câu chuyện đầu tiên</strong><p>Nhập batch_projects.json hoặc một thư mục tư liệu.</p></div></div>
+<details class="json-editor"><summary>Chỉnh JSON / dán kịch bản</summary><textarea id="batchJsonText" rows="9" spellcheck="false" placeholder='{"projects": [{"title": "Video của tôi", "scenes": [...]}]}'></textarea><button class="soft-button" id="applyJson">Nạp nội dung JSON</button></details>
+</section>
+<section class="glass-panel queue-panel"><header><div><span class="eyebrow">02 / OUTPUT</span><h2>Hàng đợi dựng video</h2></div><span class="live-dot">CHẠY TRÊN MÁY</span></header>
+<div class="variant-options"><label><input type="checkbox" name="variant" value="A" checked><span><strong>A · Shorts Loop</strong><small>34 giây · Subscribe · nối về đầu</small></span></label><label><input type="checkbox" name="variant" value="B" checked><span><strong>B · Reels Follow</strong><small>42 giây · nhắc theo dõi · thẻ thiết bị</small></span></label><label><input type="checkbox" name="variant" value="C" checked><span><strong>C · Breakdown</strong><small>68 giây · phân tích chậm 0.6×</small></span></label></div>
+<div class="queue-controls"><label class="select-label">Chất lượng<select id="batchProfile"><option value="production">1080 × 1920 · 60 fps</option><option value="draft">Nháp 540 × 960 · 30 fps</option></select></label><button class="primary-button render-button" id="renderAll">Render All Batch →</button><button class="soft-button" id="resumeQueue">Chạy mục đang chờ</button></div>
+<p class="hint">Nút Xem thử dựng riêng 3 giây, không khởi chạy các bản đầy đủ đang chờ. Thời gian xuất phụ thuộc cấu hình máy.</p>
+<div id="queueSummary" class="queue-summary"></div><div id="batchQueue" class="queue-list" aria-live="polite"></div>
+</section>
+</div>
+<section class="layout-section"><div><span class="eyebrow">BENTO COMPOSITION</span><h2>Bốn bố cục. Một ngôn ngữ hình ảnh.</h2></div><div class="layout-grid"><article><div class="layout-art vertical"><i></i><i></i></div><strong>Before / After</strong><span>Hai khung bo góc, viền sáng.</span></article><article><div class="layout-art pip"><i></i><i></i></div><strong>Video + Diagram</strong><span>Chủ thể lớn, sơ đồ góc máy nổi.</span></article><article><div class="layout-art triple"><i></i><i></i><i></i></div><strong>Result + Gear</strong><span>Kết quả, thông số và thiết bị.</span></article><article><div class="layout-art hero"><i></i><i></i></div><strong>Hero Glass</strong><span>Video toàn khung, thẻ kính gọn.</span></article></div></section>
+<p class="footer-note">Các lời nhắc theo dõi trong video là đồ họa dựng sẵn. MD5 và biến thiên hình dùng quản lý phiên bản; không bảo đảm lượt xem hoặc tránh nhận diện trùng lặp. Phụ đề tự chia thời gian nếu JSON chưa có mốc từ.</p>
+</main>
+<dialog id="batchPreview"><header><strong id="previewTitle"></strong><button id="closeBatchPreview" class="soft-button">Đóng ×</button></header><video id="batchPreviewVideo" controls playsinline></video></dialog>
+<script src="assets/js/backend-api.js?v=3.6.0"></script><script src="assets/js/omera-studio-core.js?v=3.6.0"></script><script src="assets/js/omera-batch-ui.js?v=3.6.0"></script>
+</body></html>

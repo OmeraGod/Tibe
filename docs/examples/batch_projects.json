@@ -1,0 +1,241 @@
+{
+  "media": {
+    "before": {
+      "type": "image",
+      "name": "Ảnh mẫu trước",
+      "url": "assets/demo/cliff-hd.png"
+    },
+    "after": {
+      "type": "image",
+      "name": "Ảnh mẫu sau",
+      "url": "assets/demo/coast-hd.png"
+    }
+  },
+  "projects": [
+    {
+      "id": "omera_sample_1",
+      "title": "Ánh sáng đẹp hơn",
+      "brand": "Omera Studio",
+      "hook": "Đổi một chi tiết, khung hình khác hẳn.",
+      "gift": "Sơ đồ góc máy · Gợi ý dụng cụ",
+      "narration": {
+        "generate": false,
+        "voice": "Hải Đăng"
+      },
+      "scenes": [
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_SPLIT_VERTICAL",
+          "duration": 4,
+          "caption": "Đặt chủ thể gần nguồn sáng để ảnh trong trẻo hơn.",
+          "analysis": "Nhìn hướng bóng đổ và giữ nguồn sáng chếch phía trước chủ thể.",
+          "settings": "Cửa sổ 45° · Tiêu cự 2×",
+          "gear": "Tripod · Đèn LED",
+          "widgets": [
+            {
+              "type": "ABCompareSlider",
+              "start": 4,
+              "duration": 3
+            }
+          ]
+        },
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_PIP_DIAGRAM",
+          "duration": 4,
+          "caption": "Di chuyển máy chậm và giữ hậu cảnh gọn gàng.",
+          "analysis": "Giữ trục máy ổn định, xem kỹ đường viền và khoảng trống sau chủ thể.",
+          "widgets": [
+            {
+              "type": "PhoneGridHUD",
+              "start": 2,
+              "duration": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "omera_sample_2",
+      "title": "Khung hình có chiều sâu",
+      "brand": "Omera Studio",
+      "hook": "Đổi một chi tiết, khung hình khác hẳn.",
+      "gift": "Sơ đồ góc máy · Gợi ý dụng cụ",
+      "narration": {
+        "generate": false,
+        "voice": "Hải Đăng"
+      },
+      "scenes": [
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_PIP_DIAGRAM",
+          "duration": 4,
+          "caption": "Đặt chủ thể gần nguồn sáng để ảnh trong trẻo hơn.",
+          "analysis": "Nhìn hướng bóng đổ và giữ nguồn sáng chếch phía trước chủ thể.",
+          "settings": "Cửa sổ 45° · Tiêu cự 2×",
+          "gear": "Tripod · Đèn LED",
+          "widgets": [
+            {
+              "type": "ABCompareSlider",
+              "start": 4,
+              "duration": 3
+            }
+          ]
+        },
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_PIP_DIAGRAM",
+          "duration": 4,
+          "caption": "Di chuyển máy chậm và giữ hậu cảnh gọn gàng.",
+          "analysis": "Giữ trục máy ổn định, xem kỹ đường viền và khoảng trống sau chủ thể.",
+          "widgets": [
+            {
+              "type": "PhoneGridHUD",
+              "start": 2,
+              "duration": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "omera_sample_3",
+      "title": "Góc máy kể chuyện",
+      "brand": "Omera Studio",
+      "hook": "Đổi một chi tiết, khung hình khác hẳn.",
+      "gift": "Sơ đồ góc máy · Gợi ý dụng cụ",
+      "narration": {
+        "generate": false,
+        "voice": "Hải Đăng"
+      },
+      "scenes": [
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_TRIPLE_GEAR",
+          "duration": 4,
+          "caption": "Đặt chủ thể gần nguồn sáng để ảnh trong trẻo hơn.",
+          "analysis": "Nhìn hướng bóng đổ và giữ nguồn sáng chếch phía trước chủ thể.",
+          "settings": "Cửa sổ 45° · Tiêu cự 2×",
+          "gear": "Tripod · Đèn LED",
+          "widgets": [
+            {
+              "type": "ABCompareSlider",
+              "start": 4,
+              "duration": 3
+            }
+          ]
+        },
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_PIP_DIAGRAM",
+          "duration": 4,
+          "caption": "Di chuyển máy chậm và giữ hậu cảnh gọn gàng.",
+          "analysis": "Giữ trục máy ổn định, xem kỹ đường viền và khoảng trống sau chủ thể.",
+          "widgets": [
+            {
+              "type": "PhoneGridHUD",
+              "start": 2,
+              "duration": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "omera_sample_4",
+      "title": "Thiết bị gọn cho Reels",
+      "brand": "Omera Studio",
+      "hook": "Đổi một chi tiết, khung hình khác hẳn.",
+      "gift": "Sơ đồ góc máy · Gợi ý dụng cụ",
+      "narration": {
+        "generate": false,
+        "voice": "Hải Đăng"
+      },
+      "scenes": [
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_HERO_GLASS",
+          "duration": 4,
+          "caption": "Đặt chủ thể gần nguồn sáng để ảnh trong trẻo hơn.",
+          "analysis": "Nhìn hướng bóng đổ và giữ nguồn sáng chếch phía trước chủ thể.",
+          "settings": "Cửa sổ 45° · Tiêu cự 2×",
+          "gear": "Tripod · Đèn LED",
+          "widgets": [
+            {
+              "type": "ABCompareSlider",
+              "start": 4,
+              "duration": 3
+            }
+          ]
+        },
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_PIP_DIAGRAM",
+          "duration": 4,
+          "caption": "Di chuyển máy chậm và giữ hậu cảnh gọn gàng.",
+          "analysis": "Giữ trục máy ổn định, xem kỹ đường viền và khoảng trống sau chủ thể.",
+          "widgets": [
+            {
+              "type": "PhoneGridHUD",
+              "start": 2,
+              "duration": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "omera_sample_5",
+      "title": "Chuyển động tự nhiên",
+      "brand": "Omera Studio",
+      "hook": "Đổi một chi tiết, khung hình khác hẳn.",
+      "gift": "Sơ đồ góc máy · Gợi ý dụng cụ",
+      "narration": {
+        "generate": false,
+        "voice": "Hải Đăng"
+      },
+      "scenes": [
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_SPLIT_VERTICAL",
+          "duration": 4,
+          "caption": "Đặt chủ thể gần nguồn sáng để ảnh trong trẻo hơn.",
+          "analysis": "Nhìn hướng bóng đổ và giữ nguồn sáng chếch phía trước chủ thể.",
+          "settings": "Cửa sổ 45° · Tiêu cự 2×",
+          "gear": "Tripod · Đèn LED",
+          "widgets": [
+            {
+              "type": "ABCompareSlider",
+              "start": 4,
+              "duration": 3
+            }
+          ]
+        },
+        {
+          "mediaId": "after",
+          "beforeId": "before",
+          "layout": "BENTO_PIP_DIAGRAM",
+          "duration": 4,
+          "caption": "Di chuyển máy chậm và giữ hậu cảnh gọn gàng.",
+          "analysis": "Giữ trục máy ổn định, xem kỹ đường viền và khoảng trống sau chủ thể.",
+          "widgets": [
+            {
+              "type": "PhoneGridHUD",
+              "start": 2,
+              "duration": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

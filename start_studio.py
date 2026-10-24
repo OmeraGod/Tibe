@@ -20,7 +20,7 @@ print('tibe: http://127.0.0.1:5050')
 try:
     with urllib.request.urlopen('http://127.0.0.1:5050/api/status',timeout=2) as response:
         running=json.load(response)
-    if running.get('version')=='3.5.0' and running.get('instance')==APP_INSTANCE:
+    if running.get('version')=='3.6.0' and running.get('instance')==APP_INSTANCE:
         if '--no-browser' not in sys.argv:webbrowser.open('http://127.0.0.1:5050/omera')
         raise SystemExit(0)
 except (OSError,ValueError):running=None
@@ -28,6 +28,8 @@ if running is not None:
     print('Dang co mot ban tibe khac chay o cong 5050. Hay dong cua so tibe cu roi mo lai MỞ TIBE.bat.',file=sys.stderr)
     raise SystemExit(1)
 local_voice.prepare()
+from scripts.prepare_omera import prepare as prepare_omera
+threading.Thread(target=prepare_omera, args=(root,), daemon=True, name='omera-canvas-setup').start()
 threading.Thread(target=capcut_resources.scan,daemon=True,name='tibe-capcut-resources').start()
 if '--no-browser' not in sys.argv:
     threading.Timer(1.2,lambda:webbrowser.open('http://127.0.0.1:5050/omera')).start()

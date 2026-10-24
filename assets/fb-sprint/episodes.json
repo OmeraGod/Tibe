@@ -1,0 +1,1425 @@
+[
+  {
+    "format": "tibe-fb-sprint-kit",
+    "template": "FB_1000Follow_Sprint_Mode",
+    "version": 1,
+    "id": "e01",
+    "name": "Omera / Toàn thân: giữ chân trong khung",
+    "duration": 35,
+    "ratio": "9:16",
+    "output": {
+      "fps": 30,
+      "stripSourceMetadata": true,
+      "randomize": false
+    },
+    "schedule": {
+      "day": 1,
+      "localTime": "11:30",
+      "timezone": "Asia/Saigon",
+      "status": "draft-not-scheduled"
+    },
+    "hook": {
+      "layout": "stacked",
+      "question": "VÌ SAO CHỤP BỊ LÙN?",
+      "badLabel": "❌ MÁY CAO, CẮT BÀN CHÂN",
+      "goodLabel": "✓ HẠ MÁY, CHỪA MÉP CHÂN",
+      "fontSize": 72
+    },
+    "gift": {
+      "headline": "6 góc thử với gậy chụp toàn thân",
+      "keyword": "GÓC",
+      "followRequired": false,
+      "autoSend": false,
+      "delivery": "public-comment-image",
+      "file": "fb-sprint_e01_gift.png"
+    },
+    "affiliate": {
+      "productName": "Gậy P180 / Q515: chọn đúng biến thể",
+      "url": "https://s.shopee.vn/8fTFiaAWUp",
+      "verifiedVariant": false,
+      "disclosure": "Bài có liên kết tiếp thị; Omera có thể nhận hoa hồng từ đơn hợp lệ.",
+      "requiresProductCheck": true
+    },
+    "bindings": {
+      "gift": {
+        "mediaId": "e01_gift",
+        "sourceIn": 0
+      },
+      "shutter": {
+        "mediaId": "sprint_shutter",
+        "sourceIn": 0
+      },
+      "bell": {
+        "mediaId": "sprint_bell",
+        "sourceIn": 0
+      }
+    },
+    "bundledMedia": {
+      "e01_gift": {
+        "id": "e01_gift",
+        "name": "6 góc thử với gậy chụp toàn thân",
+        "type": "image",
+        "url": "assets/demo/fb-sprint_e01_gift.png",
+        "duration": 35
+      },
+      "sprint_shutter": {
+        "id": "sprint_shutter",
+        "name": "camera_shutter_hit.wav",
+        "type": "audio",
+        "url": "assets/demo/camera_shutter_hit.wav",
+        "duration": 0.4
+      },
+      "sprint_bell": {
+        "id": "sprint_bell",
+        "name": "bell_ding.wav",
+        "type": "audio",
+        "url": "assets/demo/bell_ding.wav",
+        "duration": 0.65
+      },
+      "e01_vo01": {
+        "id": "e01_vo01",
+        "type": "audio",
+        "name": "Cùng một người, sao ảnh này bị lùn?",
+        "url": "assets/demo/fb-sprint_e01_vo01.wav",
+        "duration": 1.598375,
+        "syntheticVoice": true
+      },
+      "e01_vo02": {
+        "id": "e01_vo02",
+        "type": "audio",
+        "name": "Máy quá cao làm tỷ lệ chân khác đi.",
+        "url": "assets/demo/fb-sprint_e01_vo02.wav",
+        "duration": 1.993625,
+        "syntheticVoice": true
+      },
+      "e01_vo03": {
+        "id": "e01_vo03",
+        "type": "audio",
+        "name": "Sát mép quá dễ cắt mất bàn chân.",
+        "url": "assets/demo/fb-sprint_e01_vo03.wav",
+        "duration": 1.9970208333333332,
+        "syntheticVoice": true
+      },
+      "e01_vo04": {
+        "id": "e01_vo04",
+        "type": "audio",
+        "name": "Hạ máy, chừa mép dưới rồi so lại.",
+        "url": "assets/demo/fb-sprint_e01_vo04.wav",
+        "duration": 1.9938541666666667,
+        "syntheticVoice": true
+      },
+      "e01_vo05": {
+        "id": "e01_vo05",
+        "type": "audio",
+        "name": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "url": "assets/demo/fb-sprint_e01_vo05.wav",
+        "duration": 1.8399375,
+        "syntheticVoice": true
+      },
+      "e01_vo06": {
+        "id": "e01_vo06",
+        "type": "audio",
+        "name": "Thử ngang eo, lùi xa rồi căn khung.",
+        "url": "assets/demo/fb-sprint_e01_vo06.wav",
+        "duration": 2.1529166666666666,
+        "syntheticVoice": true
+      },
+      "e01_vo07": {
+        "id": "e01_vo07",
+        "type": "audio",
+        "name": "Giữ mặt gần tâm, tránh kéo méo người.",
+        "url": "assets/demo/fb-sprint_e01_vo07.wav",
+        "duration": 1.9947291666666667,
+        "syntheticVoice": true
+      },
+      "e01_vo08": {
+        "id": "e01_vo08",
+        "type": "audio",
+        "name": "Chụp thử một tấm, kiểm tra cả bàn chân.",
+        "url": "assets/demo/fb-sprint_e01_vo08.wav",
+        "duration": 2.23875,
+        "syntheticVoice": true
+      },
+      "e01_vo09": {
+        "id": "e01_vo09",
+        "type": "audio",
+        "name": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn GÓC cho Trang. Theo dõi để thử tập sau!",
+        "url": "assets/demo/fb-sprint_e01_vo09.wav",
+        "duration": 4.1568125,
+        "syntheticVoice": true
+      }
+    },
+    "scenes": [
+      {
+        "start": 0,
+        "end": 3,
+        "overlay": "CÙNG NGƯỜI · ĐỔI GÓC MÁY",
+        "voice": "Cùng một người, sao ảnh này bị lùn?",
+        "voiceMediaId": "e01_vo01",
+        "visual": "Hai phần màn hình 50/50: ảnh A lỗi thật và B kết quả thật, sáng rõ. Snap Zoom 1,2→1 trong 0,35s, tiếng màn trập ngay 0s; banner trắng chữ đen ≥64px. CÙNG NGƯỜI · ĐỔI GÓC MÁY"
+      },
+      {
+        "start": 3,
+        "end": 6,
+        "overlay": "LỖI 1 · MÁY ĐẶT QUÁ CAO",
+        "voice": "Máy quá cao làm tỷ lệ chân khác đi.",
+        "voiceMediaId": "e01_vo02",
+        "visual": "Cảnh lỗi A, phóng gần vị trí sai. Dùng mũi tên/khung lưới để chỉ đúng nguyên nhân. LỖI 1 · MÁY ĐẶT QUÁ CAO"
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "overlay": "LỖI 2 · SÁT MÉP BÀN CHÂN",
+        "voice": "Sát mép quá dễ cắt mất bàn chân.",
+        "voiceMediaId": "e01_vo03",
+        "visual": "Giữ cùng cảnh A, đổi crop vào chi tiết sai thứ hai; không thay ngoại hình người mẫu. LỖI 2 · SÁT MÉP BÀN CHÂN"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "overlay": "THỬ HẠ MÁY · GIỮ MÁY THẲNG",
+        "voice": "Hạ máy, chừa mép dưới rồi so lại.",
+        "voiceMediaId": "e01_vo04",
+        "visual": "Cảnh B toàn khung để người xem thấy thay đổi trước khi xem công thức. THỬ HẠ MÁY · GIỮ MÁY THẲNG"
+      },
+      {
+        "start": 13,
+        "end": 15.5,
+        "overlay": "THEO DÕI · MỖI TẬP MỘT MẸO",
+        "voice": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "voiceMediaId": "e01_vo05",
+        "visual": "Video B tiếp tục chạy. Pop-up mint “+ Theo dõi Omera Studio”, một lần bật lên, bell ở 13s; ghi rõ là đồ họa nhắc theo dõi. THEO DÕI · MỖI TẬP MỘT MẸO"
+      },
+      {
+        "start": 15.5,
+        "end": 19.5,
+        "overlay": "SƠ ĐỒ · 6 GÓC ĐỂ THỬ",
+        "voice": "Thử ngang eo, lùi xa rồi căn khung.",
+        "voiceMediaId": "e01_vo06",
+        "visual": "Chiếu ảnh sơ đồ bỏ túi đã tạo, chừa thời gian đọc bước đầu. Không khóa cách làm sau lượt theo dõi. SƠ ĐỒ · 6 GÓC ĐỂ THỬ"
+      },
+      {
+        "start": 19.5,
+        "end": 23.5,
+        "overlay": "GIỮ MẶT GẦN TÂM KHUNG",
+        "voice": "Giữ mặt gần tâm, tránh kéo méo người.",
+        "voiceMediaId": "e01_vo07",
+        "visual": "Trở về cảnh B áp dụng; thêm mũi tên hướng máy/đèn hoặc lưới khi phù hợp. GIỮ MẶT GẦN TÂM KHUNG"
+      },
+      {
+        "start": 23.5,
+        "end": 28,
+        "overlay": "CHỪA KHOẢNG TRỐNG DƯỚI CHÂN",
+        "voice": "Chụp thử một tấm, kiểm tra cả bàn chân.",
+        "voiceMediaId": "e01_vo08",
+        "visual": "Trở về sơ đồ; nhắc bước kiểm tra kết quả và giới hạn thực tế. CHỪA KHOẢNG TRỐNG DƯỚI CHÂN"
+      },
+      {
+        "start": 28,
+        "end": 35,
+        "overlay": "SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU",
+        "voice": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn GÓC cho Trang. Theo dõi để thử tập sau!",
+        "voiceMediaId": "e01_vo09",
+        "visual": "Nửa trên: 7s quay thao tác thiết bị thật. Nửa dưới: tên quà, vị trí lấy ảnh ở bình luận đầu, lời mời theo dõi tập sau và công khai hoa hồng nếu có link. SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU"
+      }
+    ],
+    "shootingBrief": "Quay người trưởng thành đứng toàn thân trong ánh sáng ban ngày; A máy cao và cắt chân, B hạ máy và giữ đủ bàn chân. Giữ nguyên người, quần áo, ánh sáng; không sửa dáng. Quay tay mở chân, gắn và giữ điện thoại trên đúng biến thể gậy.",
+    "sourceChecklist": [
+      "Cặp A/B có người thật, đủ quyền sử dụng, cùng điều kiện so sánh.",
+      "before / after: mỗi video còn ít nhất 13s, hoặc ảnh thực tế.",
+      "device: video thao tác đúng thiết bị thật còn ít nhất 7s.",
+      "Kiểm tra lời đọc và đủ ảnh sơ đồ trước khi đăng."
+    ],
+    "caption": "Vì sao chụp bị lùn? Thử đổi đúng một yếu tố trước khi mua thêm đồ.\nLưu sơ đồ để thử lại; chia sẻ nếu bạn thấy hữu ích.\nSơ đồ ở bình luận đầu. Theo dõi Omera để xem tập tiếp theo.",
+    "firstComment": "Sơ đồ 6 góc thử với gậy chụp toàn thân mình đính kèm ngay tại đây, tải tự do, không cần theo dõi để nhận. Dụng cụ tham khảo: https://s.shopee.vn/8fTFiaAWUp — kiểm tra đúng biến thể, giá và ưu đãi trên Shopee trước khi đặt. Đây là liên kết tiếp thị; Omera có thể nhận hoa hồng từ đơn hợp lệ.",
+    "discussionComment": "Bạn thấy bản A hay B dễ áp dụng hơn? Điều kiện quay nào khiến bạn khó làm theo nhất?",
+    "requestedReply": "Mình gửi sơ đồ bạn đã hỏi tại đây. Dụng cụ tham khảo: https://s.shopee.vn/8fTFiaAWUp (liên kết tiếp thị, có thể có hoa hồng).",
+    "publishReady": false
+  },
+  {
+    "format": "tibe-fb-sprint-kit",
+    "template": "FB_1000Follow_Sprint_Mode",
+    "version": 1,
+    "id": "e02",
+    "name": "Omera / Ảnh nhóm: cả hội đều trong khung",
+    "duration": 35,
+    "ratio": "9:16",
+    "output": {
+      "fps": 30,
+      "stripSourceMetadata": true,
+      "randomize": false
+    },
+    "schedule": {
+      "day": 1,
+      "localTime": "19:45",
+      "timezone": "Asia/Saigon",
+      "status": "draft-not-scheduled"
+    },
+    "hook": {
+      "layout": "stacked",
+      "question": "AI LẠI THIẾU TRONG ẢNH?",
+      "badLabel": "❌ NGƯỜI CẦM MÁY BỊ THIẾU",
+      "goodLabel": "✓ CẢ HỘI ĐỦ TRONG KHUNG",
+      "fontSize": 72
+    },
+    "gift": {
+      "headline": "Bố cục nhóm 3 · 5 · 7 người",
+      "keyword": "NHÓM",
+      "followRequired": false,
+      "autoSend": false,
+      "delivery": "public-comment-image",
+      "file": "fb-sprint_e02_gift.png"
+    },
+    "affiliate": {
+      "productName": "Gậy Q515 / P180: đối chiếu biến thể",
+      "url": "https://s.shopee.vn/8fTFiaAWUp",
+      "verifiedVariant": false,
+      "disclosure": "Bài có liên kết tiếp thị; Omera có thể nhận hoa hồng từ đơn hợp lệ.",
+      "requiresProductCheck": true
+    },
+    "bindings": {
+      "gift": {
+        "mediaId": "e02_gift",
+        "sourceIn": 0
+      },
+      "shutter": {
+        "mediaId": "sprint_shutter",
+        "sourceIn": 0
+      },
+      "bell": {
+        "mediaId": "sprint_bell",
+        "sourceIn": 0
+      }
+    },
+    "bundledMedia": {
+      "e02_gift": {
+        "id": "e02_gift",
+        "name": "Bố cục nhóm 3 · 5 · 7 người",
+        "type": "image",
+        "url": "assets/demo/fb-sprint_e02_gift.png",
+        "duration": 35
+      },
+      "sprint_shutter": {
+        "id": "sprint_shutter",
+        "name": "camera_shutter_hit.wav",
+        "type": "audio",
+        "url": "assets/demo/camera_shutter_hit.wav",
+        "duration": 0.4
+      },
+      "sprint_bell": {
+        "id": "sprint_bell",
+        "name": "bell_ding.wav",
+        "type": "audio",
+        "url": "assets/demo/bell_ding.wav",
+        "duration": 0.65
+      },
+      "e02_vo01": {
+        "id": "e02_vo01",
+        "type": "audio",
+        "name": "Ảnh nhóm cứ thiếu người cầm máy?",
+        "url": "assets/demo/fb-sprint_e02_vo01.wav",
+        "duration": 1.4353541666666667,
+        "syntheticVoice": true
+      },
+      "e02_vo02": {
+        "id": "e02_vo02",
+        "type": "audio",
+        "name": "Dàn một hàng dễ bị tràn khỏi khung.",
+        "url": "assets/demo/fb-sprint_e02_vo02.wav",
+        "duration": 2.2366041666666665,
+        "syntheticVoice": true
+      },
+      "e02_vo03": {
+        "id": "e02_vo03",
+        "type": "audio",
+        "name": "Đứng sát mép còn dễ bị méo mặt.",
+        "url": "assets/demo/fb-sprint_e02_vo03.wav",
+        "duration": 1.7581458333333333,
+        "syntheticVoice": true
+      },
+      "e02_vo04": {
+        "id": "e02_vo04",
+        "type": "audio",
+        "name": "Xếp hai lớp, chừa chỗ rồi căn giữa.",
+        "url": "assets/demo/fb-sprint_e02_vo04.wav",
+        "duration": 2.0757291666666666,
+        "syntheticVoice": true
+      },
+      "e02_vo05": {
+        "id": "e02_vo05",
+        "type": "audio",
+        "name": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "url": "assets/demo/fb-sprint_e02_vo05.wav",
+        "duration": 1.9163125,
+        "syntheticVoice": true
+      },
+      "e02_vo06": {
+        "id": "e02_vo06",
+        "type": "audio",
+        "name": "Ba người xếp tam giác, năm người chia lớp.",
+        "url": "assets/demo/fb-sprint_e02_vo06.wav",
+        "duration": 2.1550625,
+        "syntheticVoice": true
+      },
+      "e02_vo07": {
+        "id": "e02_vo07",
+        "type": "audio",
+        "name": "Bảy người đứng bốn sau, ba trước nhé.",
+        "url": "assets/demo/fb-sprint_e02_vo07.wav",
+        "duration": 2.1528541666666667,
+        "syntheticVoice": true
+      },
+      "e02_vo08": {
+        "id": "e02_vo08",
+        "type": "audio",
+        "name": "Hẹn giờ, vào vị trí và chụp thử.",
+        "url": "assets/demo/fb-sprint_e02_vo08.wav",
+        "duration": 1.9145416666666666,
+        "syntheticVoice": true
+      },
+      "e02_vo09": {
+        "id": "e02_vo09",
+        "type": "audio",
+        "name": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn NHÓM cho Trang. Theo dõi để thử tập sau!",
+        "url": "assets/demo/fb-sprint_e02_vo09.wav",
+        "duration": 4.3901666666666666,
+        "syntheticVoice": true
+      }
+    },
+    "scenes": [
+      {
+        "start": 0,
+        "end": 3,
+        "overlay": "CÙNG NHÓM · ĐỦ TẤT CẢ MỌI NGƯỜI",
+        "voice": "Ảnh nhóm cứ thiếu người cầm máy?",
+        "voiceMediaId": "e02_vo01",
+        "visual": "Hai phần màn hình 50/50: ảnh A lỗi thật và B kết quả thật, sáng rõ. Snap Zoom 1,2→1 trong 0,35s, tiếng màn trập ngay 0s; banner trắng chữ đen ≥64px. CÙNG NHÓM · ĐỦ TẤT CẢ MỌI NGƯỜI"
+      },
+      {
+        "start": 3,
+        "end": 6,
+        "overlay": "LỖI · ĐỨNG DÀN MỘT HÀNG",
+        "voice": "Dàn một hàng dễ bị tràn khỏi khung.",
+        "voiceMediaId": "e02_vo02",
+        "visual": "Cảnh lỗi A, phóng gần vị trí sai. Dùng mũi tên/khung lưới để chỉ đúng nguyên nhân. LỖI · ĐỨNG DÀN MỘT HÀNG"
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "overlay": "ĐỪNG ÉP MẶT VÀO GÓC",
+        "voice": "Đứng sát mép còn dễ bị méo mặt.",
+        "voiceMediaId": "e02_vo03",
+        "visual": "Giữ cùng cảnh A, đổi crop vào chi tiết sai thứ hai; không thay ngoại hình người mẫu. ĐỪNG ÉP MẶT VÀO GÓC"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "overlay": "THỬ XẾP HAI LỚP · CĂN GIỮA",
+        "voice": "Xếp hai lớp, chừa chỗ rồi căn giữa.",
+        "voiceMediaId": "e02_vo04",
+        "visual": "Cảnh B toàn khung để người xem thấy thay đổi trước khi xem công thức. THỬ XẾP HAI LỚP · CĂN GIỮA"
+      },
+      {
+        "start": 13,
+        "end": 15.5,
+        "overlay": "THEO DÕI · MỖI TẬP MỘT MẸO",
+        "voice": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "voiceMediaId": "e02_vo05",
+        "visual": "Video B tiếp tục chạy. Pop-up mint “+ Theo dõi Omera Studio”, một lần bật lên, bell ở 13s; ghi rõ là đồ họa nhắc theo dõi. THEO DÕI · MỖI TẬP MỘT MẸO"
+      },
+      {
+        "start": 15.5,
+        "end": 19.5,
+        "overlay": "SƠ ĐỒ · NHÓM 3 / 5 / 7",
+        "voice": "Ba người xếp tam giác, năm người chia lớp.",
+        "voiceMediaId": "e02_vo06",
+        "visual": "Chiếu ảnh sơ đồ bỏ túi đã tạo, chừa thời gian đọc bước đầu. Không khóa cách làm sau lượt theo dõi. SƠ ĐỒ · NHÓM 3 / 5 / 7"
+      },
+      {
+        "start": 19.5,
+        "end": 23.5,
+        "overlay": "CHỪA CHỖ CHO NGƯỜI BẤM MÁY",
+        "voice": "Bảy người đứng bốn sau, ba trước nhé.",
+        "voiceMediaId": "e02_vo07",
+        "visual": "Trở về cảnh B áp dụng; thêm mũi tên hướng máy/đèn hoặc lưới khi phù hợp. CHỪA CHỖ CHO NGƯỜI BẤM MÁY"
+      },
+      {
+        "start": 23.5,
+        "end": 28,
+        "overlay": "HẸN GIỜ · CHỤP THỬ MỘT TẤM",
+        "voice": "Hẹn giờ, vào vị trí và chụp thử.",
+        "voiceMediaId": "e02_vo08",
+        "visual": "Trở về sơ đồ; nhắc bước kiểm tra kết quả và giới hạn thực tế. HẸN GIỜ · CHỤP THỬ MỘT TẤM"
+      },
+      {
+        "start": 28,
+        "end": 35,
+        "overlay": "SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU",
+        "voice": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn NHÓM cho Trang. Theo dõi để thử tập sau!",
+        "voiceMediaId": "e02_vo09",
+        "visual": "Nửa trên: 7s quay thao tác thiết bị thật. Nửa dưới: tên quà, vị trí lấy ảnh ở bình luận đầu, lời mời theo dõi tập sau và công khai hoa hồng nếu có link. SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU"
+      }
+    ],
+    "shootingBrief": "Hai cảnh cùng nhóm có sự đồng ý: A thiếu người bấm máy, B đủ cả nhóm. Không dùng video nhóm khác giả làm kết quả. Cảnh thiết bị thể hiện dựng chân chắc và hẹn giờ; không khẳng định xoay hoặc bám mặt AI nếu chưa thử đúng bản.",
+    "sourceChecklist": [
+      "Cặp A/B có người thật, đủ quyền sử dụng, cùng điều kiện so sánh.",
+      "before / after: mỗi video còn ít nhất 13s, hoặc ảnh thực tế.",
+      "device: video thao tác đúng thiết bị thật còn ít nhất 7s.",
+      "Kiểm tra lời đọc và đủ ảnh sơ đồ trước khi đăng."
+    ],
+    "caption": "Ai lại thiếu trong ảnh? Thử đổi đúng một yếu tố trước khi mua thêm đồ.\nLưu sơ đồ để thử lại; chia sẻ nếu bạn thấy hữu ích.\nSơ đồ ở bình luận đầu. Theo dõi Omera để xem tập tiếp theo.",
+    "firstComment": "Sơ đồ Bố cục nhóm 3 · 5 · 7 người mình đính kèm ngay tại đây, tải tự do, không cần theo dõi để nhận. Dụng cụ tham khảo: https://s.shopee.vn/8fTFiaAWUp — kiểm tra đúng biến thể, giá và ưu đãi trên Shopee trước khi đặt. Đây là liên kết tiếp thị; Omera có thể nhận hoa hồng từ đơn hợp lệ.",
+    "discussionComment": "Bạn thấy bản A hay B dễ áp dụng hơn? Điều kiện quay nào khiến bạn khó làm theo nhất?",
+    "requestedReply": "Mình gửi sơ đồ bạn đã hỏi tại đây. Dụng cụ tham khảo: https://s.shopee.vn/8fTFiaAWUp (liên kết tiếp thị, có thể có hoa hồng).",
+    "publishReady": false
+  },
+  {
+    "format": "tibe-fb-sprint-kit",
+    "template": "FB_1000Follow_Sprint_Mode",
+    "version": 1,
+    "id": "e03",
+    "name": "Omera / Ngược sáng: cứu mặt và vùng trời",
+    "duration": 35,
+    "ratio": "9:16",
+    "output": {
+      "fps": 30,
+      "stripSourceMetadata": true,
+      "randomize": false
+    },
+    "schedule": {
+      "day": 2,
+      "localTime": "11:30",
+      "timezone": "Asia/Saigon",
+      "status": "draft-not-scheduled"
+    },
+    "hook": {
+      "layout": "stacked",
+      "question": "MẶT TỐI HAY TRỜI CHÁY?",
+      "badLabel": "❌ MẶT TỐI · NỀN CHÁY",
+      "goodLabel": "✓ ĐỔI HƯỚNG · CÂN ÁNH SÁNG",
+      "fontSize": 72
+    },
+    "gift": {
+      "headline": "Sơ đồ đo sáng cạnh cửa sổ",
+      "keyword": "SÁNG",
+      "followRequired": false,
+      "autoSend": false,
+      "delivery": "public-comment-image",
+      "file": "fb-sprint_e03_gift.png"
+    },
+    "affiliate": {
+      "productName": "Đèn LED mini: chưa chọn mẫu",
+      "url": null,
+      "verifiedVariant": false,
+      "disclosure": "Bài có liên kết tiếp thị; Omera có thể nhận hoa hồng từ đơn hợp lệ.",
+      "requiresProductCheck": true
+    },
+    "bindings": {
+      "gift": {
+        "mediaId": "e03_gift",
+        "sourceIn": 0
+      },
+      "shutter": {
+        "mediaId": "sprint_shutter",
+        "sourceIn": 0
+      },
+      "bell": {
+        "mediaId": "sprint_bell",
+        "sourceIn": 0
+      }
+    },
+    "bundledMedia": {
+      "e03_gift": {
+        "id": "e03_gift",
+        "name": "Sơ đồ đo sáng cạnh cửa sổ",
+        "type": "image",
+        "url": "assets/demo/fb-sprint_e03_gift.png",
+        "duration": 35
+      },
+      "sprint_shutter": {
+        "id": "sprint_shutter",
+        "name": "camera_shutter_hit.wav",
+        "type": "audio",
+        "url": "assets/demo/camera_shutter_hit.wav",
+        "duration": 0.4
+      },
+      "sprint_bell": {
+        "id": "sprint_bell",
+        "name": "bell_ding.wav",
+        "type": "audio",
+        "url": "assets/demo/bell_ding.wav",
+        "duration": 0.65
+      },
+      "e03_vo01": {
+        "id": "e03_vo01",
+        "type": "audio",
+        "name": "Cạnh cửa sổ, sao mặt vẫn tối?",
+        "url": "assets/demo/fb-sprint_e03_vo01.wav",
+        "duration": 1.9140833333333334,
+        "syntheticVoice": true
+      },
+      "e03_vo02": {
+        "id": "e03_vo02",
+        "type": "audio",
+        "name": "Nền quá sáng, máy làm gương mặt tối.",
+        "url": "assets/demo/fb-sprint_e03_vo02.wav",
+        "duration": 2.0692916666666665,
+        "syntheticVoice": true
+      },
+      "e03_vo03": {
+        "id": "e03_vo03",
+        "type": "audio",
+        "name": "Kéo sáng mạnh lại làm mất vùng trời.",
+        "url": "assets/demo/fb-sprint_e03_vo03.wav",
+        "duration": 1.8396875,
+        "syntheticVoice": true
+      },
+      "e03_vo04": {
+        "id": "e03_vo04",
+        "type": "audio",
+        "name": "Xoay mặt về sáng rồi đo sáng lại.",
+        "url": "assets/demo/fb-sprint_e03_vo04.wav",
+        "duration": 1.838375,
+        "syntheticVoice": true
+      },
+      "e03_vo05": {
+        "id": "e03_vo05",
+        "type": "audio",
+        "name": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "url": "assets/demo/fb-sprint_e03_vo05.wav",
+        "duration": 1.9182916666666667,
+        "syntheticVoice": true
+      },
+      "e03_vo06": {
+        "id": "e03_vo06",
+        "type": "audio",
+        "name": "Chạm vùng mặt, chỉnh sáng từng chút một.",
+        "url": "assets/demo/fb-sprint_e03_vo06.wav",
+        "duration": 1.9178541666666666,
+        "syntheticVoice": true
+      },
+      "e03_vo07": {
+        "id": "e03_vo07",
+        "type": "audio",
+        "name": "Quan sát da và nền, đừng kéo quá tay.",
+        "url": "assets/demo/fb-sprint_e03_vo07.wav",
+        "duration": 1.9945208333333333,
+        "syntheticVoice": true
+      },
+      "e03_vo08": {
+        "id": "e03_vo08",
+        "type": "audio",
+        "name": "Thiếu sáng thì thêm đèn nhẹ từ bên.",
+        "url": "assets/demo/fb-sprint_e03_vo08.wav",
+        "duration": 1.7517916666666666,
+        "syntheticVoice": true
+      },
+      "e03_vo09": {
+        "id": "e03_vo09",
+        "type": "audio",
+        "name": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn SÁNG cho Trang. Theo dõi để thử tập sau!",
+        "url": "assets/demo/fb-sprint_e03_vo09.wav",
+        "duration": 4.233979166666667,
+        "syntheticVoice": true
+      }
+    },
+    "scenes": [
+      {
+        "start": 0,
+        "end": 3,
+        "overlay": "CÙNG CỬA SỔ · ĐỔI HƯỚNG SÁNG",
+        "voice": "Cạnh cửa sổ, sao mặt vẫn tối?",
+        "voiceMediaId": "e03_vo01",
+        "visual": "Hai phần màn hình 50/50: ảnh A lỗi thật và B kết quả thật, sáng rõ. Snap Zoom 1,2→1 trong 0,35s, tiếng màn trập ngay 0s; banner trắng chữ đen ≥64px. CÙNG CỬA SỔ · ĐỔI HƯỚNG SÁNG"
+      },
+      {
+        "start": 3,
+        "end": 6,
+        "overlay": "LỖI · NỀN SÁNG HƠN GƯƠNG MẶT",
+        "voice": "Nền quá sáng, máy làm gương mặt tối.",
+        "voiceMediaId": "e03_vo02",
+        "visual": "Cảnh lỗi A, phóng gần vị trí sai. Dùng mũi tên/khung lưới để chỉ đúng nguyên nhân. LỖI · NỀN SÁNG HƠN GƯƠNG MẶT"
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "overlay": "ĐỪNG CHỈ KÉO SÁNG LÊN CAO",
+        "voice": "Kéo sáng mạnh lại làm mất vùng trời.",
+        "voiceMediaId": "e03_vo03",
+        "visual": "Giữ cùng cảnh A, đổi crop vào chi tiết sai thứ hai; không thay ngoại hình người mẫu. ĐỪNG CHỈ KÉO SÁNG LÊN CAO"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "overlay": "XOAY MẶT VỀ PHÍA CỬA SỔ",
+        "voice": "Xoay mặt về sáng rồi đo sáng lại.",
+        "voiceMediaId": "e03_vo04",
+        "visual": "Cảnh B toàn khung để người xem thấy thay đổi trước khi xem công thức. XOAY MẶT VỀ PHÍA CỬA SỔ"
+      },
+      {
+        "start": 13,
+        "end": 15.5,
+        "overlay": "THEO DÕI · MỖI TẬP MỘT MẸO",
+        "voice": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "voiceMediaId": "e03_vo05",
+        "visual": "Video B tiếp tục chạy. Pop-up mint “+ Theo dõi Omera Studio”, một lần bật lên, bell ở 13s; ghi rõ là đồ họa nhắc theo dõi. THEO DÕI · MỖI TẬP MỘT MẸO"
+      },
+      {
+        "start": 15.5,
+        "end": 19.5,
+        "overlay": "SƠ ĐỒ · CHẠM MẶT ĐỂ ĐO SÁNG",
+        "voice": "Chạm vùng mặt, chỉnh sáng từng chút một.",
+        "voiceMediaId": "e03_vo06",
+        "visual": "Chiếu ảnh sơ đồ bỏ túi đã tạo, chừa thời gian đọc bước đầu. Không khóa cách làm sau lượt theo dõi. SƠ ĐỒ · CHẠM MẶT ĐỂ ĐO SÁNG"
+      },
+      {
+        "start": 19.5,
+        "end": 23.5,
+        "overlay": "GIỮ CHI TIẾT CẢ MẶT VÀ NỀN",
+        "voice": "Quan sát da và nền, đừng kéo quá tay.",
+        "voiceMediaId": "e03_vo07",
+        "visual": "Trở về cảnh B áp dụng; thêm mũi tên hướng máy/đèn hoặc lưới khi phù hợp. GIỮ CHI TIẾT CẢ MẶT VÀ NỀN"
+      },
+      {
+        "start": 23.5,
+        "end": 28,
+        "overlay": "THÊM ĐÈN NHẸ NẾU CẦN",
+        "voice": "Thiếu sáng thì thêm đèn nhẹ từ bên.",
+        "voiceMediaId": "e03_vo08",
+        "visual": "Trở về sơ đồ; nhắc bước kiểm tra kết quả và giới hạn thực tế. THÊM ĐÈN NHẸ NẾU CẦN"
+      },
+      {
+        "start": 28,
+        "end": 35,
+        "overlay": "SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU",
+        "voice": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn SÁNG cho Trang. Theo dõi để thử tập sau!",
+        "voiceMediaId": "e03_vo09",
+        "visual": "Nửa trên: 7s quay thao tác thiết bị thật. Nửa dưới: tên quà, vị trí lấy ảnh ở bình luận đầu, lời mời theo dõi tập sau và công khai hoa hồng nếu có link. SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU"
+      }
+    ],
+    "shootingBrief": "Cùng người cạnh cùng cửa sổ, khóa điều kiện so sánh. Quay rõ thao tác chạm đo sáng trên điện thoại thật. Cảnh LED thật trước/sau, không thay cả ánh sáng phòng rồi quy kết cho đèn.",
+    "sourceChecklist": [
+      "Cặp A/B có người thật, đủ quyền sử dụng, cùng điều kiện so sánh.",
+      "before / after: mỗi video còn ít nhất 13s, hoặc ảnh thực tế.",
+      "device: video thao tác đúng thiết bị thật còn ít nhất 7s.",
+      "Kiểm tra lời đọc và đủ ảnh sơ đồ trước khi đăng."
+    ],
+    "caption": "Mặt tối hay trời cháy? Thử đổi đúng một yếu tố trước khi mua thêm đồ.\nLưu sơ đồ để thử lại; chia sẻ nếu bạn thấy hữu ích.\nSơ đồ ở bình luận đầu. Theo dõi Omera để xem tập tiếp theo.",
+    "firstComment": "Sơ đồ Sơ đồ đo sáng cạnh cửa sổ mình đính kèm ngay tại đây, tải tự do, không cần theo dõi để nhận. Chưa gắn link thiết bị vì Omera đang kiểm tra đúng mẫu; không có ưu đãi được xác nhận.",
+    "discussionComment": "Bạn thấy bản A hay B dễ áp dụng hơn? Điều kiện quay nào khiến bạn khó làm theo nhất?",
+    "requestedReply": "Mình gửi sơ đồ bạn đã hỏi tại đây. Mình chưa có link dụng cụ đúng mẫu để gửi.",
+    "publishReady": false
+  },
+  {
+    "format": "tibe-fb-sprint-kit",
+    "template": "FB_1000Follow_Sprint_Mode",
+    "version": 1,
+    "id": "e04",
+    "name": "Omera / J-Cut: nghe cảnh mới trước khi thấy",
+    "duration": 35,
+    "ratio": "9:16",
+    "output": {
+      "fps": 30,
+      "stripSourceMetadata": true,
+      "randomize": false
+    },
+    "schedule": {
+      "day": 2,
+      "localTime": "19:45",
+      "timezone": "Asia/Saigon",
+      "status": "draft-not-scheduled"
+    },
+    "hook": {
+      "layout": "stacked",
+      "question": "VÌ SAO CÂU NÓI BỊ CỤT?",
+      "badLabel": "❌ CẮT CẢ HÌNH LẪN TIẾNG",
+      "goodLabel": "✓ TIẾNG CẢNH B VÀO TRƯỚC",
+      "fontSize": 72
+    },
+    "gift": {
+      "headline": "Sơ đồ J-Cut trên timeline điện thoại",
+      "keyword": "CẮT",
+      "followRequired": false,
+      "autoSend": false,
+      "delivery": "public-comment-image",
+      "file": "fb-sprint_e04_gift.png"
+    },
+    "affiliate": {
+      "productName": "Mic không dây: chưa chọn mẫu",
+      "url": null,
+      "verifiedVariant": false,
+      "disclosure": "Bài có liên kết tiếp thị; Omera có thể nhận hoa hồng từ đơn hợp lệ.",
+      "requiresProductCheck": true
+    },
+    "bindings": {
+      "gift": {
+        "mediaId": "e04_gift",
+        "sourceIn": 0
+      },
+      "shutter": {
+        "mediaId": "sprint_shutter",
+        "sourceIn": 0
+      },
+      "bell": {
+        "mediaId": "sprint_bell",
+        "sourceIn": 0
+      }
+    },
+    "bundledMedia": {
+      "e04_gift": {
+        "id": "e04_gift",
+        "name": "Sơ đồ J-Cut trên timeline điện thoại",
+        "type": "image",
+        "url": "assets/demo/fb-sprint_e04_gift.png",
+        "duration": 35
+      },
+      "sprint_shutter": {
+        "id": "sprint_shutter",
+        "name": "camera_shutter_hit.wav",
+        "type": "audio",
+        "url": "assets/demo/camera_shutter_hit.wav",
+        "duration": 0.4
+      },
+      "sprint_bell": {
+        "id": "sprint_bell",
+        "name": "bell_ding.wav",
+        "type": "audio",
+        "url": "assets/demo/bell_ding.wav",
+        "duration": 0.65
+      },
+      "e04_vo01": {
+        "id": "e04_vo01",
+        "type": "audio",
+        "name": "Cùng câu nói, sao bản này bị cụt?",
+        "url": "assets/demo/fb-sprint_e04_vo01.wav",
+        "duration": 1.7586666666666666,
+        "syntheticVoice": true
+      },
+      "e04_vo02": {
+        "id": "e04_vo02",
+        "type": "audio",
+        "name": "Cắt cả tiếng cùng hình dễ mất câu.",
+        "url": "assets/demo/fb-sprint_e04_vo02.wav",
+        "duration": 1.8390833333333334,
+        "syntheticVoice": true
+      },
+      "e04_vo03": {
+        "id": "e04_vo03",
+        "type": "audio",
+        "name": "Giữ đầu tiếng cảnh B trước điểm đổi hình.",
+        "url": "assets/demo/fb-sprint_e04_vo03.wav",
+        "duration": 2.0765416666666665,
+        "syntheticVoice": true
+      },
+      "e04_vo04": {
+        "id": "e04_vo04",
+        "type": "audio",
+        "name": "Nghe cảnh mới trước, rồi mới thấy hình.",
+        "url": "assets/demo/fb-sprint_e04_vo04.wav",
+        "duration": 1.9141458333333334,
+        "syntheticVoice": true
+      },
+      "e04_vo05": {
+        "id": "e04_vo05",
+        "type": "audio",
+        "name": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "url": "assets/demo/fb-sprint_e04_vo05.wav",
+        "duration": 1.7567291666666667,
+        "syntheticVoice": true
+      },
+      "e04_vo06": {
+        "id": "e04_vo06",
+        "type": "audio",
+        "name": "Tách âm thanh cảnh B trên timeline.",
+        "url": "assets/demo/fb-sprint_e04_vo06.wav",
+        "duration": 1.9173541666666667,
+        "syntheticVoice": true
+      },
+      "e04_vo07": {
+        "id": "e04_vo07",
+        "type": "audio",
+        "name": "Cho tiếng B vào sớm khoảng nửa giây.",
+        "url": "assets/demo/fb-sprint_e04_vo07.wav",
+        "duration": 1.8379583333333334,
+        "syntheticVoice": true
+      },
+      "e04_vo08": {
+        "id": "e04_vo08",
+        "type": "audio",
+        "name": "Nghe lại, tránh để hai câu chồng nhau.",
+        "url": "assets/demo/fb-sprint_e04_vo08.wav",
+        "duration": 2.0784375,
+        "syntheticVoice": true
+      },
+      "e04_vo09": {
+        "id": "e04_vo09",
+        "type": "audio",
+        "name": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn CẮT cho Trang. Theo dõi để thử tập sau!",
+        "url": "assets/demo/fb-sprint_e04_vo09.wav",
+        "duration": 4.157625,
+        "syntheticVoice": true
+      }
+    },
+    "scenes": [
+      {
+        "start": 0,
+        "end": 3,
+        "overlay": "NGHE A / B · CÙNG MỘT LỜI NÓI",
+        "voice": "Cùng câu nói, sao bản này bị cụt?",
+        "voiceMediaId": "e04_vo01",
+        "visual": "Hai phần màn hình 50/50: ảnh A lỗi thật và B kết quả thật, sáng rõ. Snap Zoom 1,2→1 trong 0,35s, tiếng màn trập ngay 0s; banner trắng chữ đen ≥64px. NGHE A / B · CÙNG MỘT LỜI NÓI"
+      },
+      {
+        "start": 3,
+        "end": 6,
+        "overlay": "NGHE A · CẮT MẤT ĐẦU TIẾNG B",
+        "voice": "Cùng một bản ghi, A cắt mất đầu câu.",
+        "voiceMediaId": "e04_vo02",
+        "visual": "Phát 3 giây đầu video A với tiếng thực, không có lời dẫn."
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "overlay": "NGHE B · TIẾNG B VÀO TRƯỚC",
+        "voice": "B giữ đầu tiếng, vào trước khi đổi hình.",
+        "voiceMediaId": "e04_vo03",
+        "visual": "Phát 3 giây đầu video B với cùng bản ghi câu nói; nghe tiếng B vào trước hình. Không có lời dẫn."
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "overlay": "J-CUT · NGHE B TRƯỚC KHI THẤY B",
+        "voice": "Nghe cảnh mới trước, rồi mới thấy hình.",
+        "voiceMediaId": "e04_vo04",
+        "visual": "Cảnh B toàn khung để người xem thấy thay đổi trước khi xem công thức. J-CUT · NGHE B TRƯỚC KHI THẤY B"
+      },
+      {
+        "start": 13,
+        "end": 15.5,
+        "overlay": "THEO DÕI · MỖI TẬP MỘT MẸO",
+        "voice": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "voiceMediaId": "e04_vo05",
+        "visual": "Video B tiếp tục chạy. Pop-up mint “+ Theo dõi Omera Studio”, một lần bật lên, bell ở 13s; ghi rõ là đồ họa nhắc theo dõi. THEO DÕI · MỖI TẬP MỘT MẸO"
+      },
+      {
+        "start": 15.5,
+        "end": 19.5,
+        "overlay": "SƠ ĐỒ · TÁCH ÂM THANH CẢNH B",
+        "voice": "Tách âm thanh cảnh B trên timeline.",
+        "voiceMediaId": "e04_vo06",
+        "visual": "Chiếu ảnh sơ đồ bỏ túi đã tạo, chừa thời gian đọc bước đầu. Không khóa cách làm sau lượt theo dõi. SƠ ĐỒ · TÁCH ÂM THANH CẢNH B"
+      },
+      {
+        "start": 19.5,
+        "end": 23.5,
+        "overlay": "KÉO TIẾNG B SANG TRÁI NHẸ",
+        "voice": "Cho tiếng B vào sớm khoảng nửa giây.",
+        "voiceMediaId": "e04_vo07",
+        "visual": "Trở về cảnh B áp dụng; thêm mũi tên hướng máy/đèn hoặc lưới khi phù hợp. KÉO TIẾNG B SANG TRÁI NHẸ"
+      },
+      {
+        "start": 23.5,
+        "end": 28,
+        "overlay": "NGHE LẠI · TRÁNH HAI CÂU CHỒNG NHAU",
+        "voice": "Nghe lại, tránh để hai câu chồng nhau.",
+        "voiceMediaId": "e04_vo08",
+        "visual": "Trở về sơ đồ; nhắc bước kiểm tra kết quả và giới hạn thực tế. NGHE LẠI · TRÁNH HAI CÂU CHỒNG NHAU"
+      },
+      {
+        "start": 28,
+        "end": 35,
+        "overlay": "SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU",
+        "voice": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn CẮT cho Trang. Theo dõi để thử tập sau!",
+        "voiceMediaId": "e04_vo09",
+        "visual": "Nửa trên: 7s quay thao tác thiết bị thật. Nửa dưới: tên quà, vị trí lấy ảnh ở bình luận đầu, lời mời theo dõi tập sau và công khai hoa hồng nếu có link. SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU"
+      }
+    ],
+    "shootingBrief": "Quay người nói câu B đủ đầu cuối và cảnh A đời thường. Dùng chính bản ghi B cho A/B, chỉ đổi vị trí tiếng B. Quay thao tác mic thật; mic chỉ thu tiếng, không phải công cụ tự làm chuyển cảnh. Chuẩn bị 3 giây đầu của video A/B cùng một câu B và cùng mức âm: A bị cắt đầu tiếng tại điểm đổi hình; B cho tiếng vào sớm 0,3–0,7 giây. Template phát tiếng thật của A ở 3–6s và B ở 6–9s, tắt lời dẫn tại hai đoạn này.",
+    "sourceChecklist": [
+      "Cặp A/B có người thật, đủ quyền sử dụng, cùng điều kiện so sánh.",
+      "before / after: mỗi video còn ít nhất 13s, hoặc ảnh thực tế.",
+      "device: video thao tác đúng thiết bị thật còn ít nhất 7s.",
+      "Kiểm tra lời đọc và đủ ảnh sơ đồ trước khi đăng."
+    ],
+    "caption": "Vì sao câu nói bị cụt? Thử đổi đúng một yếu tố trước khi mua thêm đồ.\nLưu sơ đồ để thử lại; chia sẻ nếu bạn thấy hữu ích.\nSơ đồ ở bình luận đầu. Theo dõi Omera để xem tập tiếp theo.",
+    "firstComment": "Sơ đồ Sơ đồ J-Cut trên timeline điện thoại mình đính kèm ngay tại đây, tải tự do, không cần theo dõi để nhận. Chưa gắn link thiết bị vì Omera đang kiểm tra đúng mẫu; không có ưu đãi được xác nhận.",
+    "discussionComment": "Bạn thấy bản A hay B dễ áp dụng hơn? Điều kiện quay nào khiến bạn khó làm theo nhất?",
+    "requestedReply": "Mình gửi sơ đồ bạn đã hỏi tại đây. Mình chưa có link dụng cụ đúng mẫu để gửi.",
+    "publishReady": false,
+    "sourceAudioDemo": true
+  },
+  {
+    "format": "tibe-fb-sprint-kit",
+    "template": "FB_1000Follow_Sprint_Mode",
+    "version": 1,
+    "id": "e05",
+    "name": "Omera / Một đèn: bóng đổ có chủ đích",
+    "duration": 35,
+    "ratio": "9:16",
+    "output": {
+      "fps": 30,
+      "stripSourceMetadata": true,
+      "randomize": false
+    },
+    "schedule": {
+      "day": 3,
+      "localTime": "11:30",
+      "timezone": "Asia/Saigon",
+      "status": "draft-not-scheduled"
+    },
+    "hook": {
+      "layout": "stacked",
+      "question": "TƯỜNG TRỐNG VẪN CÓ CHẤT?",
+      "badLabel": "❌ ĐÈN THẲNG · HÌNH PHẲNG",
+      "goodLabel": "✓ SÁNG LỆCH · BÓNG CÓ HÌNH",
+      "fontSize": 72
+    },
+    "gift": {
+      "headline": "5 sơ đồ thử với một nguồn sáng",
+      "keyword": "ĐÈN",
+      "followRequired": false,
+      "autoSend": false,
+      "delivery": "public-comment-image",
+      "file": "fb-sprint_e05_gift.png"
+    },
+    "affiliate": {
+      "productName": "Đèn RGB bỏ túi: chưa chọn mẫu",
+      "url": null,
+      "verifiedVariant": false,
+      "disclosure": "Bài có liên kết tiếp thị; Omera có thể nhận hoa hồng từ đơn hợp lệ.",
+      "requiresProductCheck": true
+    },
+    "bindings": {
+      "gift": {
+        "mediaId": "e05_gift",
+        "sourceIn": 0
+      },
+      "shutter": {
+        "mediaId": "sprint_shutter",
+        "sourceIn": 0
+      },
+      "bell": {
+        "mediaId": "sprint_bell",
+        "sourceIn": 0
+      }
+    },
+    "bundledMedia": {
+      "e05_gift": {
+        "id": "e05_gift",
+        "name": "5 sơ đồ thử với một nguồn sáng",
+        "type": "image",
+        "url": "assets/demo/fb-sprint_e05_gift.png",
+        "duration": 35
+      },
+      "sprint_shutter": {
+        "id": "sprint_shutter",
+        "name": "camera_shutter_hit.wav",
+        "type": "audio",
+        "url": "assets/demo/camera_shutter_hit.wav",
+        "duration": 0.4
+      },
+      "sprint_bell": {
+        "id": "sprint_bell",
+        "name": "bell_ding.wav",
+        "type": "audio",
+        "url": "assets/demo/bell_ding.wav",
+        "duration": 0.65
+      },
+      "e05_vo01": {
+        "id": "e05_vo01",
+        "type": "audio",
+        "name": "Một ghế, tường trống, vẫn có chất phim?",
+        "url": "assets/demo/fb-sprint_e05_vo01.wav",
+        "duration": 2.314,
+        "syntheticVoice": true
+      },
+      "e05_vo02": {
+        "id": "e05_vo02",
+        "type": "audio",
+        "name": "Chiếu thẳng dễ làm hình bị phẳng.",
+        "url": "assets/demo/fb-sprint_e05_vo02.wav",
+        "duration": 1.5182708333333332,
+        "syntheticVoice": true
+      },
+      "e05_vo03": {
+        "id": "e05_vo03",
+        "type": "audio",
+        "name": "Thử dời đèn sang bên, giữ nguyên máy.",
+        "url": "assets/demo/fb-sprint_e05_vo03.wav",
+        "duration": 1.9979791666666666,
+        "syntheticVoice": true
+      },
+      "e05_vo04": {
+        "id": "e05_vo04",
+        "type": "audio",
+        "name": "Nhìn bóng trên mặt rồi kiểm tra tường.",
+        "url": "assets/demo/fb-sprint_e05_vo04.wav",
+        "duration": 1.831875,
+        "syntheticVoice": true
+      },
+      "e05_vo05": {
+        "id": "e05_vo05",
+        "type": "audio",
+        "name": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "url": "assets/demo/fb-sprint_e05_vo05.wav",
+        "duration": 1.8362916666666667,
+        "syntheticVoice": true
+      },
+      "e05_vo06": {
+        "id": "e05_vo06",
+        "type": "audio",
+        "name": "Thử đèn lệch bốn mươi lăm độ trước.",
+        "url": "assets/demo/fb-sprint_e05_vo06.wav",
+        "duration": 1.5146041666666668,
+        "syntheticVoice": true
+      },
+      "e05_vo07": {
+        "id": "e05_vo07",
+        "type": "audio",
+        "name": "Tách người khỏi tường rồi so bóng đổ.",
+        "url": "assets/demo/fb-sprint_e05_vo07.wav",
+        "duration": 1.9985416666666667,
+        "syntheticVoice": true
+      },
+      "e05_vo08": {
+        "id": "e05_vo08",
+        "type": "audio",
+        "name": "Khóa cân bằng trắng, giảm đèn nếu cháy.",
+        "url": "assets/demo/fb-sprint_e05_vo08.wav",
+        "duration": 1.8348958333333334,
+        "syntheticVoice": true
+      },
+      "e05_vo09": {
+        "id": "e05_vo09",
+        "type": "audio",
+        "name": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn ĐÈN cho Trang. Theo dõi để thử tập sau!",
+        "url": "assets/demo/fb-sprint_e05_vo09.wav",
+        "duration": 4.07775,
+        "syntheticVoice": true
+      }
+    },
+    "scenes": [
+      {
+        "start": 0,
+        "end": 3,
+        "overlay": "MỘT GHẾ · MỘT TƯỜNG · MỘT ĐÈN",
+        "voice": "Một ghế, tường trống, vẫn có chất phim?",
+        "voiceMediaId": "e05_vo01",
+        "visual": "Hai phần màn hình 50/50: ảnh A lỗi thật và B kết quả thật, sáng rõ. Snap Zoom 1,2→1 trong 0,35s, tiếng màn trập ngay 0s; banner trắng chữ đen ≥64px. MỘT GHẾ · MỘT TƯỜNG · MỘT ĐÈN"
+      },
+      {
+        "start": 3,
+        "end": 6,
+        "overlay": "LỖI · CHIẾU THẲNG LÀM HÌNH PHẲNG",
+        "voice": "Chiếu thẳng dễ làm hình bị phẳng.",
+        "voiceMediaId": "e05_vo02",
+        "visual": "Cảnh lỗi A, phóng gần vị trí sai. Dùng mũi tên/khung lưới để chỉ đúng nguyên nhân. LỖI · CHIẾU THẲNG LÀM HÌNH PHẲNG"
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "overlay": "CHỈ ĐỔI MỘT VỊ TRÍ ĐÈN",
+        "voice": "Thử dời đèn sang bên, giữ nguyên máy.",
+        "voiceMediaId": "e05_vo03",
+        "visual": "Giữ cùng cảnh A, đổi crop vào chi tiết sai thứ hai; không thay ngoại hình người mẫu. CHỈ ĐỔI MỘT VỊ TRÍ ĐÈN"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "overlay": "QUAN SÁT BÓNG TRÊN MẶT VÀ TƯỜNG",
+        "voice": "Nhìn bóng trên mặt rồi kiểm tra tường.",
+        "voiceMediaId": "e05_vo04",
+        "visual": "Cảnh B toàn khung để người xem thấy thay đổi trước khi xem công thức. QUAN SÁT BÓNG TRÊN MẶT VÀ TƯỜNG"
+      },
+      {
+        "start": 13,
+        "end": 15.5,
+        "overlay": "THEO DÕI · MỖI TẬP MỘT MẸO",
+        "voice": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "voiceMediaId": "e05_vo05",
+        "visual": "Video B tiếp tục chạy. Pop-up mint “+ Theo dõi Omera Studio”, một lần bật lên, bell ở 13s; ghi rõ là đồ họa nhắc theo dõi. THEO DÕI · MỖI TẬP MỘT MẸO"
+      },
+      {
+        "start": 15.5,
+        "end": 19.5,
+        "overlay": "SƠ ĐỒ · THỬ SÁNG LỆCH 45 ĐỘ",
+        "voice": "Thử đèn lệch bốn mươi lăm độ trước.",
+        "voiceMediaId": "e05_vo06",
+        "visual": "Chiếu ảnh sơ đồ bỏ túi đã tạo, chừa thời gian đọc bước đầu. Không khóa cách làm sau lượt theo dõi. SƠ ĐỒ · THỬ SÁNG LỆCH 45 ĐỘ"
+      },
+      {
+        "start": 19.5,
+        "end": 23.5,
+        "overlay": "ĐƯA NGƯỜI XA TƯỜNG MỘT CHÚT",
+        "voice": "Tách người khỏi tường rồi so bóng đổ.",
+        "voiceMediaId": "e05_vo07",
+        "visual": "Trở về cảnh B áp dụng; thêm mũi tên hướng máy/đèn hoặc lưới khi phù hợp. ĐƯA NGƯỜI XA TƯỜNG MỘT CHÚT"
+      },
+      {
+        "start": 23.5,
+        "end": 28,
+        "overlay": "KHÓA MÀU · CHỈNH CƯỜNG ĐỘ NHẸ",
+        "voice": "Khóa cân bằng trắng, giảm đèn nếu cháy.",
+        "voiceMediaId": "e05_vo08",
+        "visual": "Trở về sơ đồ; nhắc bước kiểm tra kết quả và giới hạn thực tế. KHÓA MÀU · CHỈNH CƯỜNG ĐỘ NHẸ"
+      },
+      {
+        "start": 28,
+        "end": 35,
+        "overlay": "SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU",
+        "voice": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn ĐÈN cho Trang. Theo dõi để thử tập sau!",
+        "voiceMediaId": "e05_vo09",
+        "visual": "Nửa trên: 7s quay thao tác thiết bị thật. Nửa dưới: tên quà, vị trí lấy ảnh ở bình luận đầu, lời mời theo dõi tập sau và công khai hoa hồng nếu có link. SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU"
+      }
+    ],
+    "shootingBrief": "Cùng người ngồi ghế, cùng tường, cùng mức sáng; A chiếu thẳng, B dời đèn lệch. Quay cảnh cầm đèn RGB thật. Không gắn thông số công suất/màu chính xác khi chưa đo.",
+    "sourceChecklist": [
+      "Cặp A/B có người thật, đủ quyền sử dụng, cùng điều kiện so sánh.",
+      "before / after: mỗi video còn ít nhất 13s, hoặc ảnh thực tế.",
+      "device: video thao tác đúng thiết bị thật còn ít nhất 7s.",
+      "Kiểm tra lời đọc và đủ ảnh sơ đồ trước khi đăng."
+    ],
+    "caption": "Tường trống vẫn có chất? Thử đổi đúng một yếu tố trước khi mua thêm đồ.\nLưu sơ đồ để thử lại; chia sẻ nếu bạn thấy hữu ích.\nSơ đồ ở bình luận đầu. Theo dõi Omera để xem tập tiếp theo.",
+    "firstComment": "Sơ đồ 5 sơ đồ thử với một nguồn sáng mình đính kèm ngay tại đây, tải tự do, không cần theo dõi để nhận. Chưa gắn link thiết bị vì Omera đang kiểm tra đúng mẫu; không có ưu đãi được xác nhận.",
+    "discussionComment": "Bạn thấy bản A hay B dễ áp dụng hơn? Điều kiện quay nào khiến bạn khó làm theo nhất?",
+    "requestedReply": "Mình gửi sơ đồ bạn đã hỏi tại đây. Mình chưa có link dụng cụ đúng mẫu để gửi.",
+    "publishReady": false
+  },
+  {
+    "format": "tibe-fb-sprint-kit",
+    "template": "FB_1000Follow_Sprint_Mode",
+    "version": 1,
+    "id": "e06",
+    "name": "Omera / Cam 0.5x: tránh méo mặt sát góc",
+    "duration": 35,
+    "ratio": "9:16",
+    "output": {
+      "fps": 30,
+      "stripSourceMetadata": true,
+      "randomize": false
+    },
+    "schedule": {
+      "day": 3,
+      "localTime": "19:45",
+      "timezone": "Asia/Saigon",
+      "status": "draft-not-scheduled"
+    },
+    "hook": {
+      "layout": "stacked",
+      "question": "CAM 0.5X LÀM MÉO MẶT?",
+      "badLabel": "❌ MẶT SÁT GÓC · QUÁ GẦN",
+      "goodLabel": "✓ MẶT GẦN TÂM · LÙI MÁY",
+      "fontSize": 72
+    },
+    "gift": {
+      "headline": "Quy tắc lưới 9 ô với camera góc rộng",
+      "keyword": "LƯỚI",
+      "followRequired": false,
+      "autoSend": false,
+      "delivery": "public-comment-image",
+      "file": "fb-sprint_e06_gift.png"
+    },
+    "affiliate": {
+      "productName": "Gậy P180: kiểm tra đúng biến thể",
+      "url": "https://s.shopee.vn/8fTFiaAWUp",
+      "verifiedVariant": false,
+      "disclosure": "Bài có liên kết tiếp thị; Omera có thể nhận hoa hồng từ đơn hợp lệ.",
+      "requiresProductCheck": true
+    },
+    "bindings": {
+      "gift": {
+        "mediaId": "e06_gift",
+        "sourceIn": 0
+      },
+      "shutter": {
+        "mediaId": "sprint_shutter",
+        "sourceIn": 0
+      },
+      "bell": {
+        "mediaId": "sprint_bell",
+        "sourceIn": 0
+      }
+    },
+    "bundledMedia": {
+      "e06_gift": {
+        "id": "e06_gift",
+        "name": "Quy tắc lưới 9 ô với camera góc rộng",
+        "type": "image",
+        "url": "assets/demo/fb-sprint_e06_gift.png",
+        "duration": 35
+      },
+      "sprint_shutter": {
+        "id": "sprint_shutter",
+        "name": "camera_shutter_hit.wav",
+        "type": "audio",
+        "url": "assets/demo/camera_shutter_hit.wav",
+        "duration": 0.4
+      },
+      "sprint_bell": {
+        "id": "sprint_bell",
+        "name": "bell_ding.wav",
+        "type": "audio",
+        "url": "assets/demo/bell_ding.wav",
+        "duration": 0.65
+      },
+      "e06_vo01": {
+        "id": "e06_vo01",
+        "type": "audio",
+        "name": "Cam nửa ích, sao mặt bị kéo méo?",
+        "url": "assets/demo/fb-sprint_e06_vo01.wav",
+        "duration": 1.838375,
+        "syntheticVoice": true
+      },
+      "e06_vo02": {
+        "id": "e06_vo02",
+        "type": "audio",
+        "name": "Mặt sát góc dễ bị kéo giãn hình.",
+        "url": "assets/demo/fb-sprint_e06_vo02.wav",
+        "duration": 1.9943541666666667,
+        "syntheticVoice": true
+      },
+      "e06_vo03": {
+        "id": "e06_vo03",
+        "type": "audio",
+        "name": "Máy quá gần còn làm tỷ lệ khác đi.",
+        "url": "assets/demo/fb-sprint_e06_vo03.wav",
+        "duration": 1.9966458333333332,
+        "syntheticVoice": true
+      },
+      "e06_vo04": {
+        "id": "e06_vo04",
+        "type": "audio",
+        "name": "Đưa mặt gần tâm rồi lùi máy lại.",
+        "url": "assets/demo/fb-sprint_e06_vo04.wav",
+        "duration": 1.6771458333333333,
+        "syntheticVoice": true
+      },
+      "e06_vo05": {
+        "id": "e06_vo05",
+        "type": "audio",
+        "name": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "url": "assets/demo/fb-sprint_e06_vo05.wav",
+        "duration": 1.9171875,
+        "syntheticVoice": true
+      },
+      "e06_vo06": {
+        "id": "e06_vo06",
+        "type": "audio",
+        "name": "Bật lưới, giữ mặt quanh ô chính giữa.",
+        "url": "assets/demo/fb-sprint_e06_vo06.wav",
+        "duration": 2.074708333333333,
+        "syntheticVoice": true
+      },
+      "e06_vo07": {
+        "id": "e06_vo07",
+        "type": "audio",
+        "name": "Chân dung thì thử một ích rồi so.",
+        "url": "assets/demo/fb-sprint_e06_vo07.wav",
+        "duration": 1.7565625,
+        "syntheticVoice": true
+      },
+      "e06_vo08": {
+        "id": "e06_vo08",
+        "type": "audio",
+        "name": "Ảnh nhóm nhớ nhìn cả người ở mép.",
+        "url": "assets/demo/fb-sprint_e06_vo08.wav",
+        "duration": 1.5180416666666667,
+        "syntheticVoice": true
+      },
+      "e06_vo09": {
+        "id": "e06_vo09",
+        "type": "audio",
+        "name": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn LƯỚI cho Trang. Theo dõi để thử tập sau!",
+        "url": "assets/demo/fb-sprint_e06_vo09.wav",
+        "duration": 4.3181875,
+        "syntheticVoice": true
+      }
+    },
+    "scenes": [
+      {
+        "start": 0,
+        "end": 3,
+        "overlay": "CÙNG NGƯỜI · CÙNG CAM 0.5X",
+        "voice": "Cam nửa ích, sao mặt bị kéo méo?",
+        "voiceMediaId": "e06_vo01",
+        "visual": "Hai phần màn hình 50/50: ảnh A lỗi thật và B kết quả thật, sáng rõ. Snap Zoom 1,2→1 trong 0,35s, tiếng màn trập ngay 0s; banner trắng chữ đen ≥64px. CÙNG NGƯỜI · CÙNG CAM 0.5X"
+      },
+      {
+        "start": 3,
+        "end": 6,
+        "overlay": "LỖI · MẶT SÁT MÉP KHUNG",
+        "voice": "Mặt sát góc dễ bị kéo giãn hình.",
+        "voiceMediaId": "e06_vo02",
+        "visual": "Cảnh lỗi A, phóng gần vị trí sai. Dùng mũi tên/khung lưới để chỉ đúng nguyên nhân. LỖI · MẶT SÁT MÉP KHUNG"
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "overlay": "ĐỪNG ĐƯA MÁY QUÁ GẦN MẶT",
+        "voice": "Máy quá gần còn làm tỷ lệ khác đi.",
+        "voiceMediaId": "e06_vo03",
+        "visual": "Giữ cùng cảnh A, đổi crop vào chi tiết sai thứ hai; không thay ngoại hình người mẫu. ĐỪNG ĐƯA MÁY QUÁ GẦN MẶT"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "overlay": "ĐƯA MẶT VỀ TÂM · LÙI MÁY",
+        "voice": "Đưa mặt gần tâm rồi lùi máy lại.",
+        "voiceMediaId": "e06_vo04",
+        "visual": "Cảnh B toàn khung để người xem thấy thay đổi trước khi xem công thức. ĐƯA MẶT VỀ TÂM · LÙI MÁY"
+      },
+      {
+        "start": 13,
+        "end": 15.5,
+        "overlay": "THEO DÕI · MỖI TẬP MỘT MẸO",
+        "voice": "Theo dõi Omera, lưu sơ đồ nhé!",
+        "voiceMediaId": "e06_vo05",
+        "visual": "Video B tiếp tục chạy. Pop-up mint “+ Theo dõi Omera Studio”, một lần bật lên, bell ở 13s; ghi rõ là đồ họa nhắc theo dõi. THEO DÕI · MỖI TẬP MỘT MẸO"
+      },
+      {
+        "start": 15.5,
+        "end": 19.5,
+        "overlay": "LƯỚI 9 Ô · GIỮ MẶT GẦN TÂM",
+        "voice": "Bật lưới, giữ mặt quanh ô chính giữa.",
+        "voiceMediaId": "e06_vo06",
+        "visual": "Chiếu ảnh sơ đồ bỏ túi đã tạo, chừa thời gian đọc bước đầu. Không khóa cách làm sau lượt theo dõi. LƯỚI 9 Ô · GIỮ MẶT GẦN TÂM"
+      },
+      {
+        "start": 19.5,
+        "end": 23.5,
+        "overlay": "THỬ 1X KHI CHỤP CHÂN DUNG",
+        "voice": "Chân dung thì thử một ích rồi so.",
+        "voiceMediaId": "e06_vo07",
+        "visual": "Trở về cảnh B áp dụng; thêm mũi tên hướng máy/đèn hoặc lưới khi phù hợp. THỬ 1X KHI CHỤP CHÂN DUNG"
+      },
+      {
+        "start": 23.5,
+        "end": 28,
+        "overlay": "KIỂM TRA CẢ NGƯỜI Ở MÉP KHUNG",
+        "voice": "Ảnh nhóm nhớ nhìn cả người ở mép.",
+        "voiceMediaId": "e06_vo08",
+        "visual": "Trở về sơ đồ; nhắc bước kiểm tra kết quả và giới hạn thực tế. KIỂM TRA CẢ NGƯỜI Ở MÉP KHUNG"
+      },
+      {
+        "start": 28,
+        "end": 35,
+        "overlay": "SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU",
+        "voice": "Sơ đồ ở bình luận. Cần bản ảnh, nhắn LƯỚI cho Trang. Theo dõi để thử tập sau!",
+        "voiceMediaId": "e06_vo09",
+        "visual": "Nửa trên: 7s quay thao tác thiết bị thật. Nửa dưới: tên quà, vị trí lấy ảnh ở bình luận đầu, lời mời theo dõi tập sau và công khai hoa hồng nếu có link. SƠ ĐỒ MIỄN PHÍ · BÌNH LUẬN ĐẦU"
+      }
+    ],
+    "shootingBrief": "Cùng người cùng camera0.5x: A ở sát góc và quá gần, B lùi máy/giữ mặt gần tâm. Không dùng filter làm đẹp giả Before/After. Quay thao tác dựng P180 thật và kiểm tra nền phẳng.",
+    "sourceChecklist": [
+      "Cặp A/B có người thật, đủ quyền sử dụng, cùng điều kiện so sánh.",
+      "before / after: mỗi video còn ít nhất 13s, hoặc ảnh thực tế.",
+      "device: video thao tác đúng thiết bị thật còn ít nhất 7s.",
+      "Kiểm tra lời đọc và đủ ảnh sơ đồ trước khi đăng."
+    ],
+    "caption": "Cam 0.5x làm méo mặt? Thử đổi đúng một yếu tố trước khi mua thêm đồ.\nLưu sơ đồ để thử lại; chia sẻ nếu bạn thấy hữu ích.\nSơ đồ ở bình luận đầu. Theo dõi Omera để xem tập tiếp theo.",
+    "firstComment": "Sơ đồ Quy tắc lưới 9 ô với camera góc rộng mình đính kèm ngay tại đây, tải tự do, không cần theo dõi để nhận. Dụng cụ tham khảo: https://s.shopee.vn/8fTFiaAWUp — kiểm tra đúng biến thể, giá và ưu đãi trên Shopee trước khi đặt. Đây là liên kết tiếp thị; Omera có thể nhận hoa hồng từ đơn hợp lệ.",
+    "discussionComment": "Bạn thấy bản A hay B dễ áp dụng hơn? Điều kiện quay nào khiến bạn khó làm theo nhất?",
+    "requestedReply": "Mình gửi sơ đồ bạn đã hỏi tại đây. Dụng cụ tham khảo: https://s.shopee.vn/8fTFiaAWUp (liên kết tiếp thị, có thể có hoa hồng).",
+    "publishReady": false
+  }
+]

@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
 const source=fs.readFileSync(require.resolve('../assets/js/backend-api.js'),'utf8');
 function environment(port='63343',protocol='http:'){
- const calls=[];let healthy=true;const context={window:null,location:{hostname:'localhost',port,protocol},backend:null,AbortSignal,Headers,fetch:async(url,options)=>{calls.push({url,options});return {ok:healthy,json:async()=>({ok:true,version:'3.5.0'})};}};context.window=context;vm.createContext(context);vm.runInContext(source,context);return {context,calls,fail:()=>healthy=false,ready:()=>healthy=true};
+ const calls=[];let healthy=true;const context={window:null,location:{hostname:'localhost',port,protocol},backend:null,AbortSignal,Headers,fetch:async(url,options)=>{calls.push({url,options});return {ok:healthy,json:async()=>({ok:true,version:'3.6.0'})};}};context.window=context;vm.createContext(context);vm.runInContext(source,context);return {context,calls,fail:()=>healthy=false,ready:()=>healthy=true};
 }
 (async()=>{
  const {context,calls}=environment();await Promise.all([context.TibeBackend.ensure(),context.TibeBackend.ensure()]);assert.equal(calls.length,1);assert.equal(calls[0].url,'http://127.0.0.1:5050/api/status');

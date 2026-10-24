@@ -54,14 +54,27 @@ def bounded(value, low, high, label):
     return number
 
 
+def normalize_fps(value):
+    """Only supported rates; never truncate 59.94 to 59 or arbitrary 30.5 to 30."""
+    if str(value) in {'59.94', '60000/1001'} or value == 60000/1001:
+        return 60000/1001, '60000/1001'
+    if isinstance(value, bool):
+        raise ValueError('FPS không hợp lệ.')
+    number = bounded(value, 1, 120, 'FPS')
+    if number not in {24, 30, 60}:
+        raise ValueError('FPS hỗ trợ: 24, 30, 59.94 hoặc 60.')
+    return number, str(int(number))
+
+
 class RenderJob:
     def __init__(self, root, project, width, height, fps, duration):
         self.id = uuid.uuid4().hex
         self.root, self.base = root, root.parent.parent
         self.folder = root / ('render_' + self.id)
         self.folder.mkdir()
-        self.width, self.height, self.fps, self.duration = width, height, fps, duration
-        self.expected = math.ceil(duration * fps)
+        self.fps, self.fps_ratio = normalize_fps(fps)
+        self.width, self.height, self.duration = width, height, duration
+        self.expected = math.ceil(duration * self.fps)
         self.received = 0
         self.created = time.monotonic()
         self.lock = threading.RLock()
@@ -75,19 +88,42 @@ class RenderJob:
             self.log = (self.folder / 'encode.log').open('wb')
             self.proc = subprocess.Popen([
                 shutil.which('ffmpeg'), '-nostdin', '-v', 'error', '-y',
-                '-f', 'image2pipe', '-vcodec', 'mjpeg', '-framerate', str(fps), '-i', 'pipe:0',
+                '-f', 'image2pipe', '-vcodec', 'mjpeg', '-framerate', self.fps_ratio, '-i', 'pipe:0',
                 '-an', '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', '-pix_fmt', 'yuv420p',
-                '-frames:v', str(self.expected), '-movflags', '+faststart', str(self.folder / 'video.mp4')
+                '-map_metadata', '-1', '-map_chapters', '-1', '-frames:v', str(self.expected), '-movflags', '+faststart', str(self.folder / 'video.mp4')
             ], stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=self.log, creationflags=FLAGS)
         except Exception:
             self.cancel()
             raise
 
+    @classmethod
+    def from_video(cls, root, base, project, video, duration):
+        """Attach a frame-worker video and reuse the exact timeline audio mixer."""
+        job = cls.__new__(cls)
+        job.id = uuid.uuid4().hex
+        job.root, job.base = Path(root), Path(base)
+        job.folder = job.root / ('render_' + job.id)
+        job.folder.mkdir()
+        job.project, job.duration = project, duration
+        job.expected = job.received = 0
+        job.cancelled = False
+        job.proc = job.log = None
+        job.audio = []
+        job.lock = threading.RLock()
+        job.created = time.monotonic()
+        try:
+            job._collect_audio()
+            shutil.copyfile(video, job.folder / 'video.mp4')
+            return job
+        except Exception:
+            job.cancel()
+            raise
+
     def _source(self, item):
         url = item.get('url', '')
-        if re.fullmatch(r'(assets/demo/[\w.-]+|/workspace/(uploads|tts)/[\w.-]+)', url):
+        if re.fullmatch(r'(assets/(?:demo|sfx)/[\w.-]+|/workspace/(uploads|tts)/[\w.-]+)', url):
             path = (self.base / url.lstrip('/')).resolve()
-            allowed = [(self.base / 'assets/demo').resolve(), (self.base / 'workspace/uploads').resolve(),
+            allowed = [(self.base / 'assets/demo').resolve(), (self.base / 'assets/sfx').resolve(), (self.base / 'workspace/uploads').resolve(),
                        (self.base / 'workspace/tts').resolve()]
             if path.parent not in allowed or not path.is_file():
                 raise ValueError('Không tìm thấy tư liệu âm thanh trong dự án.')
@@ -121,6 +157,8 @@ class RenderJob:
                                          '-show_entries', 'stream=codec_type', '-of', 'csv=p=0', str(sources[key])],
                                         capture_output=True, timeout=30, creationflags=FLAGS)
                 has_audio[key] = result.returncode == 0 and b'audio' in result.stdout
+            if clip.get('requiredSourceAudio') and not has_audio[key]:
+                raise ValueError('Cảnh minh họa J-Cut cần âm thanh gốc. Video A/B này không có track âm thanh.')
             if has_audio[key]:
                 normalized = {
                     'start': bounded(clip.get('start', 0), 0, 21600, 'Thời điểm bắt đầu'),
@@ -167,15 +205,16 @@ class RenderJob:
         with self.lock:
             if self.cancelled or self.received != self.expected:
                 raise ValueError('Chưa nhận đủ khung hình hoặc tác vụ đã hủy.')
-            self.proc.stdin.close()
-            if self.proc.wait(timeout=180):
-                raise ValueError('Không mã hóa được khung hình.')
-            self.log.close()
+            if self.proc:
+                self.proc.stdin.close()
+                if self.proc.wait(timeout=180):
+                    raise ValueError('Không mã hóa được khung hình.')
+                self.log.close()
             output = self.root / ('ClipCut_' + self.id + '.mp4')
             if not self.audio:
                 shutil.copyfile(self.folder / 'video.mp4', output)
             else:
-                command = [shutil.which('ffmpeg'), '-nostdin', '-v', 'error', '-y', '-i', str(self.folder / 'video.mp4')]
+                command = [shutil.which('ffmpeg'), '-nostdin', '-v', 'error', '-y', '-filter_complex_threads', '1', '-i', str(self.folder / 'video.mp4')]
                 filters, labels = [], []
                 for i, (path, clip) in enumerate(self.audio, 1):
                     command += ['-i', str(path)]
@@ -229,7 +268,10 @@ class RenderJob:
                 graph = self.folder / 'audio-filter.txt'
                 graph.write_text(';\n'.join(filters), encoding='utf-8')
                 command += ['-filter_complex_script', str(graph), '-map', '0:v:0', '-map', '[mixed]', '-c:v', 'copy',
-                            '-c:a', 'aac', '-b:a', '192k', '-t', str(self.duration), '-movflags', '+faststart', str(output)]
+                            '-map_metadata', '-1', '-map_chapters', '-1', '-c:a', 'aac', '-b:a', '192k', '-t', str(self.duration), '-movflags', '+faststart', str(output)]
+                identity = self.project.get('renderIdentity')
+                if isinstance(identity, str) and re.fullmatch('[a-f0-9]{32}', identity):
+                    command[-1:-1] = ['-metadata', 'comment=Omera render ' + identity]
                 with (self.folder / 'mix.log').open('wb') as log:
                     self.proc = subprocess.Popen(command, stdout=subprocess.DEVNULL, stderr=log, creationflags=FLAGS)
                     if self.proc.wait(timeout=900):
@@ -273,9 +315,9 @@ class RenderStore:
             raise ValueError('Cần FFmpeg và FFprobe để xuất MP4 từng khung hình.')
         width = int(bounded(data.get('width', 0), 128, 3840, 'Chiều rộng'))
         height = int(bounded(data.get('height', 0), 128, 3840, 'Chiều cao'))
-        fps = int(data.get('fps', 30))
+        fps, _ = normalize_fps(data.get('fps', 30))
         duration = bounded(data.get('duration', 0), .05, 21600, 'Thời lượng')
-        if fps not in {24, 30, 60} or width % 2 or height % 2:
+        if width % 2 or height % 2:
             raise ValueError('FPS hoặc độ phân giải không hợp lệ.')
         project = data.get('project')
         if not isinstance(project, dict):
